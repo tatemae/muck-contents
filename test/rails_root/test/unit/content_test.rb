@@ -17,7 +17,9 @@ class ContentTest < ActiveSupport::TestCase
       @editor.add_to_role('editor')
       @user = Factory(:user)
     end
-
+    
+    subject { @content }
+    
     should_belong_to :contentable
     should_belong_to :creator
     should_have_many :content_permissions

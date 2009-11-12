@@ -4,6 +4,12 @@ require File.dirname(__FILE__) + '/../test_helper'
 class ContentTranslationTest < ActiveSupport::TestCase
 
   context "A content translation instance" do    
+    setup do
+      @content_translation = Factory(:content_translation)
+    end
+    
+    subject { @content_translation }
+    
     should_belong_to :content
     should_have_named_scope :by_newest
     should_have_named_scope :recent

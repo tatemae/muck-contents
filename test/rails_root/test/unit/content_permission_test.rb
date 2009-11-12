@@ -8,6 +8,8 @@ class ContentPermissionTest < ActiveSupport::TestCase
       @content_permission = Factory(:content_permission)
     end
     
+    subject { @content_permission }
+    
     should_belong_to :content
     should_belong_to :user
     

@@ -26,21 +26,3 @@ config.action_mailer.delivery_method = :test
 # This is necessary if your schema can't be completely dumped by the schema dumper,
 # like if you have constraints or database-specific column types
 # config.active_record.schema_format = :sql
-
-
-config.gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :source => 'http://gems.github.com'
-config.gem 'thoughtbot-shoulda', :lib => 'shoulda', :source => 'http://gems.github.com'
-# config.gem 'rspec', :version => '>=1.1.12', :lib => 'spec'
-# config.gem 'rspec-rails', :version => '>=1.1.12', :lib => 'spec/rails'
-config.gem 'treetop', :version => '>=1.2.4'
-config.gem 'term-ansicolor', :version => '>=1.0.3', :lib => 'term/ansicolor'
-config.gem 'polyglot', :version => '>=0.2.4'
-config.gem "rcov", :version => '>=0.8.1.2.0'
-
-# only required if you want to use selenium for testing
-config.gem 'selenium-client', :lib => 'selenium/client'
-config.gem 'bmabey-database_cleaner', :lib => 'database_cleaner', :source => 'http://gems.github.com'
-
-require 'factory_girl'
-
-begin require 'redgreen'; rescue LoadError; end

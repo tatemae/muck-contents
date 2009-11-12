@@ -57,7 +57,7 @@ begin
     gemspec.name = "muck-contents"
     gemspec.summary = "Add content to your muck based project"
     gemspec.email = "justinball@gmail.com"
-    gemspec.homepage = "http://github.com/jbasdf/muck_contents"
+    gemspec.homepage = "http://github.com/tatemae/muck_contents"
     gemspec.authors = ["Justin Ball"]
     gemspec.rubyforge_project = 'muck-contents'
     gemspec.add_dependency "muck-engine"
