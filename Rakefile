@@ -56,9 +56,9 @@ begin
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "muck-contents"
     gemspec.summary = "Add content to your muck based project"
-    gemspec.email = "justinball@gmail.com"
+    gemspec.email = "justin@tatemae.com"
     gemspec.homepage = "http://github.com/tatemae/muck_contents"
-    gemspec.authors = ["Justin Ball"]
+    gemspec.authors = ["Justin Ball", "Joel Duffin"]
     gemspec.rubyforge_project = 'muck-contents'
     gemspec.add_dependency "muck-engine"
     gemspec.add_dependency "muck-users"

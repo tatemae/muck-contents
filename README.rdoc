@@ -108,4 +108,4 @@ Override the contents controller to change the the security model.  For example:
 
 
 
-Copyright (c) 2009 Justin Ball, released under the MIT license
+Copyright (c) 2009 Tatemae, released under the MIT license
