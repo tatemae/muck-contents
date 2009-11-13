@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "0.1.11"
+  s.version = "0.1.12"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2009-11-12}
+  s.date = %q{2009-11-13}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -1133,8 +1133,7 @@ Gem::Specification.new do |s|
      "public/javascripts/tiny_mce/plugins/xhtmlxtras/langs/uk_dlg.js",
      "public/javascripts/tiny_mce/plugins/xhtmlxtras/langs/vi_dlg.js",
      "public/javascripts/tiny_mce/plugins/xhtmlxtras/langs/zh_dlg.js",
-     "public/javascripts/tiny_mce/templates/bio.htm",
-     "public/javascripts/tiny_mce/templates/country.htm",
+     "public/javascripts/tiny_mce/templates/example.htm",
      "public/javascripts/tiny_mce/themes/advanced/about.htm",
      "public/javascripts/tiny_mce/themes/advanced/anchor.htm",
      "public/javascripts/tiny_mce/themes/advanced/charmap.htm",
@@ -1380,7 +1379,6 @@ Gem::Specification.new do |s|
      "public/javascripts/tiny_mce/utils/form_utils.js",
      "public/javascripts/tiny_mce/utils/mctabs.js",
      "public/javascripts/tiny_mce/utils/validate.js",
-     "public/javascripts/tiny_mce_helper.js",
      "rails/init.rb",
      "tasks/muck_contents_tasks.rake",
      "test/rails_root/.gitignore",
@@ -1411,6 +1409,7 @@ Gem::Specification.new do |s|
      "test/rails_root/config/environments/test.rb",
      "test/rails_root/config/global_config.yml",
      "test/rails_root/config/initializers/inflections.rb",
+     "test/rails_root/config/initializers/mce_options.rb",
      "test/rails_root/config/initializers/mime_types.rb",
      "test/rails_root/config/initializers/requires.rb",
      "test/rails_root/config/initializers/session_store.rb",
@@ -2761,7 +2760,6 @@ Gem::Specification.new do |s|
      "test/rails_root/public/javascripts/tiny_mce/utils/form_utils.js",
      "test/rails_root/public/javascripts/tiny_mce/utils/mctabs.js",
      "test/rails_root/public/javascripts/tiny_mce/utils/validate.js",
-     "test/rails_root/public/javascripts/tiny_mce_helper.js",
      "test/rails_root/public/robots.txt",
      "test/rails_root/public/stylesheets/.keep",
      "test/rails_root/public/stylesheets/admin.css",
@@ -2916,6 +2914,7 @@ Gem::Specification.new do |s|
      "test/rails_root/config/environments/production.rb",
      "test/rails_root/config/environments/test.rb",
      "test/rails_root/config/initializers/inflections.rb",
+     "test/rails_root/config/initializers/mce_options.rb",
      "test/rails_root/config/initializers/mime_types.rb",
      "test/rails_root/config/initializers/requires.rb",
      "test/rails_root/config/initializers/session_store.rb",
