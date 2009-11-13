@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2009-11-04}
+  s.date = %q{2009-11-12}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -353,7 +353,6 @@ Gem::Specification.new do |s|
      "tasks/muck_contents_tasks.rake",
      "test/rails_root/.gitignore",
      "test/rails_root/.rake_tasks",
-     "test/rails_root/Capfile",
      "test/rails_root/Rakefile",
      "test/rails_root/app/controllers/application_controller.rb",
      "test/rails_root/app/controllers/contents_controller.rb",
@@ -554,17 +553,9 @@ Gem::Specification.new do |s|
      "test/rails_root/script/process/spawner",
      "test/rails_root/script/runner",
      "test/rails_root/script/server",
-     "test/rails_root/test/factories.rb",
      "test/rails_root/test/functional/.keep",
      "test/rails_root/test/functional/contents_controller_test.rb",
      "test/rails_root/test/integration/.keep",
-     "test/rails_root/test/mocks/development/.keep",
-     "test/rails_root/test/mocks/test/.keep",
-     "test/rails_root/test/shoulda_macros/controller.rb",
-     "test/rails_root/test/shoulda_macros/forms.rb",
-     "test/rails_root/test/shoulda_macros/models.rb",
-     "test/rails_root/test/shoulda_macros/pagination.rb",
-     "test/rails_root/test/shoulda_macros/plugins.rb",
      "test/rails_root/test/test_helper.rb",
      "test/rails_root/test/unit/.keep",
      "test/rails_root/test/unit/content_permission_test.rb",
@@ -575,7 +566,7 @@ Gem::Specification.new do |s|
      "test/rails_root/vendor/plugins/ssl_requirement/lib/ssl_requirement.rb",
      "test/rails_root/vendor/plugins/ssl_requirement/test/ssl_requirement_test.rb"
   ]
-  s.homepage = %q{http://github.com/jbasdf/muck_contents}
+  s.homepage = %q{http://github.com/tatemae/muck_contents}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{muck-contents}
@@ -622,13 +613,7 @@ Gem::Specification.new do |s|
      "test/rails_root/features/support/paths.rb",
      "test/rails_root/public/dispatch.rb",
      "test/rails_root/script/create_project.rb",
-     "test/rails_root/test/factories.rb",
      "test/rails_root/test/functional/contents_controller_test.rb",
-     "test/rails_root/test/shoulda_macros/controller.rb",
-     "test/rails_root/test/shoulda_macros/forms.rb",
-     "test/rails_root/test/shoulda_macros/models.rb",
-     "test/rails_root/test/shoulda_macros/pagination.rb",
-     "test/rails_root/test/shoulda_macros/plugins.rb",
      "test/rails_root/test/test_helper.rb",
      "test/rails_root/test/unit/content_permission_test.rb",
      "test/rails_root/test/unit/content_test.rb",
@@ -650,6 +635,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<sanitize>, [">= 0"])
       s.add_runtime_dependency(%q<acts-as-taggable-on>, [">= 0"])
       s.add_runtime_dependency(%q<friendly_id>, [">= 0"])
+      s.add_runtime_dependency(%q<tiny_mce>, [">= 0"])
     else
       s.add_dependency(%q<muck-engine>, [">= 0"])
       s.add_dependency(%q<muck-users>, [">= 0"])
@@ -658,6 +644,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<sanitize>, [">= 0"])
       s.add_dependency(%q<acts-as-taggable-on>, [">= 0"])
       s.add_dependency(%q<friendly_id>, [">= 0"])
+      s.add_dependency(%q<tiny_mce>, [">= 0"])
     end
   else
     s.add_dependency(%q<muck-engine>, [">= 0"])
@@ -667,5 +654,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<sanitize>, [">= 0"])
     s.add_dependency(%q<acts-as-taggable-on>, [">= 0"])
     s.add_dependency(%q<friendly_id>, [">= 0"])
+    s.add_dependency(%q<tiny_mce>, [">= 0"])
   end
 end

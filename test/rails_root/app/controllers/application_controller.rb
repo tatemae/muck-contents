@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
   helper :all
   protect_from_forgery
   acts_as_muck_content_handler
+  
+  layout 'default'
 
   protected
     # called by Admin::Muck::BaseController to check whether or not the

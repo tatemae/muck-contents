@@ -1,6 +1,10 @@
 class Muck::ContentsController < ApplicationController
   unloadable
   
+  uses_tiny_mce(:options => GlobalConfig.advanced_mce_options,
+                :raw_options => GlobalConfig.raw_mce_options, 
+                :only => [:new, :create, :edit, :update])
+                
   before_filter :login_required, :only => [:create, :edit, :update, :destroy]
   before_filter :setup_parent, :only => [:new, :create]
   before_filter :get_secure_content, :only => [:edit, :update, :destroy]

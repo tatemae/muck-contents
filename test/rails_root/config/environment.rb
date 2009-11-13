@@ -15,14 +15,15 @@ end
 
 Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
-  config.gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'
-  config.gem "binarylogic-authlogic", :lib => 'authlogic', :source  => 'http://gems.github.com', :version => ">=2.1.0"
-  config.gem "binarylogic-searchlogic", :lib => 'searchlogic', :source  => 'http://gems.github.com', :version => '~> 2.1.1'
+  config.gem "will_paginate"
+  config.gem "authlogic"
+  config.gem "searchlogic"
   config.gem "bcrypt-ruby", :lib => "bcrypt", :version => ">=2.0.5"
-  config.gem 'mbleigh-acts-as-taggable-on', :lib => "acts-as-taggable-on", :source => "http://gems.github.com"
-  config.gem "collectiveidea-awesome_nested_set", :lib => 'awesome_nested_set', :source => "http://gems.github.com"
-  config.gem "friendly_id", :version => '>=2.1.3'
-  config.gem "rgrove-sanitize", :lib => 'sanitize'
+  config.gem "acts-as-taggable-on"
+  config.gem "awesome_nested_set"
+  config.gem "friendly_id"
+  config.gem "sanitize"
+  config.gem 'tiny_mce'
   config.gem "babelphish"
   config.gem 'muck-engine', :lib => 'muck_engine'
   config.gem 'muck-users', :lib => 'muck_users'

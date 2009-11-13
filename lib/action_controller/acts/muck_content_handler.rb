@@ -9,7 +9,6 @@ module ActionController
         def acts_as_muck_content_handler
           rescue_from ActionController::RoutingError, :with => :handle_content_request
           include ActionController::Acts::MuckContentHandler::InstanceMethods
-          
         end
       end
       

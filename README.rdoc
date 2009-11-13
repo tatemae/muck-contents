@@ -19,7 +19,7 @@ Many of the gems are found on github so before installing do:
 === Configure environment.rb
 Paste in the following:
   config.gem "collectiveidea-awesome_nested_set", :lib => 'awesome_nested_set'
-  config.gem "rgrove-sanitize", :lib => 'sanitize'
+  config.gem "sanitize"
   config.gem "mbleigh-acts-as-taggable-on", :source => "http://gems.github.com", :lib => "acts-as-taggable-on"
   config.gem "friendly_id"
   config.gem "babelphish"
@@ -99,13 +99,12 @@ Override the contents controller to change the the security model.  For example:
     # Override this method to change the available layouts. Note that the
     # layout will need to exist in your 'views/layouts' directory
     def setup_layouts
-      @content_layouts = 
+      @content_layouts = []
       @content_layouts << OpenStruct.new(:name => 'A Great Layout', :value => 'great_layout')
       @content_layouts << OpenStruct.new(:name => 'Default', :value => 'default')
     end
     
   end
-
 
 
 Copyright (c) 2009 Tatemae, released under the MIT license

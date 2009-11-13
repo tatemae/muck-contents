@@ -4,6 +4,8 @@ ActiveRecord::Base.class_eval { include ActiveRecord::Acts::MuckContentTranslati
 ActionController::Base.class_eval { include ActionController::Acts::MuckContentHandler }
 
 ActionController::Base.send :helper, MuckContentsHelper
+ActionController::Base.send :helper, TinymceHelper
+
 I18n.load_path += Dir[ File.join(File.dirname(__FILE__), '..', 'locales', '*.{rb,yml}') ]
 
 module MuckContents
