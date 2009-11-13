@@ -35,7 +35,7 @@ module ActionController
 
           # Renders the show template with the current content.
           def render_show_content
-            activate_authlogic # HACK authlogic isn't turned on for the application controller so we force it
+            activate_authlogic # HACK authlogic isn't turned on for the application controller so we force it.  See http://www.mrkris.com/2009/08/21/authlogic-and-rescue_from-actioncontroller-routingerror/
             @page_title = @content.locale_title(I18n.locale)
             respond_to do |format|
               format.html do
