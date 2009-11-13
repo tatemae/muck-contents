@@ -48,7 +48,9 @@ module ActiveRecord
           if options[:sanitize_content]
             before_save :sanitize_attributes
           end
-
+          
+          before_save :ensure_locale_is_string
+          
           # TODO add states - draft, published
           # maybe move content body_raw -> body_draft -> body
           # then you could be working on a revision without it being live
@@ -203,6 +205,9 @@ module ActiveRecord
           rescue => ex
             #TODO figure out a way to bubble up the error
             puts ex
+            # Translations failed, but update the default language
+            translation = translation_for(self.locale)
+            translation.update_attributes!(:title => self.title, :body => self.body)
           end
         end
         
@@ -252,6 +257,10 @@ module ActiveRecord
           else
             self.body = self.body_raw
           end
+        end
+        
+        def ensure_locale_is_string
+          self.locale = self.locale.to_s
         end
         
         # Override this method to control sanitization levels.

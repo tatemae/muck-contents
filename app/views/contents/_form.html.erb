@@ -1,7 +1,21 @@
+<% 
+form_id = "#{content.dom_id}_content_form"
+mce_id = "#{content.dom_id}_content"
+message_container_id = "#{content.dom_id}_message_container"
+message_id = "#{content.dom_id}_message"
+-%>
+<div id="<%= message_container_id %>" class="help-box" style="display:none;">
+  <div id="flashMessage" class="message">
+    <div id="<%= message_id %>" class="notice message"></div>
+  </div>
+</div>
+
+<%= show_preview(@content) %>
+
 <div id="<%= "#{content.dom_id}" %>" class="content_editor">
-  <% custom_form_for(content, :url => get_content_form_url(content, @parent), :html => html.merge(:id => "#{content.dom_id}_content_form", :class => 'content_form') ) do |f| -%>
+  <% custom_form_for(content, :url => get_content_form_url(@parent, @content), :html => html.merge(:id => form_id, :class => 'content_form') ) do |f| -%>
     <%= f.text_field :title, {:class => 'title', :tip => t('muck.contents.title_help'), :label => t('muck.contents.title_label') } %>
-    <%= f.text_area :body_raw, {:label => t('muck.contents.content_label'), :class => 'mceEditor', :id => 'mce_content', :tip_key => 'mce_content', :tip => t('muck.contents.content_help') } %>
+    <%= f.text_area :body_raw, {:label => t('muck.contents.content_label'), :class => 'mceEditor', :id => mce_id, :tip_key => mce_id, :tip => t('muck.contents.content_help') } %>
     <%= capture(f, &block) %>
     <%= f.muck_select(:layout, :value, :name, t('muck.contents.choose_layout'), @content_layouts, {:tip => t('muck.contents.choose_layout_help')}) %>
     <div class="button form-row">
@@ -15,7 +29,41 @@
 
 <% content_for :head do  -%>
   <%= include_tiny_mce_if_needed %>
-  <%#= include_tiny_mce_js_if_needed -%>
   <%= javascript_include_tag 'tiny_mce_helper' %>
 <% end -%>
 
+<script language="javascript" type="text/javascript">
+function save_page() {
+	tinyMCE.triggerSave(true,true);
+	var form = jQuery('#<%= form_id %>');
+	jQuery('#errorExplanation').fadeOut();
+	jQuery.post(form.attr('action') + '.json', form.serialize(),
+	  function(data){
+			var json = eval('(' + data + ')');
+			if(json.success){
+				undirty();
+				if(json.type == 'create'){
+				  jQuery('#<%= form_id %>').attr('action', json.update_path);
+				  jQuery('#<%= form_id %>').append('<input id="hidden_put" type="hidden" value="put" name="_method"/>');
+				  jQuery('#preview').attr('href', json.preview_path);
+				  jQuery('#preview').show();
+				}
+			} else {
+			  show_message(json.message);
+			}
+	  });
+	return false;
+}
+function show_message(message){
+  <% if GlobalConfig.growl_enabled -%>
+	  jQuery.jGrowl.info(message);
+	<% else -%>
+	  jQuery('#<%=message_container_id%>').show();
+	  jQuery('#<%=message_id%>').fadeIn();
+	<% end -%>
+}
+function undirty(){
+	var ed = tinyMCE.get('<%=mce_id%>');
+	ed.isNotDirty = 1;
+}
+</script>

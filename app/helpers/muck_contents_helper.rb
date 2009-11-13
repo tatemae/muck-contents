@@ -11,11 +11,20 @@ module MuckContentsHelper
   end
   
   # content uses friendly_id but we want the param in the form to use the number id
-  def get_content_form_url(content, parent)
+  def get_content_form_url(parent, content)
     if content.new_record?
-      contents_path(make_muck_parent_params(parent))
+      polymorphic_url([parent, content])
     else
-      content_path(content.id, make_muck_parent_params(parent))
+      # HACK there should be a way to force polymorphic_url to use an id instead of to_param
+      polymorphic_url([@parent, @content]).gsub(@content.to_param, "#{@content.id}") # force the id.  The slugs can cause problems during edit
+    end
+  end
+  
+  def show_preview(content)
+    if content.new_record?
+      %Q{<a style="display:none;" target="blank" id="preview" href="#">#{t('muck.contents.preview')}</a>}
+    else
+      %Q{<a id="preview" target="blank" href="#{content.uri}">#{t('muck.contents.preview')}</a>}
     end
   end
   

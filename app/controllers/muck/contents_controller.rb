@@ -1,10 +1,10 @@
 class Muck::ContentsController < ApplicationController
   unloadable
   
-  uses_tiny_mce(:options => GlobalConfig.advanced_mce_options,
+  uses_tiny_mce(:options => GlobalConfig.advanced_mce_options.merge(:save_onsavecallback => 'save_page'),
                 :raw_options => GlobalConfig.raw_mce_options, 
                 :only => [:new, :create, :edit, :update])
-                
+
   before_filter :login_required, :only => [:create, :edit, :update, :destroy]
   before_filter :setup_parent, :only => [:new, :create]
   before_filter :get_secure_content, :only => [:edit, :update, :destroy]
@@ -73,7 +73,9 @@ class Muck::ContentsController < ApplicationController
       format.html do
         redirect_back_or_default(@content.uri)
       end
-      format.json { render :json => { :success => true, :content => @content, :parent_id => @parent ? @parent.id : nil } }
+      # HACK there should be a way to force polymorphic_url to use an id instead of to_param
+      update_path = polymorphic_url([@parent, @content]).gsub(@content.to_param, "#{@content.id}") # force the id.  The slugs can cause problems during edit
+      format.json { render :json => { :success => true, :content => @content, :parent_id => @parent ? @parent.id : nil, :update_path => update_path, :preview_path => @content.uri, :type => 'create' } } 
     end
   rescue ActiveRecord::RecordInvalid => ex
     if @content
@@ -101,12 +103,22 @@ class Muck::ContentsController < ApplicationController
   
   def update
     @content.current_editor = current_user
-    @content.update_attributes(params[:content])
+    @content.update_attributes!(params[:content])
     respond_to do |format|
       format.html do
-        redirect_back_or_default(@content.uri)
+        redirect_to @content.uri
       end
-      format.json { render :json => { :success => true, :content => @content, :parent_id => @parent ? @parent.id : nil } }
+      format.json { render :json => { :success => true, :content => @content, :parent_id => @parent ? @parent.id : nil, :type => 'update' } }
+    end
+  rescue ActiveRecord::RecordInvalid => ex
+    @errors = @content.errors.full_messages.to_sentence
+    message = t('muck.contents.update_error', :errors => @errors)
+    respond_to do |format|
+      format.html do
+        flash[:error] = message
+        render :template => 'contents/edit'
+      end
+      format.json { render :json => { :success => false, :message => message, :errors => @errors } }
     end
   end
   
