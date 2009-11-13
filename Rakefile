@@ -67,6 +67,7 @@ begin
     gemspec.add_dependency "sanitize"
     gemspec.add_dependency "acts-as-taggable-on"
     gemspec.add_dependency "friendly_id"
+    gemspec.add_dependency "uploader"
     gemspec.add_dependency "tiny_mce"
   end
   Jeweler::GemcutterTasks.new
