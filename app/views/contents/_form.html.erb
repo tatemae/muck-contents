@@ -23,7 +23,7 @@ message_id = "#{content.dom_id}_message"
       <%= f.hidden_field :uri_path unless content.uri_path.blank? %>
       <%= f.hidden_field :custom_scope unless content.custom_scope.blank? %>
     </div>
-    <%= mce_fields(polymorphic_url([@parent, :uploads], :format => 'js'), contents_url(:format => 'js')) -%>
+    <%= mce_fields(@parent) -%>
   <% end %>
 </div>
 

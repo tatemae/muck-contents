@@ -15,14 +15,17 @@ Many of the gems are found on github so before installing do:
   sudo gem install friendly_id                        # Pretty urls (http://github.com/norman/friendly_id/tree/master)
   sudo gem install babelphish                         # Translations
   sudo gem install muck-solr                          # Search Install muck_solr (or another version of acts_as_solr)
-
+  sudo gem install uploader                           # File uploads
+  
 === Configure environment.rb
 Paste in the following:
-  config.gem "collectiveidea-awesome_nested_set", :lib => 'awesome_nested_set'
+  config.gem "awesome_nested_set"
   config.gem "sanitize"
-  config.gem "mbleigh-acts-as-taggable-on", :source => "http://gems.github.com", :lib => "acts-as-taggable-on"
+  config.gem "acts-as-taggable-on"
   config.gem "friendly_id"
   config.gem "babelphish"
+  config.gem "tiny_mce"
+  config.gem "uploader"
 
 
 === Gem configuration and setup
