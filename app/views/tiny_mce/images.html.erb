@@ -1,72 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<title>{#advimage_dlg.dialog_title}</title>
-	<script language="javascript" type="text/javascript" src="../../../jquery/jquery.js"></script>	
-  <script language="javascript" type="text/javascript" src="../../../jquery/jquery.queryString.js"></script>
-	<script language="javascript" type="text/javascript" src="../../../swfupload/swfupload.js"></script>
-	<script language="javascript" type="text/javascript" src="../../../swfupload/swfupload.swfobject.js"></script>
-	<script language="javascript" type="text/javascript" src="../../../swfupload/swfupload.cookies.js"></script>
-	<script language="javascript" type="text/javascript" src="../../../swfupload/swfupload.queue.js"></script>
-	<script language="javascript" type="text/javascript" src="../../../swfupload/fileprogress.js"></script>
-	<script language="javascript" type="text/javascript" src="../../../swfupload/handlers.js"></script>
-	<script language="javascript" type="text/javascript" src="../../tiny_mce_popup.js"></script>
-	<script language="javascript" type="text/javascript" src="../../utils/mctabs.js"></script>
-	<script language="javascript" type="text/javascript" src="../../utils/form_utils.js"></script>
-	<script language="javascript" type="text/javascript" src="../../utils/validate.js"></script>
-	<script language="javascript" type="text/javascript" src="js/functions.js"></script>
-	<link href="css/advimage.css" rel="stylesheet" type="text/css" />
-	<link href="/stylesheets/swfupload.css" media="screen" rel="stylesheet" type="text/css" />
-	<base target="_self" />
-</head>
-<body id="advimage" style="display: none">
-	
-	<div id="image-upload">
-	  <fieldset>
-	    <legend>Upload New Image</legend>
+<% content_for :head do  -%>
+  <%= javascript_include_tag 'tiny_mce/plugins/advimagetoo/js/functions.js' -%>
+<% end -%>
 
-			<div id="degraded_container" style="display:none;">
-      <form id="image_upload_form" enctype="multipart/form-data" method="post" onsubmit="ts_onload(); return true;" target="html_editor_image_upload_frame">
-		      <input class="input-file" id="image_uploaded_data" name="upload[uploaded_data]" size="30" type="file"/>
-		      <input id="image_uploaded_is_public" name="is_public" type="hidden" value="true"/>
-		      <input class="submit" name="commit" type="submit" value="Upload File"/> 
-				  <div id="upload-status"></div>
-		    </form>
-			</div>
-
-			<div id="swfupload_container">
-				<form>
-					<div id="divSWFUploadUI">
-						<span id="spanButtonPlaceholder"></span>
-						<div class="fieldset  flash" id="fsUploadProgress">
-							<input id="btnCancel" type="button" value="Cancel All Uploads" style="display:none;margin-left: 2px; height: 22px; font-size: 8pt; width:110px;" />
-							<p id="divStatus"></p>
-						</div>
-					</div>
-					<noscript style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px;">
-						We're sorry.  SWFUpload could not load.  You must have JavaScript enabled to enjoy SWFUpload.
-					</noscript>
-					<div id="divLoadingContent" class="content" style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px; display: none;">
-						SWFUpload is loading. Please wait a moment...
-					</div>
-					<div id="divLongLoading" class="content" style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px; display: none;">
-						SWFUpload is taking a long time to load or the load has failed.  Please make sure that the Flash Plugin is enabled and that a working version of the Adobe Flash Player is installed.
-					</div>
-					<div id="divAlternateContent" class="content" style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px; display: none;">
-						We're sorry.  SWFUpload could not load.  You may need to install or upgrade Flash Player.
-						Visit the <a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">Adobe website</a> to get the Flash Player.
-					</div>
-				</form>
-			</div>
-	
-	  </fieldset>
-	</div>  
-  <br />
+<div id="image-upload">
+  <fieldset>
+    <legend>Upload New Image</legend>
+    <%= upload_form(@parent) %>
+  </fieldset>
+</div>  
+<br />
   
   <form name="insert_image" id="insert_image" onsubmit="ImageDialog.insert();return false;" action="#">         			
 		<div class="tabs">
 			<ul>        
-			  <li id="dynamic_select_tab" class="current"><span><a href="javascript:mcTabs.displayTab('dynamic_select_tab','dynamic_select_panel');" onmousedown="return false;">Images</a></span></li>			  
+			  <li id="dynamic_select_tab" class="current"><span><a href="javascript:mcTabs.displayTab('dynamic_select_tab','dynamic_select_panel');" onmousedown="return false;">Images</a></span></li>
 				<li id="general_tab"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#advimage_dlg.tab_general}</a></span></li>
 				<li id="appearance_tab"><span><a href="javascript:mcTabs.displayTab('appearance_tab','appearance_panel');" onmousedown="return false;">{#advimage_dlg.tab_appearance}</a></span></li>
         <!-- <li id="advanced_tab"><span><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;">{#advimage_dlg.tab_advanced}</a></span></li> -->

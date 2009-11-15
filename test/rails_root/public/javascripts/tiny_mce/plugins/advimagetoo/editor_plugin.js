@@ -9,15 +9,11 @@
 			// Register commands
 			ed.addCommand('mceAdvImageToo', function() {
 				var e = ed.selection.getNode();
-
 				// Internal image object like a flash placeholder
 				if (ed.dom.getAttrib(e, 'class').indexOf('mceItem') != -1)
 					return;
-
 				ed.windowManager.open({
-					file : url + '/image.htm?path=' + jQuery('#upload-path').val() +
-								'&sessionkey=' + jQuery('#session-key').val() + 
-								'&sessionid=' + jQuery('#session-id').val(),
+					file : '/tiny_mce_images?upload_path=' + jQuery('#upload-path').val(),
 					width : 675 + parseInt(ed.getLang('advimagetoo.delta_width', 0)),
 					height : 560 + parseInt(ed.getLang('advimagetoo.delta_height', 0)),
 					inline : 1
@@ -25,14 +21,12 @@
 					plugin_url : url
 				});
 			});
-
 			// Register buttons
 			ed.addButton('image', {
 				title : 'Upload Images',
 				cmd : 'mceAdvImageToo'
 			});
 		},
-
 		getInfo : function() {
 			return {
 				longname : 'Advanced image',
@@ -43,7 +37,6 @@
 			};
 		}
 	});
-
 	// Register plugin
 	tinymce.PluginManager.add('advimagetoo', tinymce.plugins.AdvancedImageTooPlugin);
 })();

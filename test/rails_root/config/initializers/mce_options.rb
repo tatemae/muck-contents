@@ -1,16 +1,14 @@
-# Adjust the following lines of css to match the stylesheets for your application
-content_css = ['/stylesheets/reset.css', '/stylesheets/styles.css']
+content_css = ['/stylesheets/reset.css', '/stylesheets/ie.css', '/stylesheets/application.css', '/stylesheets/common.css', '/stylesheets/standard.css']
 if Rails.env.production?
   content_css = ['/stylesheets/all.css']
 end
-
 GlobalConfig.advanced_mce_options = {
   :theme => 'advanced',
   :content_css => content_css,
   :body_id => 'content',
   :mode => "textareas",
   :height => 650,
-  :width => 960,
+  :width => 830,
   :browsers => %w{msie gecko safari},
   :theme_advanced_layout_manager => "SimpleLayout",
   :theme_advanced_statusbar_location => "bottom",
@@ -66,11 +64,15 @@ GlobalConfig.simple_mce_options = {
   :plugins => %w{inlinepopups safari}
   }
 
-# Add templates to the editor
 GlobalConfig.raw_mce_options = 'template_templates : [
   {
-    title : "Example Template",
-    src : "/javascripts/tiny_mce/templates/example.htm",
-    description : "An example of how to add a template."
+    title : "A page",
+    src : "/javascripts/tiny_mce/templates/bio.htm",
+    description : "Easily add a new biography for a team member."
+  },
+  {
+    title : "Country Page",
+    src : "/javascripts/tiny_mce/templates/country.htm",
+    description : "Add a new country page."
   }
 ]'

@@ -13,7 +13,7 @@
 				if (ed.dom.getAttrib(e, 'class').indexOf('mceItem') != -1)
 					return;
 				ed.windowManager.open({
-					file : url + '/tiny_mce_files?upload_path=' + jQuery('#upload-path').val(),
+					file : '/tiny_mce_files?upload_path=' + jQuery('#upload-path').val(),
 					width : 675 + parseInt(ed.getLang('advfiletoo.delta_width', 0)),
 					height : 540 + parseInt(ed.getLang('advfiletoo.delta_height', 0)),
 					inline : 1
