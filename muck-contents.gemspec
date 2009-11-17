@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "0.1.12"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
@@ -1424,9 +1424,11 @@ Gem::Specification.new do |s|
      "test/rails_root/db/migrate/20090402234137_create_languages.rb",
      "test/rails_root/db/migrate/20090426041056_create_countries.rb",
      "test/rails_root/db/migrate/20090426041103_create_states.rb",
+     "test/rails_root/db/migrate/20090506000404_acts_as_taggable_on_migration.rb",
      "test/rails_root/db/migrate/20090517040220_create_uploads.rb",
      "test/rails_root/db/migrate/20090613173314_create_comments.rb",
      "test/rails_root/db/migrate/20090703055724_add_contents.rb",
+     "test/rails_root/db/migrate/20090704220055_create_slugs.rb",
      "test/rails_root/db/migrate/20090730044139_add_comment_cache.rb",
      "test/rails_root/db/migrate/20090730154102_allow_null_user.rb",
      "test/rails_root/db/migrate/20090806230610_add_layout_to_contents.rb",
@@ -1582,6 +1584,7 @@ Gem::Specification.new do |s|
      "test/rails_root/public/javascripts/swfupload/swfupload.cookies.js",
      "test/rails_root/public/javascripts/swfupload/swfupload.js",
      "test/rails_root/public/javascripts/swfupload/swfupload.queue.js",
+     "test/rails_root/public/javascripts/swfupload/swfupload.speed.js",
      "test/rails_root/public/javascripts/swfupload/swfupload.swfobject.js",
      "test/rails_root/public/javascripts/tiny_mce/langs/ar.js",
      "test/rails_root/public/javascripts/tiny_mce/langs/az.js",
@@ -3043,9 +3046,11 @@ Gem::Specification.new do |s|
      "test/rails_root/db/migrate/20090402234137_create_languages.rb",
      "test/rails_root/db/migrate/20090426041056_create_countries.rb",
      "test/rails_root/db/migrate/20090426041103_create_states.rb",
+     "test/rails_root/db/migrate/20090506000404_acts_as_taggable_on_migration.rb",
      "test/rails_root/db/migrate/20090517040220_create_uploads.rb",
      "test/rails_root/db/migrate/20090613173314_create_comments.rb",
      "test/rails_root/db/migrate/20090703055724_add_contents.rb",
+     "test/rails_root/db/migrate/20090704220055_create_slugs.rb",
      "test/rails_root/db/migrate/20090730044139_add_comment_cache.rb",
      "test/rails_root/db/migrate/20090730154102_allow_null_user.rb",
      "test/rails_root/db/migrate/20090806230610_add_layout_to_contents.rb",
@@ -3059,6 +3064,7 @@ Gem::Specification.new do |s|
      "test/rails_root/features/support/paths.rb",
      "test/rails_root/lib/daemons/amazonaws.rb",
      "test/rails_root/public/dispatch.rb",
+     "test/rails_root/public/system/locals/000/000/026/original/deploy-1.rb",
      "test/rails_root/script/create_project.rb",
      "test/rails_root/test/functional/contents_controller_test.rb",
      "test/rails_root/test/test_helper.rb",
