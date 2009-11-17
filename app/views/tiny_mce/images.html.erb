@@ -262,6 +262,7 @@ jQuery(document).ready(function()
 });
 function upload_completed_callback(data){
   var json = eval('(' + data + ')');
+  jQuery('#upload-list-message').html('');
 	add_image(json, 'prepend');
 }
 function add_image(image, location){

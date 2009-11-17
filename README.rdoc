@@ -35,6 +35,11 @@ In your app do
 
 == Setup
 
+=== Initializer
+Running rake muck:contents:sync will copy all the needed javascript, image and css files into your project.  It will also create an initializer called mce_options.rb.  That file
+contains two basic configurations for tinymce as well as examples on how to create templates.  It is recommended that you don't modify that file as it will be overwritten the
+next time you run rake muck:contents:sync.  Instead use it as an example and create the desired tinymce setup.
+
 === User model
 Add the following method to your user model and modify it according to your specific needs:
   

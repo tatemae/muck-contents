@@ -96,6 +96,7 @@ jQuery(document).ready(function()
   });
 });
 function upload_completed_callback(data){
+  jQuery('#upload-list-message').html('');
   var json = eval('(' + data + ')');
 	add_file(json, 'prepend');
 }
@@ -103,7 +104,7 @@ function add_file(file, location){
 	var file_html = '<li id="file-' + file.id + '">' +
 		'<img class="icon" src="' + file.icon + '" alt="" />' +
 		'<a onclick="select_file(this);return false;" href="#">' + file.file_name + '</a>' +
-		'<a onclick="delete_file(this, ' + file.id + ');return false;" href="#"><img src="/images/delete.png" /></a>' +
+		'<a onclick="delete_file(this, ' + file.id + ');return false;" href="#"><img src="/images/icons/delete.png" /></a>' +
 		'<input type="hidden" value="' + file.file_name + '" /></li>';	
 	if ('prepend' == location){
 		jQuery('#upload-list').prepend(file_html);
