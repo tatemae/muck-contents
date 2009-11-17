@@ -14,9 +14,9 @@ class Muck::TinyMceController < ApplicationController
   
   def tiny_mce_images
     @body_tag = 'advimage'
-    @load_files_path = files_for_content_url(make_parent_params(@parent).merge(:format => 'json'))
+    @load_files_path = images_for_content_url(make_parent_params(@parent).merge(:format => 'json'))
     respond_to do |format|
-      format.html { render :template => 'tiny_mce/files'}
+      format.html { render :template => 'tiny_mce/images'}
     end
   end
   

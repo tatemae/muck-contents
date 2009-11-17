@@ -1,28 +1,6 @@
 function formElement() {
 	return document.insert_file;
 }
-function ts_onload(){
-	jQuery('#upload-status').html("Uploading <img src='/files/spinner.gif'>");
-	mcTabs.displayTab('dynamic_select_tab','dynamic_select_panel');	
-	var iframe1=ts_ce('iframe','html_editor_file_upload_frame');
-	iframe1.setAttribute('src','about:blank');
-	iframe1.style.border="0px none";
-	iframe1.style.position="absolute";
-	iframe1.style.width="1px";
-	iframe1.style.height="1px";
-	iframe1.style.visibility="hidden";
-	iframe1.setAttribute('id','html_editor_file_upload_frame');
-	jQuery('#file-upload').append(iframe1);
-}
-function ts_ce(tag,name){
-  if (name && window.ActiveXObject){
-    element = document.createElement('<'+tag+' name="'+name+'">');
-  }else{
-    element = document.createElement(tag);
-    element.setAttribute('name',name);
-  }
-  return element;
-}
 
 tinyMCEPopup.requireLangPack();
 
