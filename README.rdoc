@@ -175,6 +175,7 @@ the uploads controller.  The security for uploads to your site should be handled
   end
 
 ==== Example upload model:
+NOTE: you must define icon, thumb, small, medium and large as styles.  They can be any size you like.
 
   class Upload < ActiveRecord::Base
   

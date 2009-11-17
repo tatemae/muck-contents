@@ -5,7 +5,7 @@
   </fieldset>
 </div>  
 <br />
-<form name="insert_image" id="insert_image" onsubmit="ImageDialog.insert();return false;" action="#">         			
+<form name="insert_image" id="insert_image" onsubmit="ImageDialog.insert();return false;" action="#">
   <div class="tabs">
     <ul>        
       <li id="dynamic_select_tab" class="current"><span><a href="javascript:mcTabs.displayTab('dynamic_select_tab','dynamic_select_panel');" onmousedown="return false;">Images</a></span></li>
@@ -260,41 +260,30 @@ jQuery(document).ready(function()
     }
   });
 });
-function upload_file_callback(data){
-	jQuery('#upload-status').empty();
-	var json = eval('(' + data + ')');
-	add_image(json.upload, 'prepend');
-}
-function upload_file_fail_callback(message){
-	jQuery('#upload-status').html(message);
-}
 function upload_completed_callback(data){
-	var json = eval('(' + data + ')');
-	add_image(json.upload, 'prepend'); // call add_image from functions.js
+  var json = eval('(' + data + ')');
+	add_image(json, 'prepend');
 }
 function add_image(image, location){
 	var image_html = '<li id="image-' + image.id + '">' +
 		'<div class="thumbs">Insert:<br />' +
-		'<a onclick="select_thumb(this);return false;" href="#_icon"> Icon </a>' +
-		'<a onclick="select_thumb(this);return false;" href="#_thumb"> Thumbnail </a>' +
-	  '<a onclick="select_thumb(this);return false;" href="#_small"> Small </a>' +
-		'<a onclick="select_thumb(this);return false;" href="#_medium"> Medium </a>' +
-		'<a onclick="select_thumb(this);return false;" href="#"> Large </a><br/><div class="file-controls">' +
+		'<a onclick="select_thumb(this);return false;" href="#thumb"> Thumbnail </a>' +
+	  '<a onclick="select_thumb(this);return false;" href="#small"> Small </a>' +
+		'<a onclick="select_thumb(this);return false;" href="#medium"> Medium </a>' +
+		'<a onclick="select_thumb(this);return false;" href="#large"> Large </a><br/><div class="file-controls">' +
 		'<a class="file-control" onclick="jQuery(this).parents(\'li\').removeClass(\'selected\');return false;" href="#"> cancel </a><br/>' +
 		'<a class="file-control" onclick="delete_image(this, ' + image.id + ');return false;" href="#"> delete </a></div></div>' +
 		'<a onclick="select_image(\'image-' + image.id + '\');return false;" href="#">' +
-		'<img src="' + image.icon + '" alt="" /></a></li>';
-	
+		'<img src="' + image.thumb + '" alt="" /></a></li>';
 	if ('prepend' == location){
 		jQuery('#upload-list').prepend(image_html);
 	} else {
 		jQuery('#upload-list').append(image_html);
-	}		
+	}
 }
 function delete_image(element, id){
 	jQuery(element).parents('li').removeClass('selected');
 	jQuery(element).parents('li').fadeOut();
-
 	jQuery.post('/uploads/' + id + '.js', {action: 'destroy', _method: 'delete' },
 	  function(data){
 			//show_message(data); the fade out on delete gets the point across
@@ -308,7 +297,7 @@ function select_thumb(element) {
 	var anchor = jQuery(element);
 	var size = anchor.attr('href').split('#')[1];
 	var img = anchor.parents('li').children('a').children('img');
-	var src = img.attr('src').replace('_icon.', size + '.');
+	var src = img.attr('src').replace('/thumb/', '/' + size + '/');
 	anchor.parents('li').removeClass('selected');
 	insert_image_too(src, img.attr('alt') );	
 }

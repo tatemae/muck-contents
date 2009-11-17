@@ -17,7 +17,7 @@ module TinymceHelper
     <input id="tiny_mce_files_height" type="hidden" value="#{options[:tiny_mce_files_height] || 540}">
     <input id="tiny_mce_images_path" type="hidden" value="#{tiny_mce_images_path}">
     <input id="tiny_mce_images_width" type="hidden" value="#{options[:tiny_mce_images_width] || 675}">
-    <input id="tiny_mce_images_height" type="hidden" value="#{options[:tiny_mce_images_height] || 540}">
+    <input id="tiny_mce_images_height" type="hidden" value="#{options[:tiny_mce_images_height] || 560}">
     <input id="tiny_mce_links_path" type="hidden" value="#{tiny_mce_links_path}">}
   end
   

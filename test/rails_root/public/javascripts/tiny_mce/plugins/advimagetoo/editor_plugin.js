@@ -1,7 +1,7 @@
 /**
- * $Id: editor_plugin_src.js 520 2008-01-07 16:30:32Z spocke $
- * @author Moxiecode
- * @copyright Copyright © 2004-2008, Moxiecode Systems AB, All rights reserved.
+ * Modified version of advimage
+ * @author Tatamae
+ * @copyright Copyright © 2009, Tatemae.
  */
 (function() {
 	tinymce.create('tinymce.plugins.AdvancedImageTooPlugin', {
@@ -13,9 +13,9 @@
 				if (ed.dom.getAttrib(e, 'class').indexOf('mceItem') != -1)
 					return;
 				ed.windowManager.open({
-					file : '/tiny_mce_images?upload_path=' + jQuery('#upload-path').val(),
-					width : 675 + parseInt(ed.getLang('advimagetoo.delta_width', 0)),
-					height : 560 + parseInt(ed.getLang('advimagetoo.delta_height', 0)),
+					file : jQuery('#tiny_mce_images_path').val(),
+					width : parseInt(jQuery('#tiny_mce_images_width').val()) + parseInt(ed.getLang('advfiletoo.delta_width', 0)),
+					height : parseInt(jQuery('#tiny_mce_images_height').val()) + parseInt(ed.getLang('advfiletoo.delta_height', 0)),
 					inline : 1
 				}, {
 					plugin_url : url
@@ -29,10 +29,9 @@
 		},
 		getInfo : function() {
 			return {
-				longname : 'Advanced image',
-				author : 'Moxiecode Systems AB',
-				authorurl : 'http://tinymce.moxiecode.com',
-				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/advimage',
+				longname : 'Advanced file',
+				author : 'Tatemae',
+				authorurl : 'http://Tatemae.com',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		}
