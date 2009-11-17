@@ -23,6 +23,7 @@ Rails::Initializer.run do |config|
   config.gem "awesome_nested_set"
   config.gem "friendly_id"
   config.gem "sanitize"
+  config.gem 'paperclip'
   config.gem 'tiny_mce'
   config.gem "uploader"
   config.gem "babelphish"

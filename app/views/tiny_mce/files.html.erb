@@ -1,90 +1,135 @@
-<% content_for :head do  -%>
-  <%= javascript_include_tag 'tiny_mce/plugins/advfiletoo/js/functions.js' -%>
-<% end -%>
-<% content_for :javascript do  -%>
-  function upload_completed_callback(data){
-    jQuery('#upload-list').prepend(data);
-    setup_submit_delete();
-  }
-<% end -%>
-
 <div id="file-upload">
   <fieldset>
-    <legend>Upload New File and test</legend>
-		<%= upload_form(@parent) %>
+    <legend>Upload New File</legend>
+    <%= tiny_mce_upload_form(@parent) %>
   </fieldset>
 </div>  
 <br />
   
-  <form name="insert_file" id="insert_file" onsubmit="insertAction();return false;" action="#">
-		<div class="tabs">
-			<ul>        
-			  <li id="dynamic_select_tab" class="current"><span><a href="javascript:mcTabs.displayTab('dynamic_select_tab','dynamic_select_panel');" onmousedown="return false;">Files</a></span></li>
-				<li id="general_tab"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#advfile_dlg.tab_general}</a></span></li>
-			</ul>
-		</div>
+<form name="insert_file" id="insert_file" onsubmit="insertAction();return false;" action="#">
+  <div class="tabs">
+    <ul>        
+      <li id="dynamic_select_tab" class="current"><span><a href="javascript:mcTabs.displayTab('dynamic_select_tab','dynamic_select_panel');" onmousedown="return false;">Files</a></span></li>
+      <li id="general_tab"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#advfile_dlg.tab_general}</a></span></li>
+    </ul>
+  </div>
 
-		<div class="panel_wrapper">
+  <div class="panel_wrapper">
 
-		  <div id="dynamic_select_panel" class="panel current" style='overflow:auto'>
-		    <fieldset>
-		      <legend>Available Files - Click to Add</legend>
-					<div id="upload-list-message">
-          	Loading Files...<br />
-          	<img src="/images/spinner.gif">
-					</div>
-          <ul id="upload-list" class="file-list">
-          </ul>
-		      </fieldset>
-		  </div>
-				  
-			<div id="general_panel" class="panel">
-				<fieldset>
-					<legend>{#advfile_dlg.general_props}</legend>
+    <div id="dynamic_select_panel" class="panel current" style='overflow:auto'>
+      <fieldset>
+        <legend>Available Files - Click to Add</legend>
+        <div id="upload-list-message">
+          Loading Files...<br />
+          <img src="/images/spinner.gif">
+        </div>
+        <ul id="upload-list" class="file-list">
+        </ul>
+      </fieldset>
+    </div>
 
-					<table border="0" cellpadding="4" cellspacing="0">
-						<tr>
-						  <td nowrap="nowrap"><label id="hreflabel" for="href">{#advfile_dlg.url}</label></td>
-						  <td><table border="0" cellspacing="0" cellpadding="0">
-								<tr>
-								  <td><input id="href" name="href" type="text" class="mceFocus" value="" onchange="selectByValue(this.form,'linklisthref',this.value);" /></td>
-								  <td id="hrefbrowsercontainer">&nbsp;</td>
-								</tr>
-							  </table></td>
-						</tr>
-						<tr>
-							<td nowrap="nowrap"><label id="titlelabel" for="title">{#advfile_dlg.titlefield}</label></td>
-							<td><input id="title" name="title" type="text" value="" /></td>
-						</tr>
-						<tr>
-							<td><label id="classlabel" for="classlist">{#class_name}</label></td>
-							<td>
-								 <select id="classlist" name="classlist" onchange="changeClass();">
-									<option value="" selected>{#not_set}</option>
-								 </select>
-							</td>
-						</tr>
-						<tr>
-							<td><label id="stylelabel" for="style">{#advfile_dlg.style}</label></td>
-							<td><input type="text" id="style" name="style" value="" /></td>
-						</tr>
-						<tr>
-							<td class="column1"><label id="idlabel" for="id">{#advfile_dlg.id}</label></td> 
-							<td><input id="id" name="id" type="text" value="" /></td> 
-						</tr>
-					</table>
-				</fieldset>
-			</div>
-				
-		</div>
+    <div id="general_panel" class="panel">
+      <fieldset>
+        <legend>{#advfile_dlg.general_props}</legend>
+        <table border="0" cellpadding="4" cellspacing="0">
+          <tr>
+            <td nowrap="nowrap"><label id="hreflabel" for="href">{#advfile_dlg.url}</label></td>
+            <td><table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><input id="href" name="href" type="text" class="mceFocus" value="" onchange="selectByValue(this.form,'linklisthref',this.value);" /></td>
+                <td id="hrefbrowsercontainer">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td nowrap="nowrap"><label id="titlelabel" for="title">{#advfile_dlg.titlefield}</label></td>
+            <td><input id="title" name="title" type="text" value="" /></td>
+          </tr>
+          <tr>
+            <td><label id="classlabel" for="classlist">{#class_name}</label></td>
+            <td>
+              <select id="classlist" name="classlist" onchange="changeClass();">
+                <option value="" selected>{#not_set}</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label id="stylelabel" for="style">{#advfile_dlg.style}</label></td>
+            <td><input type="text" id="style" name="style" value="" /></td>
+          </tr>
+          <tr>
+            <td class="column1"><label id="idlabel" for="id">{#advfile_dlg.id}</label></td> 
+            <td><input id="id" name="id" type="text" value="" /></td> 
+          </tr>
+        </table>
+      </fieldset>
+    </div>
 
-		<div class="mceActionPanel">
-			<div style="float: left">
-				<input type="button" id="insert" name="insert" value="{#insert}" onclick="insertAction();" />
-			</div>
+  </div>
 
-			<div style="float: right">
-				<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
-			</div>
-		</div>
-    </form>
+  <div class="mceActionPanel">
+    <div style="float: left">
+      <input type="button" id="insert" name="insert" value="{#insert}" onclick="insertAction();" />
+    </div>
+    <div style="float: right">
+      <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+    </div>
+  </div>
+  
+</form>
+
+<% content_for :head do  -%>
+  <%= javascript_include_tag 'tiny_mce/plugins/advfiletoo/js/functions.js' -%>
+<% end -%>
+<script language="javascript" type="text/javascript">
+jQuery(document).ready(function()
+{
+  jQuery.getJSON('<%=@load_files_path%>', function(json){
+    if (json.length <= 0){
+      jQuery("#upload-list-message").html('<%= t('muck.contents.no_files') %>');
+    } else {
+      jQuery('#upload-list-message').html('');
+      for(i=0;i<json.length;i++){
+        add_file(json[i], 'append');
+      }
+    }
+  });
+});
+function upload_completed_callback(data){
+  var json = eval('(' + data + ')');
+	add_file(json, 'prepend');
+}
+function add_file(file, location){
+	var file_html = '<li id="file-' + file.id + '">' +
+		'<img class="icon" src="' + file.icon + '" alt="" />' +
+		'<a onclick="select_file(this);return false;" href="#">' + file.file_name + '</a>' +
+		'<a onclick="delete_file(this, ' + file.id + ');return false;" href="#"><img src="/images/delete.png" /></a>' +
+		'<input type="hidden" value="' + file.file_name + '" /></li>';	
+	if ('prepend' == location){
+		jQuery('#upload-list').prepend(file_html);
+	} else {
+		jQuery('#upload-list').append(file_html);
+	}
+}
+function delete_file(element, id){
+	jQuery(element).parents('li').removeClass('selected');
+	jQuery(element).parents('li').fadeOut();
+	jQuery.post('/uploads/' + id + '.js', {action: 'destroy', _method: 'delete' },
+	  function(data){
+			// just chuck the message
+	  });
+}
+function select_file(element){
+	var anchor = jQuery(element);
+	var url = anchor.parents('li').children('input').val();
+	var name = anchor.html();
+	insert_file_too(url, name);	
+}
+function insert_file_too(url, name){
+	jQuery('input#href').val(url);
+	if(jQuery('input#title').val().length <= 0){
+		jQuery('input#title').val(name);
+	}
+	mcTabs.displayTab('general_tab','general_panel');
+}
+</script>

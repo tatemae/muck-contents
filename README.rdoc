@@ -5,28 +5,27 @@ it easy to add this content to your website.
 
 === Gems
 Note that all gems below should be installed automatically as a muck-contents has them set as a dependency.  
-Many of the gems are found on github so before installing do:
-  gem sources -a http://gems.github.com
-
-  sudo gem install muck-acts_as_git                   # Versioning. Requires a git installation.
-  sudo gem install collectiveidea-awesome_nested_set  # Nested pages.  Used to setup navigation hierarchy (http://github.com/collectiveidea/awesome_nested_set/tree/master)
-  sudo gem install rgrove-sanitize                    # Remove harmful html. (http://github.com/rgrove/sanitize/tree/master.)
-  sudo gem install mbleigh-acts-as-taggable-on        # Tagging.  (http://github.com/mbleigh/acts-as-taggable-on/tree/master)
-  sudo gem install friendly_id                        # Pretty urls (http://github.com/norman/friendly_id/tree/master)
-  sudo gem install babelphish                         # Translations
-  sudo gem install muck-solr                          # Search Install muck_solr (or another version of acts_as_solr)
-  sudo gem install uploader                           # File uploads
+  sudo gem install muck-contents
   
 === Configure environment.rb
 Paste in the following:
-  config.gem "awesome_nested_set"
-  config.gem "sanitize"
+  config.gem "will_paginate"
+  config.gem "authlogic"
+  config.gem "searchlogic"
+  config.gem "bcrypt-ruby", :lib => "bcrypt", :version => ">=2.0.5"
   config.gem "acts-as-taggable-on"
+  config.gem "awesome_nested_set"
   config.gem "friendly_id"
-  config.gem "babelphish"
-  config.gem "tiny_mce"
+  config.gem "sanitize"
+  config.gem 'paperclip'
+  config.gem 'tiny_mce'
   config.gem "uploader"
-
+  config.gem "babelphish"
+  config.gem 'muck-engine', :lib => 'muck_engine'
+  config.gem 'muck-users', :lib => 'muck_users'
+  config.gem 'muck-activities', :lib => 'muck_activities'
+  config.gem 'muck-solr', :lib => 'acts_as_solr'
+  config.gem 'muck-comments', :lib => 'muck_comments'
 
 === Gem configuration and setup
 In your app do
@@ -108,6 +107,105 @@ Override the contents controller to change the the security model.  For example:
     end
     
   end
+
+=== Uploader
+muck-contents uses the uploader gem and thus requires all the configuration to make that gem function.  This includes the addition of
+and uploads controller and upload model.  See that gem for more information.  If you have generated your project using the rails template generator
+(http://github.com/jbasdf/rails-templates) then it should be setup for you.  The actual uploading of files and images will be handled by
+the uploads controller.  The security for uploads to your site should be handled in that controller.
+
+==== Example uploads controller:
+
+  class UploadsController < Uploader::UploadsController
+
+    before_filter :login_required
+    before_filter :setup_parent, :only => [:index, :create, :swfupload, :photos, :files]
+
+    def index
+      @upload = Upload.new
+      @uploads = @parent.uploads.paginate(:page => @page, :per_page => @per_page, :order => 'created_at desc')
+      respond_to do |format|
+        format.html { render }
+        format.rss { render :layout => false }
+      end
+    end
+  
+    def photos
+      @images = @parent.uploads.images.paginate(:page => @page, :per_page => @per_page, :order => 'created_at desc')
+      respond_to do |format|
+        format.html { render }
+        format.rss { render :layout => false }
+      end
+    end
+  
+    def files
+      @files = @parent.uploads.files.paginate(:page => @page, :per_page => @per_page, :order => 'created_at desc')
+      respond_to do |format|
+        format.js { render :json => basic_uploads_json(@files) }
+      end
+    end
+
+    protected
+  
+      def get_upload_text(upload)
+        render_to_string( :partial => 'uploads/upload_row', :object => upload, :locals => { :style => 'style="display:none;"', :parent => @parent } )
+      end
+    
+      def get_redirect
+        @parent
+      end
+
+      def has_permission_to_upload(user, upload_parent)
+        return true if upload_parent.blank?
+        upload_parent.can_edit?(user)
+      end
+  
+      def permission_denied
+        message = t("uploader.permission_denied")
+        respond_to do |format|
+          format.html do
+            flash[:notice] = message
+            redirect_to get_redirect
+          end
+          format.js { render :text => message }
+          format.json { render :json => { :success => false, :message => message } }
+        end
+      end
+  
+  end
+
+==== Example upload model:
+
+  class Upload < ActiveRecord::Base
+  
+    acts_as_uploader  :enable_s3 => false,
+                      :has_attached_file => {
+                        :url     => "/system/:attachment/:id_partition/:style/:basename.:extension",
+                        :path    => ":rails_root/public/system/:attachment/:id_partition/:style/:basename.:extension",
+                        :styles  => { :icon => "30x30!", 
+                                      :thumb => "100>", 
+                                      :small => "150>", 
+                                      :medium => "300>", 
+                                      :large => "660>" },
+                        :default_url => "/images/profile_default.jpg",
+                        :storage => :s3,
+                        :s3_credentials => AMAZON_S3_CREDENTIALS,
+                        :bucket => "assets.#{GlobalConfig.application_url}",
+                        :s3_host_alias => "assets.#{GlobalConfig.application_url}",
+                        :convert_options => {
+                           :all => '-quality 80'
+                         }
+                      },
+                      :s3_path => ':id_partition/:style/:basename.:extension'
+
+  
+    acts_as_taggable
+  
+    named_scope :public, :conditions => "is_public = true"
+    named_scope :tagged_with, lambda {|tag_name| {:conditions => ["tags.name = ?", tag_name], :include => :tags} }
+  
+  end
+
 
 
 Copyright (c) 2009 Tatemae, released under the MIT license

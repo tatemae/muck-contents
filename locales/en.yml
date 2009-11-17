@@ -9,6 +9,8 @@ en:
       preview: Preview
       delete_title: "Delete this page."
       edit_title: "Edit this page."
+      no_files: "No files available"
+      no_images: "No images available"
       create_error: "There was a problem adding your content"
       update_error: "There was a problem updating your content"
       content_removed: "Content successfully removed"
