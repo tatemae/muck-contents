@@ -3,7 +3,6 @@ if Rails.env.production?
   content_css = ['/stylesheets/all.css']
 end
 GlobalConfig.advanced_mce_options = {
-  :accessibility_warnings => false,
   :theme => 'advanced',
   :content_css => content_css,
   :body_id => 'content',
@@ -49,7 +48,6 @@ GlobalConfig.advanced_mce_options = {
   }
    
 GlobalConfig.simple_mce_options = {
-  :accessibility_warnings => false,
   :theme => 'advanced',
   :content_css => content_css,
   :body_id => 'content',
