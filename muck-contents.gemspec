@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "0.2.3"
+  s.version = "0.2.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
@@ -37,6 +37,7 @@ Gem::Specification.new do |s|
      "app/views/tiny_mce/images.html.erb",
      "app/views/tiny_mce/links.html.erb",
      "config/initializers/mce_options.rb",
+     "config/initializers/new_rails_defaults.rb",
      "config/muck_contents_routes.rb",
      "db/migrate/20090703055724_add_contents.rb",
      "db/migrate/20090806230610_add_layout_to_contents.rb",

@@ -32,7 +32,7 @@ class Muck::TinyMceController < ApplicationController
     @parent = current_user if @parent.blank?
     @images = @parent.uploads.images.paginate(:page => @page, :per_page => @per_page, :order => 'created_at desc')
     respond_to do |format|
-      format.json { render :json => @images.to_json(json_options) }
+      format.json { render :json => make_json(@images) }
     end
   end
   
@@ -40,11 +40,16 @@ class Muck::TinyMceController < ApplicationController
     @parent = current_user if @parent.blank?
     @files = @parent.uploads.files.paginate(:page => @page, :per_page => @per_page, :order => 'created_at desc')
     respond_to do |format|
-      format.json { render :json => @files.to_json(json_options) }
+      format.json { render :json => make_json(@files) }
     end
   end
 
   protected
+    def make_json(uploads)
+      return [] if uploads.blank?
+      uploads.collect {|f| f.as_json(json_options)}
+    end
+  
     def json_options
       { :only => [:id], :methods => [:icon, :thumb, :file_name] }
     end

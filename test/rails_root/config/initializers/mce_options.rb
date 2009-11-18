@@ -44,7 +44,8 @@ GlobalConfig.advanced_mce_options = {
   :template_selected_content_classes => "selcontent",
   :template_cdate_format => "%m/%d/%Y : %H:%M:%S",
   :template_mdate_format => "%m/%d/%Y : %H:%M:%S",
-  :save_onsavecallback => 'save_page'
+  :save_onsavecallback => 'save_page',
+  :accessibility_warnings => false
   }
    
 GlobalConfig.simple_mce_options = {
