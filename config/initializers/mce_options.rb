@@ -43,7 +43,8 @@ GlobalConfig.advanced_mce_options = {
   :template_mdate_classes => "mdate modifieddate",
   :template_selected_content_classes => "selcontent",
   :template_cdate_format => "%m/%d/%Y : %H:%M:%S",
-  :template_mdate_format => "%m/%d/%Y : %H:%M:%S"
+  :template_mdate_format => "%m/%d/%Y : %H:%M:%S",
+  :save_onsavecallback => 'save_page'
   }
    
 GlobalConfig.simple_mce_options = {

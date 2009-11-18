@@ -1,7 +1,7 @@
 class Muck::ContentsController < ApplicationController
   unloadable
   
-  uses_tiny_mce(:options => GlobalConfig.advanced_mce_options.merge(:save_onsavecallback => 'save_page'),
+  uses_tiny_mce(:options => GlobalConfig.advanced_mce_options,
                 :raw_options => GlobalConfig.raw_mce_options, 
                 :only => [:new, :create, :edit, :update])
 
