@@ -19,9 +19,12 @@ lt:
       edit: Redaguoti
       edit_title: "Redaguoti šį puslapį."
       manage_pages_title: "Valdykite svetainės turinį"
+      no_files: "Nr failai galimi"
+      no_images: "Nr atvaizdai"
       no_uri_error: "Prašome nurodyti už URI vertė prieš taupymo pavyzdį kai contentable yra nulis"
       page_doesnt_exist_create: "Prašomas puslapis neegzistuoja. Prašome pateikti informaciją, norėdami sukurti puslapį."
       permalink: "Permalink:"
+      preview: Peržiūrėti
       problem_adding_content: "Iškilo problema pridėti turinį"
       problem_updating_content: "Iškilo problema atnaujinimo turinio"
       save: Saugoti
@@ -30,3 +33,4 @@ lt:
       tags: Žymos
       title_help: "Pavadinimas kontrolės URL ir puslapio pavadinimą rodomas URL baras"
       title_label: Pavadinimas
+      update_error: "Iškilo problema atnaujinti savo turinį"

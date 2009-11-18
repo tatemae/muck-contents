@@ -19,9 +19,12 @@ de:
       edit: Edit
       edit_title: "Bearbeite diese Seite."
       manage_pages_title: "Verwalten von Website-Content"
+      no_files: "Keine Dateien zur Verfügung"
+      no_images: "Keine Bilder verfügbar"
       no_uri_error: "Bitte setzen Sie einen Wert für uri vor dem Speichern des Modells ist gleich Null, wenn contentable"
       page_doesnt_exist_create: "Der von Ihnen angeforderte Seite ist nicht vorhanden. Bitte geben Sie die folgenden Informationen, um die Seite zu erstellen."
       permalink: "Permalink:"
+      preview: Vorschau
       problem_adding_content: "Es gab ein Problem Sie den Inhalt"
       problem_updating_content: "Es gab ein Problem beim Aktualisieren der Inhalte"
       save: Sichern
@@ -30,3 +33,4 @@ de:
       tags: Tags
       title_help: "Der Titel steuert die URL und der Titel der Seite in der Adressleiste angezeigt"
       title_label: Titel
+      update_error: "Es gab ein Problem beim Aktualisieren der Inhalte"

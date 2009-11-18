@@ -20,9 +20,12 @@
       edit: Rediger
       edit_title: "Rediger denne siden."
       manage_pages_title: "Behandle innhold"
+      no_files: "Ingen filer"
+      no_images: "Ingen bilder tilgjengelig"
       no_uri_error: "Vennligst angi en verdi for URI før du lagrer modellen når contentable er null"
       page_doesnt_exist_create: "Siden du forespurte finnes ikke. Angi opplysningene nedenfor for å lage siden."
       permalink: "Permalink:"
+      preview: Forhåndsvisning
       problem_adding_content: "Det var et problem å legge innholdet"
       problem_updating_content: "Det var et problem oppdaterer innholdet"
       save: Lagre
@@ -31,3 +34,4 @@
       tags: Tags
       title_help: "Tittelen styrer url og siden tittelen vises i URL-bar"
       title_label: Tittel
+      update_error: "Det var et problem å oppdatere innholdet"

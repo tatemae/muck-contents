@@ -19,9 +19,12 @@ ko:
       edit: 편집
       edit_title: "이 페이지를 편집합니다."
       manage_pages_title: "사이트의 콘텐츠 관리"
+      no_files: "파일을 사용할 수 없음"
+      no_images: 이미지가없습니다
       no_uri_error: "제발 모델을 저장하기 전에 URI에 대한 값을 설정할 때 무 contentable입니다"
       page_doesnt_exist_create: "당신이 존재하지 않습니다 요청한 페이지를 엽니다. 제발 페이지를 작성하려면 아래의 정보를 제공합니다."
       permalink: "바로가기 :"
+      preview: 미리보기
       problem_adding_content: "거기에 문제가 콘텐츠를 추가했다"
       problem_updating_content: "거기에 문제가 콘텐츠를 업데이 트했습니다"
       save: 저장
@@ -30,3 +33,4 @@ ko:
       tags: 태그
       title_help: "제목과 URL에 페이지 제목 표시줄에 표시되는 URL을 컨트롤"
       title_label: 제목
+      update_error: "거기에 문제가 귀하의 콘텐츠를 업데이 트했습니다"

@@ -19,9 +19,12 @@ ca:
       edit: Edita
       edit_title: "Edita aquesta pàgina."
       manage_pages_title: "Administrar el contingut del lloc"
+      no_files: "No hi ha arxius disponibles"
+      no_images: "No hi ha imatges disponibles"
       no_uri_error: "Si us plau, estableix un valor per uri abans de desar el model quan acontentar és nul"
       page_doesnt_exist_create: "La pàgina demanada no existeix. Sírvase proporcionar la següent informació per a crear la pàgina."
       permalink: "Permalink:"
+      preview: Prevista
       problem_adding_content: "Hi va haver un problema en afegir el contingut"
       problem_updating_content: "Hi va haver un problema en actualitzar el contingut"
       save: Salvar
@@ -30,3 +33,4 @@ ca:
       tags: Etiquetes
       title_help: "El títol dels controls de l&#39;adreça URL i el títol de la pàgina apareix a la barra d&#39;URL"
       title_label: Títol
+      update_error: "Hi va haver un problema en actualitzar el contingut"

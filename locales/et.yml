@@ -19,9 +19,12 @@ et:
       edit: Edit
       edit_title: "Redigeeri selle lehekülje."
       manage_pages_title: "Halda saidi sisu"
+      no_files: "Faile pole olemas"
+      no_images: "Nr pildid saadaval"
       no_uri_error: "Palun määrata väärtus uri enne salvestamist mudel kui contentable on null"
       page_doesnt_exist_create: "Lehekülge ei eksisteeri. Palun esitage allpool nõutud teave, et luua lehele."
       permalink: "Permalink:"
+      preview: Eelvaade
       problem_adding_content: "Probleem lisades sisu"
       problem_updating_content: "Probleem ajakohastamine sisaldus"
       save: Salvestama
@@ -30,3 +33,4 @@ et:
       tags: Sildid
       title_help: "Pealkiri kontrolli URL ja lehe pealkiri kuvatakse url bar"
       title_label: Pealkiri
+      update_error: "Probleem ajakohastamise sisu"

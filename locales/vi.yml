@@ -19,9 +19,12 @@ vi:
       edit: "Chỉnh sửa"
       edit_title: "Chỉnh sửa trang này."
       manage_pages_title: "Quản lý các trang nội dung"
+      no_files: "Không có tập tin có sẵn"
+      no_images: "Không có hình ảnh có sẵn"
       no_uri_error: "Xin hãy đặt một giá trị cho uri trước khi lưu mô hình khi contentable là nil"
       page_doesnt_exist_create: "Trang web bạn yêu cầu không tồn tại. Xin vui lòng cung cấp thông tin bên dưới để tạo trang."
       permalink: "Permalink:"
+      preview: "Xem thử"
       problem_adding_content: "Có vấn đề thêm nội dung"
       problem_updating_content: "Có vấn đề cập nhật nội dung"
       save: Lưu
@@ -30,3 +33,4 @@ vi:
       tags: Tags
       title_help: "Tiêu đề điều khiển các URL và tiêu đề trang hiển thị trên thanh url"
       title_label: "Tiêu đề"
+      update_error: "Có vấn đề cập nhật nội dung của bạn"

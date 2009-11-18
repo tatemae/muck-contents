@@ -19,9 +19,12 @@ th:
       edit: Edit
       edit_title: แก้ไขหน้านี้.
       manage_pages_title: เนื้อหาในเว็บไซต์การจัดการ
+      no_files: ไม่มีไฟล์
+      no_images: ภาพไม่มี
       no_uri_error: "กรุณาตั้งค่าสำหรับ URI ก่อนประหยัดรุ่นที่ contentable เป็นศูนย์"
       page_doesnt_exist_create: "หน้าที่คุณขอไม่พบ. โปรดระบุข้อมูลด้านล่างเพื่อสร้างหน้า."
       permalink: "Permalink:"
+      preview: ดูตัวอย่าง
       problem_adding_content: มีปัญหาการเพิ่มเนื้อหาได้
       problem_updating_content: เกิดปัญหาในการปรับปรุงเนื้อหาแล้ว
       save: บันทึก
@@ -30,3 +33,4 @@ th:
       tags: Tags
       title_help: "ชื่อควบคุม url และชื่อเพจที่ปรากฏในแถบ url"
       title_label: ชื่อเรื่อง
+      update_error: เกิดปัญหาในการปรับปรุงเนื้อหาของคุณได้

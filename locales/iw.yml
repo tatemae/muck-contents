@@ -19,9 +19,12 @@ iw:
       edit: עריכה
       edit_title: "עריכת דף זה."
       manage_pages_title: "ניהול תוכן האתר"
+      no_files: "לא זמין קבצים"
+      no_images: "אין תמונות זמינות"
       no_uri_error: "נא להגדיר ערך עבור אורי לפני שמירת מודל contentable כאשר הוא אפסי"
       page_doesnt_exist_create: "הדף שביקשת אינו קיים. נא לציין את הפרטים שלהלן כדי ליצור את הדף."
       permalink: "Permalink:"
+      preview: "תצוגה מקדימה"
       problem_adding_content: "היתה בעיה להוסיף את התוכן"
       problem_updating_content: "היתה בעיה בעדכון תוכן"
       save: לשמור
@@ -30,3 +33,4 @@ iw:
       tags: תגיות
       title_help: "הכותרת שולטת כתובת האתר ואת כותרת הדף המוצג בשורת כתובת האתר"
       title_label: כותר
+      update_error: "היתה בעיה לעדכן את התוכן שלך"

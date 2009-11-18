@@ -266,6 +266,9 @@ function upload_completed_callback(data){
 	add_image(json, 'prepend');
 }
 function add_image(image, location){
+  if(image['upload']) {
+    image = image['upload'];
+  }
 	var image_html = '<li id="image-' + image.id + '">' +
 		'<div class="thumbs">Insert:<br />' +
 		'<a onclick="select_thumb(this);return false;" href="#thumb"> Thumbnail </a>' +

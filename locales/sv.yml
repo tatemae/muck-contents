@@ -19,9 +19,12 @@ sv:
       edit: Redigera
       edit_title: "Redigera denna sida."
       manage_pages_title: "Hantera webbplatsinnehåll"
+      no_files: "Inga filer"
+      no_images: "Inga bilder tillgängliga"
       no_uri_error: "Vänligen ange ett värde för URI innan du sparar den modellen när contentable är noll"
       page_doesnt_exist_create: "Sidan du efterfrågar finns inte. Ange informationen nedan för att skapa sidan."
       permalink: "Permalink:"
+      preview: Förhandsgranska
       problem_adding_content: "Fanns ett problem att lägga till innehåll"
       problem_updating_content: "Det fanns ett problem att uppdatera innehållet"
       save: Spara
@@ -30,3 +33,4 @@ sv:
       tags: Tags
       title_help: "Titeln styr URL och sidans titel som visas i URL bar"
       title_label: Titel
+      update_error: "Det uppstod ett problem uppdatera ditt innehåll"

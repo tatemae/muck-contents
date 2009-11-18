@@ -19,9 +19,12 @@ sl:
       edit: Edit
       edit_title: "Uredi to stran."
       manage_pages_title: "Upravljanje vsebine mesta"
+      no_files: "No files voljo"
+      no_images: "No slik na voljo"
       no_uri_error: "Prosimo, določite vrednost uri pred shranjevanjem model, ko je nič contentable"
       page_doesnt_exist_create: "Zahtevana stran ne obstaja. Prosimo, navedite podatke spodaj, da ustvarite stran."
       permalink: "Permalink:"
+      preview: Predogled
       problem_adding_content: "Prišlo je do težave dodajanjem vsebine"
       problem_updating_content: "Prišlo je do težave posodabljanje vsebine"
       save: Shraniti
@@ -30,3 +33,4 @@ sl:
       tags: Tags
       title_help: "Naslov nadzor url in naslov strani prikaže v url vrstici"
       title_label: Naslov
+      update_error: "Prišlo je do težave posodabljanje vsebine"

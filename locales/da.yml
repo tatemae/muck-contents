@@ -19,9 +19,12 @@ da:
       edit: Rediger
       edit_title: "Rediger denne side."
       manage_pages_title: "Administrer site content"
+      no_files: "Ingen fil"
+      no_images: "Ingen billeder til rådighed"
       no_uri_error: "Angiv en værdi for URI før du gemmer den model, når contentable er nul"
       page_doesnt_exist_create: "Den ønskede side findes ikke. Venligst nedenstående oplysninger for at oprette siden."
       permalink: "Permalink:"
+      preview: Preview
       problem_adding_content: "Der var et problem at tilføje indhold"
       problem_updating_content: "Der var et problem ajourføring af indholdet"
       save: Gemme
@@ -30,3 +33,4 @@ da:
       tags: Tags
       title_help: "Titlen styrer url og sidens titel vises i url baren"
       title_label: Titel
+      update_error: "Der var et problem opdatere dit indhold"

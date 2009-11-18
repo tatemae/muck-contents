@@ -19,9 +19,12 @@ it:
       edit: Modifica
       edit_title: "Modifica questa pagina."
       manage_pages_title: "Gestione dei contenuti del sito"
+      no_files: "Nessun file disponibile"
+      no_images: "Non ci sono immagini disponibili"
       no_uri_error: "Si prega di impostare un valore per URI prima di salvare il modello, quando contentable è pari a zero"
       page_doesnt_exist_create: "La pagina che hai richiesto non esiste. Si prega di fornire le seguenti informazioni per creare la pagina."
       permalink: "Permalink:"
+      preview: Anteprima
       problem_adding_content: "C&#39;è stato un problema aggiungendo il contenuto"
       problem_updating_content: "C&#39;è stato un problema di aggiornamento dei contenuti"
       save: Salvare
@@ -30,3 +33,4 @@ it:
       tags: Tags
       title_help: "Il titolo controlla l&#39;url e il titolo della pagina visualizzata nella barra degli URL"
       title_label: Titolo
+      update_error: "C&#39;è stato un problema di aggiornare i contenuti"

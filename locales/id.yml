@@ -19,9 +19,12 @@ id:
       edit: Edit
       edit_title: "Sunting halaman ini."
       manage_pages_title: "Mengelola konten situs"
+      no_files: "Tidak ada file yang tersedia"
+      no_images: "Tidak ada gambar tersedia"
       no_uri_error: "Harap set nilai untuk uri sebelum menyimpan model ketika contentable adalah nol"
       page_doesnt_exist_create: "Halaman yang Anda minta tidak ada. Harap sediakan informasi di bawah ini untuk menciptakan halaman."
       permalink: "Permalink:"
+      preview: Preview
       problem_adding_content: "Ada masalah menambahkan konten"
       problem_updating_content: "Ada masalah memperbarui konten"
       save: Simpan
@@ -30,3 +33,4 @@ id:
       tags: Tags
       title_help: "Judul mengendalikan url dan judul halaman yang ditampilkan di url bar"
       title_label: Judul
+      update_error: "Ada masalah memperbarui konten"

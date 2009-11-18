@@ -19,9 +19,12 @@ sq:
       edit: Edit
       edit_title: "Edit this page."
       manage_pages_title: "Manage site content"
+      no_files: "Nuk ka fotografi në dispozicion"
+      no_images: "Nuk ka imazhe në dispozicion"
       no_uri_error: "Ju lutem vendosur një vlerë për uri përpara se të kryeni modeli kur contentable është zero"
       page_doesnt_exist_create: "Faqe keni kërkuar nuk ekziston. Ju lutemi jepni informacionin e mëposhtëm për të krijuar faqe."
       permalink: "Permalink:"
+      preview: Preview
       problem_adding_content: "Nuk ishte një problem duke shtuar përmbajtjen"
       problem_updating_content: "Nuk ishte një problem azhurnimin content"
       save: Ruaj
@@ -30,3 +33,4 @@ sq:
       tags: Tags
       title_help: "Titulli i kontrollon url dhe titullin shfaqur në faqe url bar"
       title_label: Titulli
+      update_error: "Nuk ishte një problem updating përmbajtjen tuaj"

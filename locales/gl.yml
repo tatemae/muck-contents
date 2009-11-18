@@ -19,9 +19,12 @@ gl:
       edit: Editar
       edit_title: "Edita esta páxina."
       manage_pages_title: "Xestionar o contido do sitio web"
+      no_files: "Non hai ficheiros dispoñibles"
+      no_images: "Ningunha imaxe dispoñible"
       no_uri_error: "Por favor, estableza un valor para uri antes de gardar o modelo cando contentable é nula"
       page_doesnt_exist_create: "A páxina solicitada non existe. Por favor, forneza a información seguinte para crear a páxina."
       permalink: "Permalink:"
+      preview: Preview
       problem_adding_content: "Houbo un erro engadindo o contido"
       problem_updating_content: "Houbo un problema ao actualizar o contido"
       save: Gardar
@@ -30,3 +33,4 @@ gl:
       tags: Tags
       title_help: "O título controla o URL eo título da páxina amosada na barra do URL"
       title_label: Título
+      update_error: "Houbo un problema ao actualizar o seu contido"

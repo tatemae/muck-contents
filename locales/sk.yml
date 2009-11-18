@@ -19,9 +19,12 @@ sk:
       edit: Upraviť
       edit_title: "Upraviť túto stránku."
       manage_pages_title: "Správa obsahu webu"
+      no_files: "Žiadne súbory sú k dispozícii"
+      no_images: "Žiadne obrázky k dispozícii"
       no_uri_error: "Prosím nastavte hodnotu uri pred uložením modelu, kedy contentable je nula"
       page_doesnt_exist_create: "Stránka, ktorú ste požadovali, neexistuje. Prosím, uveďte informácie na vytvorenie stránky."
       permalink: "Permalink:"
+      preview: Náhľad
       problem_adding_content: "Došlo k problému pri pridania obsahu"
       problem_updating_content: "Došlo k problému pri aktualizácii obsahu"
       save: Uložiť
@@ -30,3 +33,4 @@ sk:
       tags: Tagy
       title_help: "Názov kontroly URL a titulok stránky zobrazené v url bar"
       title_label: Názov
+      update_error: "Došlo k problému pri aktualizácii obsahu"

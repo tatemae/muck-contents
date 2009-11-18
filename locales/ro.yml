@@ -19,9 +19,12 @@ ro:
       edit: Editaţi
       edit_title: "Edita această pagină."
       manage_pages_title: "Gestionaţi conţinutul site-ului"
+      no_files: "Nici un fişier disponibil"
+      no_images: "Nu imagini disponibile"
       no_uri_error: "Vă rugăm să stabiliţi o valoare pentru uri înainte de a salva modelul contentable atunci când este egală cu zero"
       page_doesnt_exist_create: "Pagina pe care aţi solicitat nu există. Vă rugăm să furnizaţi informaţiile de mai jos pentru a crea pagina."
       permalink: "Permalink:"
+      preview: Preview
       problem_adding_content: "Nu a fost o problemă adăugarea de conţinut"
       problem_updating_content: "Nu a fost o problemă de actualizare a conţinutului"
       save: Economisi
@@ -30,3 +33,4 @@ ro:
       tags: Tag-uri
       title_help: "Titlu de control URL-ul şi titlul paginii afişate în bara de URL-ul"
       title_label: Title
+      update_error: "Există o problemă cu actualizarea conţinutului dvs."

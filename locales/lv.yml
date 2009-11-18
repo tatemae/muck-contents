@@ -19,9 +19,12 @@ lv:
       edit: Rediģēt
       edit_title: "Rediģēt šo lapu."
       manage_pages_title: "Pārvaldīt vietnes saturu"
+      no_files: "Nav faili"
+      no_images: "Ne attēli pieejami"
       no_uri_error: "Lūdzu, iestatiet vērtību uri pirms saglabāšanas modeli, contentable ir nulle"
       page_doesnt_exist_create: "Jūsu pieprasīto lapu neeksistē. Lūdzu, sniedziet informāciju zemāk, lai izveidotu lapu."
       permalink: "Permalink:"
+      preview: Preview
       problem_adding_content: "Radās problēma pievienojot saturs"
       problem_updating_content: "Radās problēma atjaunināšana saturs"
       save: Glābt
@@ -30,3 +33,4 @@ lv:
       tags: Tags
       title_help: "Nosaukums kontroles URL un lapas nosaukums rādīts url bārs"
       title_label: Nosaukums
+      update_error: "Radās problēma atjaunināt savu saturu"

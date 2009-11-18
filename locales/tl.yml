@@ -19,9 +19,12 @@ tl:
       edit: I-edit
       edit_title: "I-edit ang pahina na ito."
       manage_pages_title: "Pamahalaan ang mga nilalaman ng site"
+      no_files: "Walang magagamit na mga file"
+      no_images: "Walang magagamit na imahe"
       no_uri_error: "Mangyari lamang na magtakda ng isang halaga para sa uri bago ang pag-save ng modelo kapag contentable ay wala"
       page_doesnt_exist_create: "Ang pahina na iyong hiniling ay hindi umiiral. Mangyaring magbigay ng impormasyon sa ibaba para lumikha ng pahina."
       permalink: "Permalink:"
+      preview: Preview
       problem_adding_content: "Nagkaroon ng problema ang pagdaragdag ng nilalaman"
       problem_updating_content: "Nagkaroon ng problema sa pag-update ng nilalaman"
       save: I-save
@@ -30,3 +33,4 @@ tl:
       tags: Tags
       title_help: "Ang pamagat ng kontrol ang url at ang pahina ng pamagat na ipinapakita sa ang url bar"
       title_label: Title
+      update_error: "Nagkaroon ng problema sa pag-update ng iyong nilalaman"

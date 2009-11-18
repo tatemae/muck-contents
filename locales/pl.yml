@@ -19,9 +19,12 @@ pl:
       edit: Edycja
       edit_title: "Edytuj tę stronę."
       manage_pages_title: "Zarządzanie treścią witryny"
+      no_files: "Żadne pliki dostępne"
+      no_images: "Brak dostępnych zdjęć"
       no_uri_error: "Proszę ustawić wartość uri przed zapisaniem modelu gdy contentable jest zerowa"
       page_doesnt_exist_create: "Żądana strona nie istnieje. Prosimy o podanie poniższych informacji, aby utworzyć stronę."
       permalink: "Permalink:"
+      preview: Podgląd
       problem_adding_content: "Nie było problemu dodanie treści"
       problem_updating_content: "Wystąpił problem z aktualizowaniem treści"
       save: Zapisać
@@ -30,3 +33,4 @@ pl:
       tags: Tagi
       title_help: "Tytuł kontroli URL i tytuł strony wyświetlany w pasku adresu URL"
       title_label: Tytuł
+      update_error: "Wystąpił problem z aktualizacją treści"

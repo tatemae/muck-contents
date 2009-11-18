@@ -19,9 +19,12 @@ hr:
       edit: Uredi
       edit_title: "Edit this page."
       manage_pages_title: "Upravljanje web sadržajem"
+      no_files: "Nema nacrti"
+      no_images: "Nema dostupne slike"
       no_uri_error: "Molimo postavite vrijednost za uri prije spremanja model kad contentable je nula"
       page_doesnt_exist_create: "Stranicu koju ste tražili ne postoji. Molimo navedite podatke ispod kako biste stvorili stranicu."
       permalink: "Permalink:"
+      preview: Pregled
       problem_adding_content: "Došlo je do problema dodavanje sadržaja"
       problem_updating_content: "Došlo je do problema ažuriranje sadržaja"
       save: Spremiti
@@ -30,3 +33,4 @@ hr:
       tags: Tags
       title_help: "Naziv kontrole URL te stranice naslov prikazan u url baru"
       title_label: Naslov
+      update_error: "Došlo je do problema ažuriranju sadržaj"

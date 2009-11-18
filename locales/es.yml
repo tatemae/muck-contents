@@ -19,9 +19,12 @@ es:
       edit: Editar
       edit_title: "Editar esta página."
       manage_pages_title: "Administrar el contenido del sitio"
+      no_files: "No hay archivos disponibles"
+      no_images: "No hay imágenes disponibles"
       no_uri_error: "Por favor, establece un valor para uri antes de guardar el modelo cuando contentable es nula"
       page_doesnt_exist_create: "La página solicitada no existe. Sírvase proporcionar la siguiente información para crear la página."
       permalink: "Permalink:"
+      preview: Prevista
       problem_adding_content: "Hubo un problema al añadir el contenido"
       problem_updating_content: "Hubo un problema al actualizar el contenido"
       save: Salvar
@@ -30,3 +33,4 @@ es:
       tags: Etiquetas
       title_help: "El título de los controles de la dirección URL y el título de la página aparece en la barra de URL"
       title_label: Título
+      update_error: "Hubo un problema al actualizar el contenido"

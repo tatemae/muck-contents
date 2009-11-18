@@ -19,9 +19,12 @@ ja:
       edit: "[編集]"
       edit_title: このページを編集します。
       manage_pages_title: サイトコンテンツの管理
+      no_files: いいえファイルが利用可能
+      no_images: いいえ画像をご利用いただけます
       no_uri_error: してくださいモデルを保存する前にURIの値を設定nilの場合contentableです
       page_doesnt_exist_create: あなたが存在しない場合、リクエストされたページです。してくださいページを作成し、以下の情報を提供します。
       permalink: 固定リンク：
+      preview: プレビュー
       problem_adding_content: 問題があるコンテンツを追加されました
       problem_updating_content: 問題があるコンテンツを更新されました
       save: 保存する
@@ -30,3 +33,4 @@ ja:
       tags: タグ
       title_help: タイトルとページタイトルのURLバーに表示されるURLを制御
       title_label: タイトル
+      update_error: 問題があるコンテンツを更新されました

@@ -19,9 +19,12 @@ hu:
       edit: Szerkesztés
       edit_title: "Edit ezt az oldalt."
       manage_pages_title: "Kezelés site content"
+      no_files: "Nincs elérhető fájl"
+      no_images: "Nincs kép áll rendelkezésre"
       no_uri_error: "Adjon meg egy értéket uri mentés előtt a modellt, amikor contentable nulla"
       page_doesnt_exist_create: "A kért oldal nem létezik. Kérjük, adja meg az alábbi információkat, hogy létrehozza az oldalt."
       permalink: "Permalink:"
+      preview: Előnézeti
       problem_adding_content: "Hiba történt a tartalom hozzáadása"
       problem_updating_content: "Hiba történt a frissítés a tartalom"
       save: Ment
@@ -30,3 +33,4 @@ hu:
       tags: Címkéket
       title_help: "Az ellenőrzéseket az URL címet és az oldal címe jelenik meg az URL sáv"
       title_label: Címben
+      update_error: "Hiba történt a frissítés a tartalmat"

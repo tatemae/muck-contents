@@ -19,9 +19,12 @@ nl:
       edit: Edit
       edit_title: "Bewerk deze pagina."
       manage_pages_title: "Beheer site-inhoud"
+      no_files: "Geen bestanden beschikbaar"
+      no_images: "Geen afbeeldingen beschikbaar"
       no_uri_error: "Stel een waarde voor uri voordat het model bij contentable is nihil"
       page_doesnt_exist_create: "De pagina die u heeft opgevraagd bestaat niet. Geef de informatie hieronder het maken van de pagina."
       permalink: "Permalink:"
+      preview: Preview
       problem_adding_content: "Er was een probleem het toevoegen van de inhoud"
       problem_updating_content: "Er was een probleem actualisering van de inhoud"
       save: Redden
@@ -30,3 +33,4 @@ nl:
       tags: Tags
       title_help: "De titel regelt de url en de pagina titel weergegeven in de URL-balk"
       title_label: Titel
+      update_error: "Er was een probleem bijwerken van uw inhoud"
