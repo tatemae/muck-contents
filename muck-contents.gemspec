@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "0.2.4"
+  s.version = "0.2.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
@@ -37,7 +37,6 @@ Gem::Specification.new do |s|
      "app/views/tiny_mce/images.html.erb",
      "app/views/tiny_mce/links.html.erb",
      "config/initializers/mce_options.rb",
-     "config/initializers/new_rails_defaults.rb",
      "config/muck_contents_routes.rb",
      "db/migrate/20090703055724_add_contents.rb",
      "db/migrate/20090806230610_add_layout_to_contents.rb",
@@ -1414,6 +1413,7 @@ Gem::Specification.new do |s|
      "test/rails_root/config/initializers/inflections.rb",
      "test/rails_root/config/initializers/mce_options.rb",
      "test/rails_root/config/initializers/mime_types.rb",
+     "test/rails_root/config/initializers/new_rails_defaults.rb",
      "test/rails_root/config/initializers/requires.rb",
      "test/rails_root/config/initializers/s3_credentials.rb",
      "test/rails_root/config/initializers/session_store.rb",
@@ -3037,6 +3037,7 @@ Gem::Specification.new do |s|
      "test/rails_root/config/initializers/inflections.rb",
      "test/rails_root/config/initializers/mce_options.rb",
      "test/rails_root/config/initializers/mime_types.rb",
+     "test/rails_root/config/initializers/new_rails_defaults.rb",
      "test/rails_root/config/initializers/requires.rb",
      "test/rails_root/config/initializers/s3_credentials.rb",
      "test/rails_root/config/initializers/session_store.rb",
