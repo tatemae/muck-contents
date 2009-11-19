@@ -24,5 +24,9 @@ module TinymceHelper
   def tiny_mce_upload_form(parent)
     upload_form(parent, true, '', :upload_url =>new_upload_path_with_session_information(parent, 'json'))
   end
-    
+  
+  def tiny_mce_scripts
+    render :partial => 'tiny_mce/tiny_mce_scripts'
+  end
+  
 end

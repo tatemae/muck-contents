@@ -1,0 +1,39 @@
+<% content_for :head do  -%>
+  <%= include_tiny_mce_if_needed %>
+<% end -%>
+
+<script language="javascript" type="text/javascript">
+function save_page() {
+	tinyMCE.triggerSave(true,true);
+	var form = jQuery('#<%= form_id %>');
+	jQuery('#errorExplanation').fadeOut();
+	jQuery.post(form.attr('action') + '.json', form.serialize(),
+	  function(data){
+			var json = eval('(' + data + ')');
+			if(json.success){
+				undirty();
+				if(json.type == 'create'){
+				  jQuery('#<%= form_id %>').attr('action', json.update_path);
+				  jQuery('#<%= form_id %>').append('<input id="hidden_put" type="hidden" value="put" name="_method"/>');
+				  jQuery('#preview').attr('href', json.preview_path);
+				  jQuery('#preview').show();
+				}
+			} else {
+			  show_message(json.message);
+			}
+	  });
+	return false;
+}
+function show_message(message){
+  <% if GlobalConfig.growl_enabled -%>
+	  jQuery.jGrowl.info(message);
+	<% else -%>
+	  jQuery('#<%=message_container_id%>').show();
+	  jQuery('#<%=message_id%>').fadeIn();
+	<% end -%>
+}
+function undirty(){
+	var ed = tinyMCE.get('<%=mce_id%>');
+	ed.isNotDirty = 1;
+}
+</script>
