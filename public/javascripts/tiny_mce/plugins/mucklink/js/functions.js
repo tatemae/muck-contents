@@ -26,8 +26,8 @@ function init() {
 	var action = "insert";
 	var html;
 
-	document.getElementById('hrefbrowsercontainer').innerHTML = getBrowserHTML('hrefbrowser','href','file','advlinktoo');
-	document.getElementById('popupurlbrowsercontainer').innerHTML = getBrowserHTML('popupurlbrowser','popupurl','file','advlinktoo');
+	document.getElementById('hrefbrowsercontainer').innerHTML = getBrowserHTML('hrefbrowser','href','file','mucklink');
+	document.getElementById('popupurlbrowsercontainer').innerHTML = getBrowserHTML('popupurlbrowser','popupurl','file','mucklink');
 	document.getElementById('linklisthrefcontainer').innerHTML = getLinkListHTML('linklisthref','href');
 	document.getElementById('anchorlistcontainer').innerHTML = getAnchorListHTML('anchorlist','href');
 	document.getElementById('targetlistcontainer').innerHTML = getTargetListHTML('targetlist','target');

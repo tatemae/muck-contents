@@ -34,7 +34,7 @@ GlobalConfig.advanced_mce_options = {
                                  sub sup charmap separator
                                  template visualaid fullscreen code},
   :theme_advanced_buttons3 => [],
-  :plugins => %w{ paste media preview inlinepopups safari save searchreplace table style template fullscreen print autosave advimagetoo advlinktoo advfiletoo},
+  :plugins => %w{ paste media preview inlinepopups safari save searchreplace table style template fullscreen print autosave muckimage mucklink muckfile},
   :editor_deselector => "mceNoEditor",
   :editor_selector => 'mceEditor',
   :remove_script_host => true,

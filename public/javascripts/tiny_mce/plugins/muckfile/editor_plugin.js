@@ -14,8 +14,8 @@
 					return;
 				ed.windowManager.open({
 					file : jQuery('#tiny_mce_files_path').val(),
-					width : parseInt(jQuery('#tiny_mce_files_width').val()) + parseInt(ed.getLang('advfiletoo.delta_width', 0)),
-					height : parseInt(jQuery('#tiny_mce_files_height').val()) + parseInt(ed.getLang('advfiletoo.delta_height', 0)),
+					width : parseInt(jQuery('#tiny_mce_files_width').val()) + parseInt(ed.getLang('muckfile.delta_width', 0)),
+					height : parseInt(jQuery('#tiny_mce_files_height').val()) + parseInt(ed.getLang('muckfile.delta_height', 0)),
 					inline : 1
 				}, {
 					plugin_url : url
@@ -38,5 +38,5 @@
 		}
 	});
 	// Register plugin
-	tinymce.PluginManager.add('advfiletoo', tinymce.plugins.AdvancedFileTooPlugin);
+	tinymce.PluginManager.add('muckfile', tinymce.plugins.AdvancedFileTooPlugin);
 })();
