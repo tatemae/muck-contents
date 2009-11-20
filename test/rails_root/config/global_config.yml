@@ -57,9 +57,11 @@ default: &DEFAULT
   content_git_repository: "#{File.join(RAILS_ROOT, 'repo', RAILS_ENV)}"
   enable_auto_translations: true
   content_enable_solr: false
+  content_css: ['/stylesheets/reset.css', '/stylesheets/styles.css']
   
 production:
   <<: *DEFAULT
+  content_css: ['/stylesheets/all.css']
   
 development:
   <<: *DEFAULT

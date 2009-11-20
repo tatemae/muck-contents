@@ -35,6 +35,15 @@ In your app do
 
 == Setup
 
+=== Global Config
+Add the following settings to your global_config.yml file and change as is appropriate for your application.  In particular
+be sure to set content_css to any css files you want to have show up in your tinymce editor.
+  # Content options
+  content_git_repository: "#{File.join(RAILS_ROOT, 'repo', RAILS_ENV)}"
+  enable_auto_translations: true
+  content_enable_solr: false
+  content_css: ['/stylesheets/reset.css', '/stylesheets/styles.css']
+
 === Initializer
 Running rake muck:contents:sync will copy all the needed javascript, image and css files into your project.  It will also create an initializer called mce_options.rb.  That file
 contains two basic configurations for tinymce as well as examples on how to create templates.  It is recommended that you don't modify that file as it will be overwritten the

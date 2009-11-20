@@ -207,7 +207,7 @@ module ActiveRecord
             puts ex
             # Translations failed, but update the default language
             translation = translation_for(self.locale)
-            translation.update_attributes!(:title => self.title, :body => self.body)
+            translation.update_attributes!(:title => self.title, :body => self.body) unless translation.blank?
           end
         end
         
