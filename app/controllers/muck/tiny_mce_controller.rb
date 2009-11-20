@@ -44,6 +44,13 @@ class Muck::TinyMceController < ApplicationController
     end
   end
 
+  def links_for_content
+    @contents = Content.by_alpha
+    respond_to do |format|
+      format.json { render :json => autocomplete_urls_json(@contents) }
+    end
+  end
+  
   protected
     def make_json(uploads)
       return [] if uploads.blank?
@@ -53,5 +60,13 @@ class Muck::TinyMceController < ApplicationController
     def json_options
       { :only => [:id], :methods => [:icon, :thumb, :file_name] }
     end
-  
+    
+    def autocomplete_urls_json(items)
+      return '' if items.blank?
+      ActiveRecord::Base.include_root_in_json = false
+      json = items.collect{|item| item.as_json(:only => [:title], :methods => [:uri]) }
+      ActiveRecord::Base.include_root_in_json = true
+      json
+    end
+    
 end

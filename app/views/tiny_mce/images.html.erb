@@ -1,7 +1,7 @@
 <div id="image-upload">
   <fieldset>
     <legend>Upload New Image</legend>
-    <%= tiny_mce_upload_form(@parent) %>
+    <%= tiny_mce_upload_form(@parent, true, '', :file_types => '*.jpg;*.gif;*.jpeg,*.tif;*.tiff;*.png') %>
   </fieldset>
 </div>  
 <br />

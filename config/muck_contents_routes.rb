@@ -6,6 +6,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.images_for_content '/images_for_content', :controller => 'muck/tiny_mce', :action => 'images_for_content'
   map.files_for_content '/files_for_content', :controller => 'muck/tiny_mce', :action => 'files_for_content'
+  map.links_for_content '/links_for_content', :controller => 'muck/tiny_mce', :action => 'links_for_content'
   
   # MuckContents.routes.each do |route|
   #   map.connect route[:uri], MuckContents.build_route_options(route)

@@ -1,4 +1,5 @@
 /**
+ * Modified version of advlink
  * @author Tatemae
  * @copyright Copyright © 2009, Tatemae, All rights reserved.
  */
@@ -13,9 +14,9 @@
 				if (se.isCollapsed() && !ed.dom.getParent(se.getNode(), 'A'))
 					return;
 				ed.windowManager.open({
-					file : '/tiny_mce_links',
-					width : 480 + parseInt(ed.getLang('advlinktoo.delta_width', 0)),
-					height : 400 + parseInt(ed.getLang('advlinktoo.delta_height', 0)),
+					file : jQuery('#tiny_mce_links_path').val(),
+					width : parseInt(jQuery('#tiny_mce_links_width').val()) + parseInt(ed.getLang('advlinktoo.delta_width', 0)),
+					height : parseInt(jQuery('#tiny_mce_links_height').val()) + parseInt(ed.getLang('advlinktoo.delta_height', 0)),
 					inline : 1
 				}, {
 					plugin_url : url
@@ -34,10 +35,9 @@
 		},
 		getInfo : function() {
 			return {
-				longname : 'Advanced link',
-				author : 'Moxiecode Systems AB',
-				authorurl : 'http://tinymce.moxiecode.com',
-				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/advlink',
+				longname : 'Advanced file',
+				author : 'Tatemae',
+				authorurl : 'http://Tatemae.com',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		}
