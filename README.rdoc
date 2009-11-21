@@ -19,6 +19,7 @@ Paste in the following:
   config.gem "sanitize"
   config.gem 'paperclip'
   config.gem 'tiny_mce'
+  config.gem 'fleakr'
   config.gem "uploader"
   config.gem "babelphish"
   config.gem 'muck-engine', :lib => 'muck_engine'
@@ -43,6 +44,7 @@ be sure to set content_css to any css files you want to have show up in your tin
   enable_auto_translations: true
   content_enable_solr: false
   content_css: ['/stylesheets/reset.css', '/stylesheets/styles.css']
+  flickr_api_key:  #get from www.flickr.com/services/api/misc.api_keys.html
 
 === Initializer
 Running rake muck:contents:sync will copy all the needed javascript, image and css files into your project.  It will also create an initializer called mce_options.rb.  That file
@@ -221,6 +223,8 @@ NOTE: you must define icon, thumb, small, medium and large as styles.  They can 
   
   end
 
-
+== Testing
+This gem uses a full rails application in the test directory for testing and development.  By default there isn't a global_config.yml setup.  
+Use global_config.sample.yml to set one up.
 
 Copyright (c) 2009 Tatemae, released under the MIT license

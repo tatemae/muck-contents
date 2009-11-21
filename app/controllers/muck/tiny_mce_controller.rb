@@ -28,6 +28,13 @@ class Muck::TinyMceController < ApplicationController
     end
   end
   
+  def tiny_mce_flickr
+    @body_tag = 'flickr'
+    respond_to do |format|
+      format.html { render :template => 'tiny_mce/flickr'}
+    end
+  end
+  
   def images_for_content
     @parent = current_user if @parent.blank?
     @images = @parent.uploads.images.paginate(:page => @page, :per_page => @per_page, :order => 'created_at desc')

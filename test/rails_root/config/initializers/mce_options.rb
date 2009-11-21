@@ -23,7 +23,7 @@ GlobalConfig.advanced_mce_options = {
                                 bold italic underline strikethrough separator 
                                 justifyleft justifycenter justifyright indent outdent separator 
                                 bullist numlist separator 
-                                link unlink image file media anchor separator  
+                                link unlink image flickr file media anchor separator  
                                 template visualaid separator
                                 fullscreen code},
   :theme_advanced_buttons2 => %w{styleprops styleselect separator
@@ -33,7 +33,7 @@ GlobalConfig.advanced_mce_options = {
                                  sub sup charmap },
   :theme_advanced_buttons3 => %w{}, #bramus_cssextras_classes bramus_cssextras_ids
   #:theme_advanced_buttons3 => %w{cleanup code insertdate inserttime removeformat insertlayer},
-  :plugins => %w{ paste media preview inlinepopups safari save searchreplace table style template fullscreen print autosave muckimage mucklink},
+  :plugins => %w{ paste media preview inlinepopups safari save searchreplace table style template fullscreen print autosave muckimage mucklink muckflickr},
   # codehighlighting
   # spellchecker,pagebreak,layer,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,
   # contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template

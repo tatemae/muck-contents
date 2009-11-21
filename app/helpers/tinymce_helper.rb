@@ -8,19 +8,23 @@ module TinymceHelper
   #       tiny_mce_images_height height of image dialog. Default is 540
   def mce_fields(parent, options = {})
     parent_params = make_muck_parent_fields(parent) || {}
-    tiny_mce_files_path = tiny_mce_files_url(parent_params)
-    tiny_mce_images_path = tiny_mce_images_url(parent_params)
-    tiny_mce_links_path = tiny_mce_links_url(parent_params)
+    files_path = tiny_mce_files_url(parent_params)
+    images_path = tiny_mce_images_url(parent_params)
+    links_path = tiny_mce_links_url(parent_params)
+    flickr_path = tiny_mce_flickr_url(parent_params)
     
-    %Q{<input id="tiny_mce_files_path" type="hidden" value="#{tiny_mce_files_path}">
+    %Q{<input id="tiny_mce_files_path" type="hidden" value="#{files_path}">
     <input id="tiny_mce_files_width" type="hidden" value="#{options[:tiny_mce_files_width] || 675}">
     <input id="tiny_mce_files_height" type="hidden" value="#{options[:tiny_mce_files_height] || 540}">
-    <input id="tiny_mce_images_path" type="hidden" value="#{tiny_mce_images_path}">
+    <input id="tiny_mce_images_path" type="hidden" value="#{images_path}">
     <input id="tiny_mce_images_width" type="hidden" value="#{options[:tiny_mce_images_width] || 675}">
     <input id="tiny_mce_images_height" type="hidden" value="#{options[:tiny_mce_images_height] || 560}">
-    <input id="tiny_mce_links_path" type="hidden" value="#{tiny_mce_links_path}">
-    <input id="tiny_mce_links_width" type="hidden" value="#{options[:tiny_mce_images_width] || 480}">
-    <input id="tiny_mce_links_height" type="hidden" value="#{options[:tiny_mce_images_height] || 480}">}
+    <input id="tiny_mce_links_path" type="hidden" value="#{links_path}">
+    <input id="tiny_mce_links_width" type="hidden" value="#{options[:tiny_mce_links_width] || 480}">
+    <input id="tiny_mce_links_height" type="hidden" value="#{options[:tiny_mce_links_height] || 480}">
+    <input id="tiny_mce_flickr_path" type="hidden" value="#{flickr_path}">
+    <input id="tiny_mce_flickr_width" type="hidden" value="#{options[:tiny_mce_flickr_width] || 675}">
+    <input id="tiny_mce_flickr_height" type="hidden" value="#{options[:tiny_mce_flickr_height] || 675}">}
   end
   
   # Output a form capable of uploading files to the server.

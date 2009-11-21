@@ -69,6 +69,7 @@ begin
     gemspec.add_dependency "friendly_id"
     gemspec.add_dependency "uploader"
     gemspec.add_dependency "tiny_mce"
+    gemspec.add_dependency "fleakr"
   end
   Jeweler::GemcutterTasks.new
   Jeweler::RubyforgeTasks.new do |rubyforge|

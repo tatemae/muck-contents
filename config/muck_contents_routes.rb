@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.tiny_mce_files '/tiny_mce_files', :controller => 'muck/tiny_mce', :action => 'tiny_mce_files'
   map.tiny_mce_images '/tiny_mce_images', :controller => 'muck/tiny_mce', :action => 'tiny_mce_images'
   map.tiny_mce_links '/tiny_mce_links', :controller => 'muck/tiny_mce', :action => 'tiny_mce_links'
+  map.tiny_mce_flickr '/tiny_mce_flickr', :controller => 'muck/tiny_mce', :action => 'tiny_mce_flickr'
   
   map.images_for_content '/images_for_content', :controller => 'muck/tiny_mce', :action => 'images_for_content'
   map.files_for_content '/files_for_content', :controller => 'muck/tiny_mce', :action => 'files_for_content'
