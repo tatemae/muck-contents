@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "0.2.8"
+  s.version = "0.2.9"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
@@ -1654,10 +1654,6 @@ Gem::Specification.new do |s|
      "test/rails_root/public/javascripts/tiny_mce/langs/vi.js",
      "test/rails_root/public/javascripts/tiny_mce/langs/zh.js",
      "test/rails_root/public/javascripts/tiny_mce/license.txt",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advfiletoo/editor_plugin.js",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advfiletoo/editor_plugin_src.js",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advfiletoo/js/functions.js",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advfiletoo/langs/en_dlg.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/advhr/css/advhr.css",
      "test/rails_root/public/javascripts/tiny_mce/plugins/advhr/editor_plugin.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/advhr/editor_plugin_src.js",
@@ -1799,10 +1795,6 @@ Gem::Specification.new do |s|
      "test/rails_root/public/javascripts/tiny_mce/plugins/advimage/langs/uk_dlg.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/advimage/langs/vi_dlg.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/advimage/langs/zh_dlg.js",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advimagetoo/editor_plugin.js",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advimagetoo/editor_plugin_src.js",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advimagetoo/js/functions.js",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advimagetoo/langs/en_dlg.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/advlink/css/advlink.css",
      "test/rails_root/public/javascripts/tiny_mce/plugins/advlink/editor_plugin.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/advlink/editor_plugin_src.js",
@@ -1873,16 +1865,24 @@ Gem::Specification.new do |s|
      "test/rails_root/public/javascripts/tiny_mce/plugins/advlink/langs/vi_dlg.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/advlink/langs/zh_dlg.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/advlink/link.htm",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advlinktoo/editor_plugin.js",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advlinktoo/editor_plugin_src.js",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advlinktoo/js/functions.js",
-     "test/rails_root/public/javascripts/tiny_mce/plugins/advlinktoo/langs/en_dlg.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/autoresize/editor_plugin.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/autoresize/editor_plugin_src.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/autosave/editor_plugin.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/autosave/editor_plugin_src.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/bbcode/editor_plugin.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/bbcode/editor_plugin_src.js",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/bramus_cssextras/editor_plugin.js",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/bramus_cssextras/editor_plugin_src.js",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/codehighlighting/codehighlighting.htm",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/codehighlighting/css/codehighlighting.css",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/codehighlighting/editor_plugin.js",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/codehighlighting/editor_plugin_src.js",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/codehighlighting/img/Thumbs.db",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/codehighlighting/img/codehighlight.gif",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/codehighlighting/img/codehighlight2.gif",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/codehighlighting/js/codehighlighting.js",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/codehighlighting/langs/en.js",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/codehighlighting/langs/en_dlg.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/compat2x/editor_plugin.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/compat2x/editor_plugin_src.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/contextmenu/editor_plugin.js",
