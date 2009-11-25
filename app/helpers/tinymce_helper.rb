@@ -60,4 +60,20 @@ module TinymceHelper
     render :partial => 'tiny_mce/tiny_mce_scripts', :locals => options
   end
   
+  # Adds fields for outputing messages related to the tiny mce editor.
+  # This method is used instead of tiny_mce_scripts if no customization of message fields
+  # is required.
+  # mce_id:   id of tiny mce editor 
+  # parent:   parent object for which to build tiny mce editor
+  def tiny_mce_messages_and_scripts_for(mce_id, parent)
+    form_id = "#{parent.dom_id}_content_form"
+    message_container_id = "#{parent.dom_id}_message_container"
+    message_id = "#{parent.dom_id}_message"
+    render :partial => 'tiny_mce/tiny_mce_messages_and_scripts_for', :locals => { :mce_id => mce_id,
+                                                                                  :form_id => form_id,
+                                                                                  :message_container_id => message_container_id,
+                                                                                  :message_id => message_id }
+  end
+
+
 end

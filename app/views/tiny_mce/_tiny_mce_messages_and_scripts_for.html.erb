@@ -1,0 +1,6 @@
+<div id="<%= message_container_id %>" class="help-box" style="display:none;">
+  <div id="flashMessage" class="message">
+    <div id="<%= message_id %>" class="notice message"></div>
+  </div>
+</div>
+<%= tiny_mce_scripts(:form_id => form_id, :mce_id => mce_id, :message_container_id => message_container_id, :message_id => message_id) -%>

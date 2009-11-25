@@ -30,6 +30,8 @@ class Muck::TinyMceController < ApplicationController
   
   def tiny_mce_flickr
     @body_tag = 'flickr'
+    Fleakr.api_key = GlobalConfig.flickr_api_key
+    @photos = Fleakr.search(params[:search]) unless params[:search].blank?
     respond_to do |format|
       format.html { render :template => 'tiny_mce/flickr'}
     end

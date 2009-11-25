@@ -58,6 +58,7 @@ default: &DEFAULT
   enable_auto_translations: true
   content_enable_solr: false
   content_css: ['/stylesheets/reset.css', '/stylesheets/styles.css']
+  flickr_api_key:  #get from www.flickr.com/services/api/misc.api_keys.html
   
 production:
   <<: *DEFAULT

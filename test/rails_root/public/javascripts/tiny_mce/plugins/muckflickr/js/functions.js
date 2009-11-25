@@ -1,12 +1,8 @@
 tinyMCEPopup.requireLangPack();
 
-var FlickrDialog = {
+var MuckFlickrDialog = {
 	init : function() {
 		var selected_text = tinyMCEPopup.editor.selection.getContent({format : 'text'});
-        if(selected_text.length > 3 && selected_text.length < 30 ){
-            $("#q_id").val(selected_text)
-            updateResults();
-        }
 	},
 	insert : function() {
         selected_text = tinyMCEPopup.editor.selection.getContent({format : 'text'})
@@ -20,4 +16,4 @@ var FlickrDialog = {
 	}
 };
 
-tinyMCEPopup.onInit.add(FlickrDialog.init, FlickrDialog);
+tinyMCEPopup.onInit.add(MuckFlickrDialog.init, MuckFlickrDialog);

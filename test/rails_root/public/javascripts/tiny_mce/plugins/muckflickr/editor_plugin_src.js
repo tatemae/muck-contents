@@ -12,12 +12,11 @@
 				if (ed.dom.getAttrib(e, 'class').indexOf('mceItem') != -1)
 					return;
 				ed.windowManager.open({
-					file : jQuery('#tiny_mce_flickr_path').val(),
+					file : jQuery('#tiny_mce_flickr_path').val() + '?search=' + ed.selection.getContent({format : 'text'}),
 					width : parseInt(jQuery('#tiny_mce_flickr_width').val()) + parseInt(ed.getLang('muckflickr.delta_width', 0)),
 					height : parseInt(jQuery('#tiny_mce_flickr_height').val()) + parseInt(ed.getLang('muckflickr.delta_height', 0)),
 					inline : 1
 				}, {
-					search_string : ed.selection.getContent({format : 'text'}),
 					plugin_url : url
 				});
 			});

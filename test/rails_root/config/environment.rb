@@ -25,6 +25,7 @@ Rails::Initializer.run do |config|
   config.gem "sanitize"
   config.gem 'paperclip'
   config.gem 'tiny_mce'
+  config.gem 'fleakr'
   config.gem "uploader"
   config.gem "babelphish"
   config.gem 'muck-engine', :lib => 'muck_engine'
