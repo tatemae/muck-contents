@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "0.2.9"
+  s.version = "0.2.11"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2009-11-20}
+  s.date = %q{2009-11-30}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -33,8 +33,11 @@ Gem::Specification.new do |s|
      "app/views/contents/new.html.erb",
      "app/views/contents/show.html.erb",
      "app/views/layouts/tiny_mce.html.erb",
+     "app/views/tiny_mce/_flickr_photo.html.erb",
+     "app/views/tiny_mce/_tiny_mce_messages_and_scripts_for.html.erb",
      "app/views/tiny_mce/_tiny_mce_scripts.html.erb",
      "app/views/tiny_mce/files.html.erb",
+     "app/views/tiny_mce/flickr.html.erb",
      "app/views/tiny_mce/images.html.erb",
      "app/views/tiny_mce/links.html.erb",
      "config/initializers/mce_options.rb",
@@ -1410,7 +1413,7 @@ Gem::Specification.new do |s|
      "test/rails_root/config/environments/development.rb",
      "test/rails_root/config/environments/production.rb",
      "test/rails_root/config/environments/test.rb",
-     "test/rails_root/config/global_config.yml",
+     "test/rails_root/config/global_config.sample.yml",
      "test/rails_root/config/initializers/inflections.rb",
      "test/rails_root/config/initializers/mce_options.rb",
      "test/rails_root/config/initializers/mime_types.rb",
@@ -1550,6 +1553,7 @@ Gem::Specification.new do |s|
      "test/rails_root/public/images/rails.png",
      "test/rails_root/public/images/spinner.gif",
      "test/rails_root/public/images/sprites.png",
+     "test/rails_root/public/images/tinymce/flickr.gif",
      "test/rails_root/public/images/tinymce/sample.gif",
      "test/rails_root/public/images/tinymce/upload.gif",
      "test/rails_root/public/javascripts/application.js",
@@ -2153,6 +2157,9 @@ Gem::Specification.new do |s|
      "test/rails_root/public/javascripts/tiny_mce/plugins/muckfile/editor_plugin_src.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/muckfile/js/functions.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/muckfile/langs/en_dlg.js",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/muckflickr/editor_plugin.js",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/muckflickr/editor_plugin_src.js",
+     "test/rails_root/public/javascripts/tiny_mce/plugins/muckflickr/js/functions.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/muckimage/editor_plugin.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/muckimage/editor_plugin_src.js",
      "test/rails_root/public/javascripts/tiny_mce/plugins/muckimage/image.htm",
@@ -3103,6 +3110,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<friendly_id>, [">= 0"])
       s.add_runtime_dependency(%q<uploader>, [">= 0"])
       s.add_runtime_dependency(%q<tiny_mce>, [">= 0"])
+      s.add_runtime_dependency(%q<fleakr>, [">= 0"])
     else
       s.add_dependency(%q<muck-engine>, [">= 0"])
       s.add_dependency(%q<muck-users>, [">= 0"])
@@ -3113,6 +3121,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<friendly_id>, [">= 0"])
       s.add_dependency(%q<uploader>, [">= 0"])
       s.add_dependency(%q<tiny_mce>, [">= 0"])
+      s.add_dependency(%q<fleakr>, [">= 0"])
     end
   else
     s.add_dependency(%q<muck-engine>, [">= 0"])
@@ -3124,5 +3133,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<friendly_id>, [">= 0"])
     s.add_dependency(%q<uploader>, [">= 0"])
     s.add_dependency(%q<tiny_mce>, [">= 0"])
+    s.add_dependency(%q<fleakr>, [">= 0"])
   end
 end
