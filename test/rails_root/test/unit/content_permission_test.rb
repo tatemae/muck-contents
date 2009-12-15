@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: content_permissions
+#
+#  id         :integer         not null, primary key
+#  content_id :integer
+#  user_id    :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 require File.dirname(__FILE__) + '/../test_helper'
 
 # Used to test muck_content_permission

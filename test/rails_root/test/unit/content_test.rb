@@ -1,3 +1,26 @@
+# == Schema Information
+#
+# Table name: contents
+#
+#  id               :integer         not null, primary key
+#  creator_id       :integer
+#  title            :string(255)
+#  body             :text
+#  locale           :string(255)
+#  body_raw         :text
+#  contentable_id   :integer
+#  contentable_type :string(255)
+#  parent_id        :integer
+#  lft              :integer
+#  rgt              :integer
+#  is_public        :boolean
+#  state            :string(255)
+#  created_at       :datetime
+#  updated_at       :datetime
+#  layout           :string(255)
+#  comment_count    :integer         default(0)
+#
+
 require File.dirname(__FILE__) + '/../test_helper'
 
 # Used to test muck_content
@@ -29,15 +52,50 @@ class ContentTest < ActiveSupport::TestCase
     should_validate_presence_of :body_raw
     should_validate_presence_of :locale
     
-    should_have_named_scope :by_newest
-    should_have_named_scope :recent
-    should_have_named_scope :by_alpha
-    should_have_named_scope :public
-    should_have_named_scope :no_contentable
-    
+    should_scope_by_newest
+    should_scope_recent
+    should_scope_public
+    should_scope_by_alpha_title
+    should_scope_by_creator
+        
     should_sanitize :title
     should_sanitize :body
-        
+
+    context "named scopes" do
+      context "no_contentable" do
+        # named_scope :no_contentable, :conditions => 'contentable_id IS NULL'
+        setup do
+          @user = Factory(:user)
+          @content_not = Factory(:content, :contentable => nil)
+          @content = Factory(:content, :contentable => @user)
+        end
+        should "not find content with contentable association" do
+          assert !Content.no_contentable.include?(@content)
+        end
+        should "find content without contentable association" do
+          assert Content.no_contentable.include?(@content_not)
+        end
+      end
+      context "by_scope" do
+        # named_scope :by_scope, lambda { |scope| { :conditions => ["slugs.scope = ?", File.join('/', scope)], :include => [:slugs] } }
+        # TODO add test
+      end
+      context "by_parent" do
+        # named_scope :by_parent, lambda { |parent_id| { :conditions => ['parent_id = ?', parent_id || 0] } }
+        setup do
+          Content.delete_all
+          @parent_content = Factory(:content)
+          @item = Factory(:content, :parent => @parent_content)
+          @item1 = Factory(:content)
+        end
+        should "find items by the source they are associated with" do
+          items = Content.by_parent(@parent_content)
+          assert items.include?(@item), "created_by didn't find item whose parent is user"
+          assert !items.include?(@item1), "created_by found item that should not have user as a parent"
+        end
+      end
+    end
+
     context "translations" do
       should "have localized title" do
         assert_equal 'hola', @content.locale_title('es')

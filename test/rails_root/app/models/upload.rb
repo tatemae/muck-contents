@@ -2,33 +2,26 @@
 #
 # Table name: uploads
 #
-#  id                  :integer(4)      not null, primary key
-#  creator_id          :integer(4)
+#  id                  :integer         not null, primary key
+#  creator_id          :integer
 #  name                :string(255)
 #  caption             :string(1000)
 #  description         :text
-#  is_public           :boolean(1)      default(TRUE)
-#  uploadable_id       :integer(4)
+#  is_public           :boolean         default(TRUE)
+#  uploadable_id       :integer
 #  uploadable_type     :string(255)
 #  width               :string(255)
 #  height              :string(255)
 #  local_file_name     :string(255)
 #  local_content_type  :string(255)
-#  local_file_size     :integer(4)
+#  local_file_size     :integer
 #  local_updated_at    :datetime
 #  remote_file_name    :string(255)
 #  remote_content_type :string(255)
-#  remote_file_size    :integer(4)
+#  remote_file_size    :integer
 #  remote_updated_at   :datetime
 #  created_at          :datetime
 #  updated_at          :datetime
-#
-# Indexes
-#
-#  index_uploads_on_creator_id          (creator_id)
-#  index_uploads_on_uploadable_id       (uploadable_id)
-#  index_uploads_on_uploadable_type     (uploadable_type)
-#  index_uploads_on_local_content_type  (local_content_type)
 #
 
 class Upload < ActiveRecord::Base
