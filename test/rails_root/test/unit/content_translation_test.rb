@@ -50,7 +50,6 @@ class ContentTranslationTest < ActiveSupport::TestCase
         assert_equal @second, ContentTranslation.by_alpha[1]
       end
     end
-
     
     context "find by locale" do
       #named_scope :by_locale, lambda { |locale| { :conditions => ['content_translations.locale = ?', locale] } }
