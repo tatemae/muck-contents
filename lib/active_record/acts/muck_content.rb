@@ -32,13 +32,13 @@ module ActiveRecord
           has_many   :content_permissions, :dependent => :destroy
           has_many   :content_translations, :dependent => :destroy
 
-          named_scope :by_newest, :order => "created_at DESC"
-          named_scope :recent, lambda { { :conditions => ['created_at > ?', 1.week.ago] } }
-          named_scope :by_alpha, :order => "title ASC"
-          named_scope :public, :conditions => "is_public = true"
-          named_scope :by_parent, lambda { |parent_id| { :conditions => ['parent_id = ?', parent_id || 0] } }
-          named_scope :by_creator, lambda { |creator_id| { :conditions => ['creator_id = ?', creator_id || 0] } }
-          named_scope :no_contentable, :conditions => 'contentable_id IS NULL'
+          named_scope :by_newest, :order => "contents.created_at DESC"
+          named_scope :recent, lambda { { :conditions => ['contents.created_at > ?', 1.week.ago] } }
+          named_scope :by_alpha, :order => "contents.title ASC"
+          named_scope :public, :conditions => "contents.is_public = true"
+          named_scope :by_parent, lambda { |parent_id| { :conditions => ['contents.parent_id = ?', parent_id || 0] } }
+          named_scope :by_creator, lambda { |creator_id| { :conditions => ['contents.creator_id = ?', creator_id || 0] } }
+          named_scope :no_contentable, :conditions => 'contents.contentable_id IS NULL'
           # include the '/' in case the user forgets.  Note 'get_content_scope' will add the '/' so 
           # if we don't include it here the content won't be found as the scope won't match up. 
           named_scope :by_scope, lambda { |scope| { :conditions => ["slugs.scope = ?", File.join('/', scope)], :include => [:slugs] } } 

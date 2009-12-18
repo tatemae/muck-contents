@@ -71,7 +71,7 @@ class Muck::ContentsController < ApplicationController
     @content.save!
     respond_to do |format|
       format.html do
-        redirect_back_or_default(@content.uri)
+        redirect_to(@content.uri)
       end
       # HACK there should be a way to force polymorphic_url to use an id instead of to_param
       update_path = polymorphic_url([@parent, @content]).gsub(@content.to_param, "#{@content.id}") # force the id.  The slugs can cause problems during edit
