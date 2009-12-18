@@ -35,14 +35,20 @@ class Muck::ContentsController < ApplicationController
   #        <%= f.text_field :custom_thing %>
   #      <% end -%>
   #    </div>
+  #
+  # If you are overriding this method in a different controller (ie not contents_controller.rb) you can set
+  # the template to render in a different location. For example, if you have a controller named blogs_controller.rb
+  # that inherits Muck::ContentsController you can do this to render the new template in the /view/blogs/new.html.erb:
+  # @new_template = 'blogs/new'
+  #
   def new
     @content ||= Content.new
     @content.uri = params[:path] if params[:path]
     if logged_in? && has_permission_to_add_content(current_user, @parent, @content)
       flash[:notice] = @new_content_message || t('muck.contents.page_doesnt_exist_create')
       respond_to do |format|
-        format.html { render :template => 'contents/new'}
-        format.pjs { render :template => 'contents/new', :layout => 'popup'}
+        format.html { render :template => @new_template || 'contents/new'}
+        format.pjs { render :template => @new_template || 'contents/new', :layout => 'popup'}
       end
     else
       # TODO think about caching this:
@@ -71,7 +77,7 @@ class Muck::ContentsController < ApplicationController
     @content.save!
     respond_to do |format|
       format.html do
-        redirect_to(@content.uri)
+        after_create_redirect
       end
       # HACK there should be a way to force polymorphic_url to use an id instead of to_param
       update_path = polymorphic_url([@parent, @content]).gsub(@content.to_param, "#{@content.id}") # force the id.  The slugs can cause problems during edit
@@ -93,11 +99,16 @@ class Muck::ContentsController < ApplicationController
     end
   end
 
+  # If you are overriding this method in a different controller (ie not contents_controller.rb) you can set
+  # the template to render in a different location. For example, if you have a controller named blogs_controller.rb
+  # that inherits Muck::ContentsController you can do this to render the new template in the /view/blogs/edit.html.erb:
+  # @new_template = 'blogs/edit'
+  #
   def edit
     @page_title = @content.locale_title(I18n.locale)
     respond_to do |format|
-      format.html { render :template => 'contents/edit'}
-      format.pjs { render :template => 'contents/edit', :layout => 'popup'}
+      format.html { render :template => @edit_template || 'contents/edit'}
+      format.pjs { render :template => @edit_template || 'contents/edit', :layout => 'popup'}
     end
   end
   
@@ -106,7 +117,7 @@ class Muck::ContentsController < ApplicationController
     @content.update_attributes!(params[:content])
     respond_to do |format|
       format.html do
-        redirect_to @content.uri
+        after_update_redirect
       end
       format.json { render :json => { :success => true, :content => @content, :parent_id => @parent ? @parent.id : nil, :type => 'update' } }
     end
@@ -127,7 +138,7 @@ class Muck::ContentsController < ApplicationController
     respond_to do |format|
       format.html do
         flash[:notice] = t('muck.contents.content_removed')
-        redirect_back_or_default(current_user)
+        after_destroy_redirect
       end
       format.js do
         render(:update) do |page|
@@ -139,6 +150,18 @@ class Muck::ContentsController < ApplicationController
   end  
 
   protected
+    
+    def after_create_redirect
+      redirect_to @content.uri
+    end
+    
+    def after_update_redirect
+      redirect_to @content.uri
+    end
+    
+    def after_destroy_redirect
+      redirect_back_or_default(current_user)
+    end
     
     # Setups up the layouts that are available in the 'layouts' pulldown.
     # Override this method to change the available layouts. Note that the
