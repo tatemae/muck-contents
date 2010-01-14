@@ -1,8 +1,6 @@
-<% content_for :head do  -%>
-  <%= include_tiny_mce_if_needed %>
-<% end -%>
-
+<% init_tiny_mce %>
 <script language="javascript" type="text/javascript">
+<% if include_save_page -%>
 function save_page() {
 	tinyMCE.triggerSave(true,true);
 	var form = jQuery('#<%= form_id %>');
@@ -24,6 +22,12 @@ function save_page() {
 	  });
 	return false;
 }
+function undirty(){
+	var ed = tinyMCE.get('<%=mce_id%>');
+	ed.isNotDirty = 1;
+}
+<% end -%>
+
 function show_message(message){
   <% if GlobalConfig.growl_enabled -%>
 	  jQuery.jGrowl.info(message);
@@ -31,9 +35,5 @@ function show_message(message){
 	  jQuery('#<%=message_container_id%>').show();
 	  jQuery('#<%=message_id%>').fadeIn();
 	<% end -%>
-}
-function undirty(){
-	var ed = tinyMCE.get('<%=mce_id%>');
-	ed.isNotDirty = 1;
 }
 </script>

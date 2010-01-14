@@ -56,7 +56,9 @@ module TinymceHelper
   # mce_id:               id of tiny mce editor 
   # message_container_id: id of a container for returned messages
   # message_id:           id of the container for the actual message
+  # include_save_page:    This script is used include or omit the 'save_page' javascript.  Set to true if the editor includes a save button.
   def tiny_mce_scripts(options = {})
+    options[:include_save_page] = true unless options.has_key?(:include_save_page)
     render :partial => 'tiny_mce/tiny_mce_scripts', :locals => options
   end
   
@@ -75,5 +77,11 @@ module TinymceHelper
                                                                                   :message_id => message_id }
   end
 
-
+  # Adds tiny mce intialization code if it hasn't already been added.
+  def init_tiny_mce
+    return if @@init_tiny_mce_completed
+    @@init_tiny_mce_completed = true
+    render :partial => 'tiny_mce/init_tiny_mce'
+  end
+  
 end
