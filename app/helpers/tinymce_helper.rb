@@ -79,7 +79,7 @@ module TinymceHelper
 
   # Adds tiny mce intialization code if it hasn't already been added.
   def init_tiny_mce
-    return if @@init_tiny_mce_completed
+    return if defined?(@@init_tiny_mce_completed)
     @@init_tiny_mce_completed = true
     render :partial => 'tiny_mce/init_tiny_mce'
   end

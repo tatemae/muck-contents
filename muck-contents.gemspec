@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
      "app/views/contents/show.html.erb",
      "app/views/layouts/tiny_mce.html.erb",
      "app/views/tiny_mce/_flickr_photo.html.erb",
+     "app/views/tiny_mce/_init_tiny_mce.html.erb",
      "app/views/tiny_mce/_tiny_mce_messages_and_scripts_for.html.erb",
      "app/views/tiny_mce/_tiny_mce_scripts.html.erb",
      "app/views/tiny_mce/files.html.erb",
