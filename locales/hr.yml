@@ -31,6 +31,8 @@ hr:
       submit_content_button: Spremiti
       tag_information: "Tags pomoći i drugim korisnicima da pronađu svoju stranicu, te će se koristiti kao meta za ključne riječi dokumenta."
       tags: Tags
+      tags_help: "Dodajte oznake na pomoći identificirati sadržaj. Tags se također može koristiti za generiranje popisa veza za izbornika."
+      tags_label: Tags
       title_help: "Naziv kontrole URL te stranice naslov prikazan u url baru"
       title_label: Naslov
       update_error: "Došlo je do problema ažuriranju sadržaj"

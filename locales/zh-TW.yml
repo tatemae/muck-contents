@@ -21,7 +21,7 @@ zh-TW:
       manage_pages_title: 網站內容管理
       no_files: 無任何可下載
       no_images: 沒有圖像可用
-      no_uri_error: 請設置值為開放模型，然後保存時contentable為零
+      no_uri_error: "請設置值為開放模型，然後保存時 contentable為零"
       page_doesnt_exist_create: 您要求的網頁不存在。請提供下面的信息來創建頁面。
       permalink: 固定鏈接：
       preview: 預覽
@@ -31,6 +31,8 @@ zh-TW:
       submit_content_button: 保存
       tag_information: 標籤幫助其他用戶找到您的網頁，將被用作元關鍵字的文件。
       tags: 標籤
+      tags_help: 添加標籤，以幫助確定您的內容。標籤也可以用於生成鏈接列表的菜單。
+      tags_label: 標籤
       title_help: 標題控制URL和頁面標題顯示在地址欄
       title_label: 標題
       update_error: 有一個問題，更新您的內容

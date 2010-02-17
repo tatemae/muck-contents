@@ -31,6 +31,8 @@ id:
       submit_content_button: Simpan
       tag_information: "Tags membantu pengguna lain menemukan halaman Anda dan akan digunakan sebagai meta kata kunci untuk dokumen."
       tags: Tags
+      tags_help: "Tambahkan tag untuk membantu mengidentifikasi konten Anda. Tags juga dapat digunakan untuk menghasilkan daftar link untuk menu."
+      tags_label: Tags
       title_help: "Judul mengendalikan url dan judul halaman yang ditampilkan di url bar"
       title_label: Judul
       update_error: "Ada masalah memperbarui konten"

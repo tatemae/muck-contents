@@ -32,6 +32,8 @@
       submit_content_button: Lagre
       tag_information: "Tags å finne andre brukere til siden, og vil bli brukt som meta nøkkelord for dokumentet."
       tags: Tags
+      tags_help: "Legg til koder til å identifisere innholdet. Tags kan også brukes til å generere lister med linker for en meny."
+      tags_label: Tags
       title_help: "Tittelen styrer url og siden tittelen vises i URL-bar"
       title_label: Tittel
       update_error: "Det var et problem å oppdatere innholdet"

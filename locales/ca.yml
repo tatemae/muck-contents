@@ -31,6 +31,8 @@ ca:
       submit_content_button: Salvar
       tag_information: "Etiquetes ajudar a altres usuaris trobar la seva pàgina i s&#39;utilitzarà com les paraules clau de metadades per al document."
       tags: Etiquetes
+      tags_help: "Afegir etiquetes per ajudar a identificar el seu contingut. Les etiquetes també poden utilitzar per generar llistats d&#39;enllaços per a un menú."
+      tags_label: Etiquetes
       title_help: "El títol dels controls de l&#39;adreça URL i el títol de la pàgina apareix a la barra d&#39;URL"
       title_label: Títol
       update_error: "Hi va haver un problema en actualitzar el contingut"

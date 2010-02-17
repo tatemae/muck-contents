@@ -31,6 +31,8 @@ ja:
       submit_content_button: 保存する
       tag_information: タグを他のユーザーがあなたのページに役立つとは、文書のメタデータをキーワードとして使用されます。
       tags: タグ
+      tags_help: タグを追加コンテンツの識別に役立ちます。また、タグのメニューへのリンクのリストを生成するために使用することができます。
+      tags_label: タグ
       title_help: タイトルとページタイトルのURLバーに表示されるURLを制御
       title_label: タイトル
       update_error: 問題があるコンテンツを更新されました

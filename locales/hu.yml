@@ -31,6 +31,8 @@ hu:
       submit_content_button: Ment
       tag_information: "Címkék segítsenek a többieknek meg az oldalt, és fogják használni a meta kulcsszavakat a dokumentumot."
       tags: Címkéket
+      tags_help: "Add tags, hogy azonosítsa a tartalmat. Címkék is használhatók generálására listák link a menüben."
+      tags_label: Címkéket
       title_help: "Az ellenőrzéseket az URL címet és az oldal címe jelenik meg az URL sáv"
       title_label: Címben
       update_error: "Hiba történt a frissítés a tartalmat"

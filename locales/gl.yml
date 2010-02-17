@@ -29,8 +29,10 @@ gl:
       problem_updating_content: "Houbo un problema ao actualizar o contido"
       save: Gardar
       submit_content_button: Gardar
-      tag_information: "Tags axudar a outros usuarios a atopar a súa páxina e será usado como meta palabras clave para o papel."
+      tag_information: "Tags axudar a outros usuarios a atopar a súa páxina e será usado como meta verbas-chave para o papel."
       tags: Tags
+      tags_help: "Engadir etiquetas para axudar a identificar o seu contido. Palabras clave tamén pode ser usado para xerar listas de enlaces a un menú."
+      tags_label: Tags
       title_help: "O título controla o URL eo título da páxina amosada na barra do URL"
       title_label: Título
       update_error: "Houbo un problema ao actualizar o seu contido"

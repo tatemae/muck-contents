@@ -31,6 +31,8 @@ vi:
       submit_content_button: Lưu
       tag_information: "Tags giúp người dùng khác tìm thấy trang của bạn và sẽ được sử dụng như các từ khoá meta cho tài liệu."
       tags: Tags
+      tags_help: "Thêm thẻ để giúp xác định các nội dung của bạn. Tags cũng có thể được sử dụng để tạo các danh sách liên kết cho một trình đơn."
+      tags_label: Tags
       title_help: "Tiêu đề điều khiển các URL và tiêu đề trang hiển thị trên thanh url"
       title_label: "Tiêu đề"
       update_error: "Có vấn đề cập nhật nội dung của bạn"

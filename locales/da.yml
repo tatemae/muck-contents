@@ -31,6 +31,8 @@ da:
       submit_content_button: Gemme
       tag_information: "Tags hjælpe andre brugere med at finde din side og vil blive brugt som meta-nøgleord til dokumentet."
       tags: Tags
+      tags_help: "Tilføj tags til at identificere dit indhold. Tags kan også bruges til at generere lister med links til en menu."
+      tags_label: Tags
       title_help: "Titlen styrer url og sidens titel vises i url baren"
       title_label: Titel
       update_error: "Der var et problem opdatere dit indhold"

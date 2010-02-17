@@ -31,6 +31,8 @@ zh:
       submit_content_button: 保存
       tag_information: 标签帮助其他用户找到您的网页，将作为该文件的meta关键字使用。
       tags: 标签
+      tags_help: 添加标签，以帮助确定您的内容。标签也可以用于生成的菜单链接列表。
+      tags_label: 标签
       title_help: 标题控制URL和页面标题中的地址栏显示
       title_label: 标题
       update_error: 有一个问题，更新您的内容

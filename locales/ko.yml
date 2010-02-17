@@ -31,6 +31,8 @@ ko:
       submit_content_button: 저장
       tag_information: "태그 다른 사용자가 페이지를 찾는 데 도움이 문서에 대한 메타 키워드로 사용됩니다."
       tags: 태그
+      tags_help: "태그 추가 귀하의 콘텐츠를 식별하는 데 도움합니다. 태그 또한, 메뉴에 대한 링크의 목록을 생성하는 데 사용하실 수있습니다."
+      tags_label: 태그
       title_help: "제목과 URL에 페이지 제목 표시줄에 표시되는 URL을 컨트롤"
       title_label: 제목
       update_error: "거기에 문제가 귀하의 콘텐츠를 업데이 트했습니다"

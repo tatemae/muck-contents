@@ -31,6 +31,8 @@ sl:
       submit_content_button: Shraniti
       tag_information: "Tags pomagajo drugi uporabniki najdejo vaše strani, in bodo uporabljeni kot meta ključnih besed za dokument."
       tags: Tags
+      tags_help: "Dodaj oznako za pomoč pri identifikaciji vsebine. Tags se lahko uporabljajo tudi za pridobivanje seznamov povezav v meniju."
+      tags_label: Tags
       title_help: "Naslov nadzor url in naslov strani prikaže v url vrstici"
       title_label: Naslov
       update_error: "Prišlo je do težave posodabljanje vsebine"

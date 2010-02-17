@@ -31,6 +31,8 @@ es:
       submit_content_button: Salvar
       tag_information: "Etiquetas ayudar a otros usuarios encontrar su página y se utilizará como las palabras clave de metadatos para el documento."
       tags: Etiquetas
+      tags_help: "Agregar etiquetas para ayudar a identificar su contenido. Las etiquetas también pueden utilizarse para generar listas de enlaces para un menú."
+      tags_label: Etiquetas
       title_help: "El título de los controles de la dirección URL y el título de la página aparece en la barra de URL"
       title_label: Título
       update_error: "Hubo un problema al actualizar el contenido"

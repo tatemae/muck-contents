@@ -4,33 +4,35 @@ th:
     contents: 
       add: เพิ่ม
       cancel: ยกเลิก
-      cant_delete_content: คุณไม่ได้รับสิทธิ์ในการลบเนื้อหาที่ระบุ
-      choose_layout: แม่เลือก
-      choose_layout_help: เลือกรูปแบบแม่แบบที่จะทำให้สีเหลืองหน้านี้.
-      confirm_delete_content: คุณแน่ใจหรือว่าต้องการลบเนื้อหานี้นี้ไม่สามารถยกเลิก!
-      content_help: นี้มีเนื้อหาที่จะปรากฏบนหน้า.
+      cant_delete_content: "คุณ ไม่ ได้ รับ สิทธิ์ ใน การ ลบ เนื้อหา ที่ ระบุ"
+      choose_layout: "แม่ เลือก"
+      choose_layout_help: "เลือก รูป แบบ แม่ แบบ ที่ จะ ทำให้ สี เหลือง หน้า นี้."
+      confirm_delete_content: "คุณ แน่ใจ หรือ ว่า ต้องการ ลบ เนื้อหา นี้ นี้ ไม่ สามารถ ยกเลิก!"
+      content_help: "นี้ มี เนื้อหา ที่ จะ ปรากฏ บน หน้า."
       content_label: เนื้อหา
-      content_removed: เนื้อหาสำเร็จลบ
-      create_error: มีปัญหาการเพิ่มเนื้อหาของคุณได้
-      default_404_body: เราไม่พบหน้าคุณต้องการ.
-      default_404_title: "404 ไม่พบหน้า"
+      content_removed: "เนื้อหา สำเร็จ ลบ"
+      create_error: "มี ปัญหา การ เพิ่ม เนื้อหา ของ คุณ ได้"
+      default_404_body: "เรา ไม่ พบ หน้า คุณ ต้องการ."
+      default_404_title: "404 ไม่ พบ หน้า"
       delete: ลบ
-      delete_title: ลบหน้านี้.
+      delete_title: "ลบ หน้า นี้."
       edit: Edit
-      edit_title: แก้ไขหน้านี้.
-      manage_pages_title: เนื้อหาในเว็บไซต์การจัดการ
-      no_files: ไม่มีไฟล์
-      no_images: ภาพไม่มี
-      no_uri_error: "กรุณาตั้งค่าสำหรับ URI ก่อนประหยัดรุ่นที่ contentable เป็นศูนย์"
-      page_doesnt_exist_create: "หน้าที่คุณขอไม่พบ. โปรดระบุข้อมูลด้านล่างเพื่อสร้างหน้า."
+      edit_title: "แก้ไข หน้า นี้."
+      manage_pages_title: "เนื้อหา ใน เว็บไซต์ การ จัดการ"
+      no_files: "ไม่มี ไฟล์"
+      no_images: "ภาพ ไม่มี"
+      no_uri_error: "กรุณา ตั้ง ค่า สำหรับ URI ก่อน ประหยัด รุ่น ที่ contentable เป็น ศูนย์"
+      page_doesnt_exist_create: "หน้าที่ คุณ ขอ ไม่ พบ. โปรด ระบุ ข้อมูล ด้าน ล่าง เพื่อ สร้าง หน้า."
       permalink: "Permalink:"
-      preview: ดูตัวอย่าง
-      problem_adding_content: มีปัญหาการเพิ่มเนื้อหาได้
-      problem_updating_content: เกิดปัญหาในการปรับปรุงเนื้อหาแล้ว
+      preview: "ดู ตัวอย่าง"
+      problem_adding_content: "มี ปัญหา การ เพิ่ม เนื้อหา ได้"
+      problem_updating_content: "เกิด ปัญหา ใน การ ปรับปรุง เนื้อหา แล้ว"
       save: บันทึก
       submit_content_button: บันทึก
-      tag_information: "แท็กช่วยให้ผู้ใช้อื่นหาหน้าของคุณและจะใช้เป็นคำ meta สำหรับเอกสาร."
+      tag_information: "แท็ ก ช่วย ให้ ผู้ ใช้ อื่น หา หน้า ของ คุณ และ จะ ใช้ เป็น คำ meta สำหรับ เอกสาร."
       tags: Tags
-      title_help: "ชื่อควบคุม url และชื่อเพจที่ปรากฏในแถบ url"
-      title_label: ชื่อเรื่อง
-      update_error: เกิดปัญหาในการปรับปรุงเนื้อหาของคุณได้
+      tags_help: "เพิ่ม แท็ ก เพื่อ ระบุ เนื้อหา ของ คุณ. แท็ ก ยัง สามารถ ใช้ เพื่อ สร้าง ราย ชื่อ ของ ลิงค์ สำหรับ เมนู."
+      tags_label: Tags
+      title_help: "ชื่อ ควบคุม url และ ชื่อ เพจ ที่ ปรากฏ ใน แถบ url"
+      title_label: "ชื่อ เรื่อง"
+      update_error: "เกิด ปัญหา ใน การ ปรับปรุง เนื้อหา ของ คุณ ได้"

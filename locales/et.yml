@@ -6,7 +6,7 @@ et:
       cancel: Tühista
       cant_delete_content: "Sul ei ole õigusi kustutada määratletud sisu"
       choose_layout: "Vali mall"
-      choose_layout_help: "Vali paigutus malli, et teevad Chrome lehekülg."
+      choose_layout_help: "Vali paigutus malli, et teevad Chrome sellel lehel."
       confirm_delete_content: "Oled sa kindel, et soovid kustutada selle sisu? Seda ei saa tagasi võtta!"
       content_help: "See on sisu, mis ilmuvad leheküljele."
       content_label: Sisu
@@ -31,6 +31,8 @@ et:
       submit_content_button: Salvestama
       tag_information: "Sildid aidata teisi kasutajaid leiavad teie lehe ja seda kasutatakse meta märksõnad dokumendid."
       tags: Sildid
+      tags_help: "Lisa silte, mis aitavad kindlaks oma sisu. Tags saab kasutada ka luua nimekirja lingid menüüs."
+      tags_label: Sildid
       title_help: "Pealkiri kontrolli URL ja lehe pealkiri kuvatakse url bar"
       title_label: Pealkiri
       update_error: "Probleem ajakohastamise sisu"

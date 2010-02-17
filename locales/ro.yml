@@ -31,6 +31,8 @@ ro:
       submit_content_button: Economisi
       tag_information: "Tag-uri ajuta utilizatorii să găsească alte pagina dvs. şi va fi utilizată ca cuvintele cheie meta pentru document."
       tags: Tag-uri
+      tags_help: "Adauga tag-uri pentru a ajuta la identificarea dvs. de conţinut. Tag-uri pot fi, de asemenea, utilizat pentru a genera liste de link-uri pentru un meniu."
+      tags_label: Tag-uri
       title_help: "Titlu de control URL-ul şi titlul paginii afişate în bara de URL-ul"
       title_label: Title
       update_error: "Există o problemă cu actualizarea conţinutului dvs."

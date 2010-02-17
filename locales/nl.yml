@@ -31,6 +31,8 @@ nl:
       submit_content_button: Redden
       tag_information: "Tags help andere gebruikers vinden van uw pagina en zal worden gebruikt als de meta sleutelwoorden voor het document."
       tags: Tags
+      tags_help: "Voeg tags te helpen identificeren uw inhoud. Tags kunnen ook worden gebruikt voor het genereren van lijsten met links voor een menu."
+      tags_label: Tags
       title_help: "De titel regelt de url en de pagina titel weergegeven in de URL-balk"
       title_label: Titel
       update_error: "Er was een probleem bijwerken van uw inhoud"

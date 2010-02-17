@@ -31,6 +31,8 @@ de:
       submit_content_button: Sichern
       tag_information: "Tags helfen Sie anderen Anwendern finden Sie Ihre Seite und wird als die Meta-Keywords für das Dokument verwendet werden."
       tags: Tags
+      tags_help: "Tags hinzufügen, um Ihre Inhalte zu identifizieren. Tags können auch verwendet werden, um eine Liste von Links für ein Menü zu erzeugen."
+      tags_label: Tags
       title_help: "Der Titel steuert die URL und der Titel der Seite in der Adressleiste angezeigt"
       title_label: Titel
       update_error: "Es gab ein Problem beim Aktualisieren der Inhalte"

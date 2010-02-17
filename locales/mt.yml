@@ -31,6 +31,8 @@ mt:
       submit_content_button: Save
       tag_information: "Tags tgħin lill-utenti l-oħra jsibu paġna tiegħek u se tintuża bħala l-keywords meta għad-dokument."
       tags: Tags
+      tags_help: "Żid tags biex jgħinu fl-identifikazzjoni tiegħek kontenut. Tags tista &#39;wkoll tkun użata biex tiġġenera l-listi ta&#39; links għal menu."
+      tags_label: Tags
       title_help: "It-titolu l-kontrolli url u t-titolu paġna li tidher fil-bar url"
       title_label: Titolu
       update_error: "Kien hemm problema aġġornament tiegħek kontenut"

@@ -31,6 +31,8 @@ pt-PT:
       submit_content_button: Salvar
       tag_information: "Tags ajudar outros usuários a encontrar sua página e será usado como meta palavras-chave para o documento."
       tags: Tags
+      tags_help: "Adicionar tags para ajudar a identificar o seu conteúdo. Palavras-chave também pode ser usado para gerar listas de links para um menu."
+      tags_label: Tags
       title_help: "O título controla o URL eo título da página exibida na barra de URL"
       title_label: Título
       update_error: "Houve um problema ao atualizar o seu conteúdo"

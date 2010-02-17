@@ -31,6 +31,8 @@ sq:
       submit_content_button: Ruaj
       tag_information: "Tags ndihmojë përdoruesit e tjerë të gjeni faqen tuaj dhe do të përdoret si fjalë kyçe të meta për dokumentin."
       tags: Tags
+      tags_help: "Add tags për të ndihmuar në identifikimin përmbajtjen tuaj. Tags mund gjithashtu të përdoret për të gjeneruar listat e lidhjeve për një menu."
+      tags_label: Tags
       title_help: "Titulli i kontrollon url dhe titullin shfaqur në faqe url bar"
       title_label: Titulli
       update_error: "Nuk ishte një problem updating përmbajtjen tuaj"

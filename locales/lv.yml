@@ -31,6 +31,8 @@ lv:
       submit_content_button: Glābt
       tag_information: "Tags palīdzēt citiem lietotājiem atrast jūsu lapā un tiks izmantots kā meta atslēgvārdus dokumentu."
       tags: Tags
+      tags_help: "Pievienot tagus, lai palīdzētu identificēt jūsu saturu. Tagus var izmantot arī, lai radītu sarakstu ar saitēm uz izvēlni."
+      tags_label: Tags
       title_help: "Nosaukums kontroles URL un lapas nosaukums rādīts url bārs"
       title_label: Nosaukums
       update_error: "Radās problēma atjaunināt savu saturu"

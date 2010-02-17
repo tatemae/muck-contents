@@ -31,6 +31,8 @@ pl:
       submit_content_button: Zapisać
       tag_information: "Tagi pomóc innym użytkownikom znaleźć na stronie i zostanie wykorzystany jako meta słowa kluczowe dla tego dokumentu."
       tags: Tagi
+      tags_help: "Dodaj tagi ułatwiające identyfikację zawartości. Tagi mogą być również wykorzystywane do tworzenia listy odnośników do menu."
+      tags_label: Tagi
       title_help: "Tytuł kontroli URL i tytuł strony wyświetlany w pasku adresu URL"
       title_label: Tytuł
       update_error: "Wystąpił problem z aktualizacją treści"

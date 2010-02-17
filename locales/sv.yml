@@ -31,6 +31,8 @@ sv:
       submit_content_button: Spara
       tag_information: "Tags hjälp andra användare att hitta din sida och kommer att användas som meta nyckelord för dokumentet."
       tags: Tags
+      tags_help: "Lägg till taggar för att identifiera innehållet. Taggar kan också användas för att generera listor med länkar till en meny."
+      tags_label: Tags
       title_help: "Titeln styr URL och sidans titel som visas i URL bar"
       title_label: Titel
       update_error: "Det uppstod ett problem uppdatera ditt innehåll"

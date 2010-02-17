@@ -31,6 +31,8 @@ fi:
       submit_content_button: Tallentaa
       tag_information: "Tagit auttavat muita käyttäjiä löytämään sivusi ja käytetään meta avainsanat asiakirjaa."
       tags: Tunnisteita
+      tags_help: "Lisää tunnisteet, joiden avulla tunnistaa sisältöä. Tunnisteita voidaan myös luoda luettelot linkkejä-valikosta."
+      tags_label: Tunnisteita
       title_help: "Otsikko valvonta URL-osoite ja sivun otsikon näkyvä URL bar"
       title_label: Arvonimi
       update_error: "Oli ongelma päivittää sisältöä"

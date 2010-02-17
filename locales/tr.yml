@@ -31,6 +31,8 @@ tr:
       submit_content_button: Kaydetmek
       tag_information: "Etiketler diğer kullanıcıların sayfası bulmak ve yardım belgenin meta anahtar kelimeler olarak kullanılacaktır."
       tags: Etiketler
+      tags_help: "Etiketler ekleyin içerik tanımlamak için. Tags ayrıca menü için bağlantıların listelerini oluşturmak için kullanılabilir."
+      tags_label: Etiketler
       title_help: "Başlık ve sayfa başlığını url çubuğunda görüntülenen URL&#39;yi kontrol"
       title_label: Title
       update_error: "Bir sorun içerik güncellenirken"

@@ -31,6 +31,8 @@ cs:
       submit_content_button: Uložit
       tag_information: "Štítky pomoci ostatním uživatelům najít vaši stránku a bude použita jako meta klíčová slova pro dokument."
       tags: Tagy
+      tags_help: "Přidejte značky na pomoc při hledání svého obsahu. Značky mohou být také použity k vytváření seznamů odkazů na menu."
+      tags_label: Tagy
       title_help: "Název kontroly URL a titulek stránky zobrazené v url bar"
       title_label: Název
       update_error: "Došlo k problému při aktualizaci obsahu"

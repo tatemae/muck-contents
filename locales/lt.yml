@@ -31,6 +31,8 @@ lt:
       submit_content_button: Saugoti
       tag_information: "Žymos padėti kitiems naudotojams rasti jūsų puslapį ir bus naudojami kaip meta raktažodžius dokumentas."
       tags: Žymos
+      tags_help: "Add Tags padėti nustatyti jūsų turinį. Žymės gali būti naudojamos siekiant generuoti sąrašus nuorodų meniu."
+      tags_label: Žymos
       title_help: "Pavadinimas kontrolės URL ir puslapio pavadinimą rodomas URL baras"
       title_label: Pavadinimas
       update_error: "Iškilo problema atnaujinti savo turinį"

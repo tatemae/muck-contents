@@ -31,6 +31,8 @@ tl:
       submit_content_button: I-save
       tag_information: "Tags ng tulong sa ibang mga gumagamit mahanap ang iyong pahina at ito ay gagamitin bilang meta keywords para sa dokumento."
       tags: Tags
+      tags_help: "Magdagdag ng mga tag sa mga tulong na kilalanin ang iyong nilalaman. Tags maaari ding magamit upang bumuo ng listahan ng mga link para sa isang menu."
+      tags_label: Tags
       title_help: "Ang pamagat ng kontrol ang url at ang pahina ng pamagat na ipinapakita sa ang url bar"
       title_label: Title
       update_error: "Nagkaroon ng problema sa pag-update ng iyong nilalaman"

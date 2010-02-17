@@ -31,6 +31,8 @@ fr:
       submit_content_button: Sauver
       tag_information: "Tags aider les autres utilisateurs de trouver votre page et seront utilisés comme les mots-clés meta pour le document."
       tags: Tags
+      tags_help: "Ajouter vos tags pour aider à identifier votre contenu. Les étiquettes peuvent également être utilisés pour générer des listes de liens pour un menu."
+      tags_label: Tags
       title_help: "Le titre de contrôle de l&#39;URL et le titre de la page affichée dans la barre d&#39;URL"
       title_label: Titre
       update_error: "Il y avait un problème de mise à jour votre contenu"
