@@ -13,7 +13,7 @@ message_id = "#{content.dom_id}_message"
 <%= show_preview(@content) %>
 
 <div id="<%= "#{content.dom_id}" %>" class="content_editor">
-  <% custom_form_for(content, :url => get_content_form_url(@parent, @content), :html => html.merge(:id => form_id, :class => 'content_form') ) do |f| -%>
+  <% custom_form_for(content, :url => url, :html => html.merge(:id => form_id, :class => 'content_form') ) do |f| -%>
     <%= f.text_field :title, {:class => 'title', :tip => t('muck.contents.title_help'), :label => t('muck.contents.title_label') } %>
     <%= f.text_field :tag_list, {:class => 'tags', :tip => t('muck.contents.tags_help'), :label => t('muck.contents.tags_label') } %>
     <%= f.muck_select(:layout, :value, :name, t('muck.contents.choose_layout'), @content_layouts, {:tip => t('muck.contents.choose_layout_help')}) %>

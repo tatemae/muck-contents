@@ -2,12 +2,13 @@ module MuckContentsHelper
   
   # share is an optional share object that can be used to pre populate the form.
   # content:  Optional content object to be edited.
-  # options:  html options for form.  For example:
-  #             :html => {:id => 'a form'}
+  # options:  options for form.  For example:
+  #           :url => 'some-url', :html => {:id => 'a form'}
   def content_form(content = nil, options = {}, &block)
     content ||= Content.new
     options[:html] = {} if options[:html].nil?
-    raw_block_to_partial('contents/form', options.merge(:content => content), &block)
+    url = options[:url] || get_content_form_url(@parent, @content)
+    raw_block_to_partial('contents/form', options.merge(:url => url, :content => content), &block)
   end
   
   # content uses friendly_id but we want the param in the form to use the number id
