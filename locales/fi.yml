@@ -2,37 +2,37 @@
 fi: 
   muck: 
     contents: 
-      add: Lisää
-      cancel: Peruuta
-      cant_delete_content: "Sinulla ei ole oikeutta poistaa määritetyn sisällön"
+      add: Lisätä
+      cancel: Peruuttaa
+      cant_delete_content: "Sinulla ei ole oikeutta poistaa tiettyihin sisältöihin"
       choose_layout: "Valitse malli"
-      choose_layout_help: "Valitse asettelu malli, tekevät Chrome tällä sivulla."
-      confirm_delete_content: "Oletko varma että haluat poistaa tämän sisällön? Tämä ei voi perua!"
-      content_help: "Tämä on sisältöä, joka näkyy sivulla."
-      content_label: Sisällys
-      content_removed: "Sisältö onnistuneesti poistettu"
-      create_error: "Oli ongelma lisäämällä sisällön"
+      choose_layout_help: "Valitse asettelu malli, tekevät kromi tällä sivulla."
+      confirm_delete_content: "Oletko varma että haluat poistaa tämän sisällön? Tätä ei voi perua!"
+      content_help: "Tämä on sitä sisältöä, joka näkyy sivulla."
+      content_label: Pitoisuus
+      content_removed: "Sisältö poistettu onnistuneesti"
+      create_error: "Ongelma lisäämällä sisällön"
       default_404_body: "Emme löytäneet sivun olit etsimässä."
-      default_404_title: "404 Page not found"
+      default_404_title: "404 Sivua ei löydy"
       delete: Poistaa
       delete_title: "Poista tämä sivu."
-      edit: Muokkaus
+      edit: Muokata
       edit_title: "Muokkaa tätä sivua."
       manage_pages_title: "Hallitse sivuston sisältö"
-      no_files: "Tiedostoja ei saatavilla"
+      no_files: "Ei tiedostoja saatavilla"
       no_images: "Ei kuvia saatavilla"
       no_uri_error: "Aseta arvo URI ennen tallentamista malli kun contentable on nolla"
-      page_doesnt_exist_create: "Hakemaasi sivua ei löydy. Antakaa tiedot alla luoda sivun."
+      page_doesnt_exist_create: "Pyytämääsi sivua ei löydy. Antakaa tiedot alla luoda sivua."
       permalink: "Permalink:"
-      preview: Esikatselun
-      problem_adding_content: "Oli ongelma lisäämällä sisältöä"
-      problem_updating_content: "Oli ongelma päivittää sisältöä"
-      save: Tallentaa
-      submit_content_button: Tallentaa
-      tag_information: "Tagit auttavat muita käyttäjiä löytämään sivusi ja käytetään meta avainsanat asiakirjaa."
-      tags: Tunnisteita
-      tags_help: "Lisää tunnisteet, joiden avulla tunnistaa sisältöä. Tunnisteita voidaan myös luoda luettelot linkkejä-valikosta."
-      tags_label: Tunnisteita
-      title_help: "Otsikko valvonta URL-osoite ja sivun otsikon näkyvä URL bar"
-      title_label: Arvonimi
-      update_error: "Oli ongelma päivittää sisältöä"
+      preview: Ennakkoesitys
+      problem_adding_content: "Ongelma lisäämällä sisällön"
+      problem_updating_content: "Ongelma päivittää sisällön"
+      save: Säästää
+      submit_content_button: Säästää
+      tag_information: "Tunnisteet auttaa muita käyttäjiä löytämään sivusi ja niitä käytetään meta avainsanat asiakirja."
+      tags: Tunnisteet
+      tags_help: "Lisää koodit auttaa tunnistamaan sisältöä. Tunnisteet voidaan myös tuottaa luettelot linkkejä valikosta."
+      tags_label: Tunnisteet
+      title_help: "Otsikko valvonta url ja sivun otsikko näkyy url bar"
+      title_label: Otsikko
+      update_error: "Ongelma päivittää sisältöä"

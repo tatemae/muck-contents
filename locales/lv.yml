@@ -4,35 +4,35 @@ lv:
     contents: 
       add: Pievienot
       cancel: Atcelt
-      cant_delete_content: "Jums nav atļauts dzēst noteikts saturs"
+      cant_delete_content: "Jums nav atļaujas, lai dzēstu norādīta saturu"
       choose_layout: "Izvēlēties veidni"
-      choose_layout_help: "Izvēlieties izkārtojumu veidni, kas padara hroms šai lapai."
+      choose_layout_help: "Izvēlēties izkārtojumu veidni, kas padara hromēti uz šo lapu."
       confirm_delete_content: "Vai jūs tiešām vēlaties izdzēst šo saturu? To nevar atsaukt!"
-      content_help: "Tas ir saturs, kas parādīsies lapā."
+      content_help: "Tas ir saturu, kas parādīsies lapā."
       content_label: Saturs
-      content_removed: "Content veiksmīgi noņemt"
-      create_error: "Radās problēma pievienot savu saturu"
-      default_404_body: "Mēs nevarējām atrast lapā tu meklē."
-      default_404_title: "404 Page not found"
-      delete: Dzēst
+      content_removed: "Saturs veiksmīgi izņemta"
+      create_error: "Radās problēma, pievienojot savu saturu"
+      default_404_body: "Mēs nevarējām atrast lapu jūs meklējat."
+      default_404_title: "404 Lapa nav atrasta"
+      delete: Izdzēst
       delete_title: "Dzēst šo lapu."
       edit: Rediģēt
       edit_title: "Rediģēt šo lapu."
       manage_pages_title: "Pārvaldīt vietnes saturu"
-      no_files: "Nav faili"
-      no_images: "Ne attēli pieejami"
-      no_uri_error: "Lūdzu, iestatiet vērtību uri pirms saglabāšanas modeli, contentable ir nulle"
-      page_doesnt_exist_create: "Jūsu pieprasīto lapu neeksistē. Lūdzu, sniedziet informāciju zemāk, lai izveidotu lapu."
+      no_files: "Ne failus pieejams"
+      no_images: "Nē attēli pieejami"
+      no_uri_error: "Lūdzu noteikt vērtību URI pirms saglabāšanas modelis, kad contentable ir nulle"
+      page_doesnt_exist_create: "Lapā jūs pieprasījāt neeksistē. Lūdzu, sniedziet informāciju zemāk, lai izveidotu lapu."
       permalink: "Permalink:"
       preview: Preview
-      problem_adding_content: "Radās problēma pievienojot saturs"
-      problem_updating_content: "Radās problēma atjaunināšana saturs"
-      save: Glābt
-      submit_content_button: Glābt
+      problem_adding_content: "Radās problēma, pievienojot saturu"
+      problem_updating_content: "Radās problēma, atjauninot saturu"
+      save: Izņemot
+      submit_content_button: Izņemot
       tag_information: "Tags palīdzēt citiem lietotājiem atrast jūsu lapā un tiks izmantots kā meta atslēgvārdus dokumentu."
       tags: Tags
-      tags_help: "Pievienot tagus, lai palīdzētu identificēt jūsu saturu. Tagus var izmantot arī, lai radītu sarakstu ar saitēm uz izvēlni."
+      tags_help: "Pievienot tagus, lai palīdzētu noteikt jūsu saturu. Birkas var izmantot arī, lai radītu sarakstus saites izvēlnē."
       tags_label: Tags
-      title_help: "Nosaukums kontroles URL un lapas nosaukums rādīts url bārs"
-      title_label: Nosaukums
-      update_error: "Radās problēma atjaunināt savu saturu"
+      title_help: "Nosaukums kontrolē url un lapas nosaukums rādīts url bar"
+      title_label: Virsraksts
+      update_error: "Radās problēma, atjauninot savu saturu"

@@ -4,35 +4,35 @@ th:
     contents: 
       add: เพิ่ม
       cancel: ยกเลิก
-      cant_delete_content: "คุณ ไม่ ได้ รับ สิทธิ์ ใน การ ลบ เนื้อหา ที่ ระบุ"
-      choose_layout: "แม่ เลือก"
-      choose_layout_help: "เลือก รูป แบบ แม่ แบบ ที่ จะ ทำให้ สี เหลือง หน้า นี้."
-      confirm_delete_content: "คุณ แน่ใจ หรือ ว่า ต้องการ ลบ เนื้อหา นี้ นี้ ไม่ สามารถ ยกเลิก!"
-      content_help: "นี้ มี เนื้อหา ที่ จะ ปรากฏ บน หน้า."
-      content_label: เนื้อหา
-      content_removed: "เนื้อหา สำเร็จ ลบ"
-      create_error: "มี ปัญหา การ เพิ่ม เนื้อหา ของ คุณ ได้"
-      default_404_body: "เรา ไม่ พบ หน้า คุณ ต้องการ."
-      default_404_title: "404 ไม่ พบ หน้า"
+      cant_delete_content: คุณไม่ได้รับสิทธิ์ในการลบเนื้อหาที่ระบุ
+      choose_layout: เลือกแม่แบบ
+      choose_layout_help: เลือกรูปแบบแม่แบบที่จะทำให้โครเมี่ยมสำหรับหน้านี้
+      confirm_delete_content: "คุณแน่ใจหรือว่าต้องการลบเนื้อหานี้ นี้ไม่สามารถยกเลิกได้!"
+      content_help: นี่คือเนื้อหาที่จะปรากฏบนหน้า
+      content_label: Content
+      content_removed: "Content สำเร็จออก"
+      create_error: มีปัญหาการเพิ่มเนื้อหาของคุณได้
+      default_404_body: เราไม่พบหน้าคุณกำลังหา
+      default_404_title: "404 ไม่พบหน้า"
       delete: ลบ
-      delete_title: "ลบ หน้า นี้."
+      delete_title: ลบหน้านี้
       edit: Edit
-      edit_title: "แก้ไข หน้า นี้."
-      manage_pages_title: "เนื้อหา ใน เว็บไซต์ การ จัดการ"
-      no_files: "ไม่มี ไฟล์"
-      no_images: "ภาพ ไม่มี"
-      no_uri_error: "กรุณา ตั้ง ค่า สำหรับ URI ก่อน ประหยัด รุ่น ที่ contentable เป็น ศูนย์"
-      page_doesnt_exist_create: "หน้าที่ คุณ ขอ ไม่ พบ. โปรด ระบุ ข้อมูล ด้าน ล่าง เพื่อ สร้าง หน้า."
-      permalink: "Permalink:"
-      preview: "ดู ตัวอย่าง"
-      problem_adding_content: "มี ปัญหา การ เพิ่ม เนื้อหา ได้"
-      problem_updating_content: "เกิด ปัญหา ใน การ ปรับปรุง เนื้อหา แล้ว"
-      save: บันทึก
-      submit_content_button: บันทึก
-      tag_information: "แท็ ก ช่วย ให้ ผู้ ใช้ อื่น หา หน้า ของ คุณ และ จะ ใช้ เป็น คำ meta สำหรับ เอกสาร."
+      edit_title: แก้ไขหน้านี้
+      manage_pages_title: เนื้อหาในเว็บไซต์การจัดการ
+      no_files: ไฟล์ไม่สามารถใช้ได้
+      no_images: ภาพไม่สามารถใช้ได้
+      no_uri_error: "กรุณาตั้งค่าสำหรับพิมพ์ก่อนบันทึกแบบ contentable เมื่อเป็นศูนย์"
+      page_doesnt_exist_create: "หน้าที่คุณร้องขอไม่พบ โปรดให้ข้อมูลด้านล่างเพื่อสร้างเพจ"
+      permalink: "Permalink :"
+      preview: Preview
+      problem_adding_content: มีปัญหาการเพิ่มเนื้อหาได้
+      problem_updating_content: มีปัญหาในการปรับปรุงเนื้อหาเป็น
+      save: ประหยัด
+      submit_content_button: ประหยัด
+      tag_information: "Tags ช่วยผู้อื่นหาหน้าของคุณและจะใช้เป็นคำหลัก meta สำหรับเอกสาร"
       tags: Tags
-      tags_help: "เพิ่ม แท็ ก เพื่อ ระบุ เนื้อหา ของ คุณ. แท็ ก ยัง สามารถ ใช้ เพื่อ สร้าง ราย ชื่อ ของ ลิงค์ สำหรับ เมนู."
+      tags_help: "แท็ก Add เพื่อระบุเนื้อหาของคุณ Tags สามารถใช้เพื่อสร้างรายชื่อของการเชื่อมโยงสำหรับเมนู"
       tags_label: Tags
-      title_help: "ชื่อ ควบคุม url และ ชื่อ เพจ ที่ ปรากฏ ใน แถบ url"
-      title_label: "ชื่อ เรื่อง"
-      update_error: "เกิด ปัญหา ใน การ ปรับปรุง เนื้อหา ของ คุณ ได้"
+      title_help: "title ควบคุม url และชื่อหน้าแสดงในแถบ url"
+      title_label: ชื่อเรื่อง
+      update_error: มีปัญหาในการปรับปรุงเนื้อหาของคุณได้

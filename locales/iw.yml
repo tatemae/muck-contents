@@ -3,36 +3,36 @@ iw:
   muck: 
     contents: 
       add: להוסיף
-      cancel: ביטול
+      cancel: לבטל
       cant_delete_content: "אין לך הרשאה כדי למחוק את התוכן שצוין"
       choose_layout: "בחר תבנית"
-      choose_layout_help: "בחר תבנית פריסה יעבד הכרום של דף זה."
-      confirm_delete_content: "האם אתה בטוח שאתה מעוניין למחוק את התוכן הזה? זה לא ניתן לבטל!"
-      content_help: "זה התוכן שיופיע בדף."
+      choose_layout_help: "בחר פריסת תבנית יעבד הכרום של דף זה."
+      confirm_delete_content: "האם אתה בטוח שאתה רוצה למחוק את התוכן? זה לא ניתן לבטל!"
+      content_help: "זהו התוכן שיופיע בעמוד."
       content_label: תוכן
-      content_removed: "התוכן הוסר בהצלחה"
-      create_error: "היתה בעיה הוספת תוכן שלך"
-      default_404_body: "לא הצלחנו למצוא את הדף שחיפשת."
+      content_removed: "תוכן הסיר בהצלחה"
+      create_error: "היתה בעיה להוסיף את התוכן שלך"
+      default_404_body: "לא הצלחנו למצוא את הדף שאתה מחפש."
       default_404_title: "404 דף לא נמצא"
       delete: למחוק
-      delete_title: "למחוק דף זה."
-      edit: עריכה
+      delete_title: "מחיקת דף זה."
+      edit: לערוך
       edit_title: "עריכת דף זה."
       manage_pages_title: "ניהול תוכן האתר"
-      no_files: "לא זמין קבצים"
-      no_images: "אין תמונות זמינות"
-      no_uri_error: "נא להגדיר ערך עבור אורי לפני שמירת מודל contentable כאשר הוא אפסי"
-      page_doesnt_exist_create: "הדף שביקשת אינו קיים. נא לציין את הפרטים שלהלן כדי ליצור את הדף."
+      no_files: "אין קבצים זמינים"
+      no_images: "אין תמונות זמין"
+      no_uri_error: "בבקשה להגדיר ערך עבור אורי לפני שמירת המודל contentable כאשר הוא אפסי"
+      page_doesnt_exist_create: "הדף שביקשת אינו קיים. יש לספק את המידע שלהלן כדי ליצור את הדף."
       permalink: "Permalink:"
-      preview: "תצוגה מקדימה"
-      problem_adding_content: "היתה בעיה להוסיף את התוכן"
-      problem_updating_content: "היתה בעיה בעדכון תוכן"
-      save: לשמור
-      submit_content_button: לשמור
-      tag_information: "תגיות לעזור למשתמשים אחרים למצוא את הדף שלך ישמש את מילות המפתח מטא עבור המסמך."
+      preview: תצוגה
+      problem_adding_content: "היתה בעיה הוספת תכנים"
+      problem_updating_content: "יש בעיה לעדכן את התוכן"
+      save: להציל
+      submit_content_button: להציל
+      tag_information: "תגיות לעזור למשתמשים אחרים למצוא את הדף שלך ישמש את מילות המפתח meta עבור המסמך."
       tags: תגיות
-      tags_help: "הוספת תגים כדי לזהות את התוכן שלך. התגים יכולים לשמש גם ליצירת רשימות של קישורים עבור לתפריט."
+      tags_help: "תגיות הוספת לעזור לזהות את התוכן. תגיות יכול גם לשמש ליצירת רשימות של קישורים על תפריט."
       tags_label: תגיות
-      title_help: "הכותרת שולטת כתובת האתר ואת כותרת הדף המוצג בשורת כתובת האתר"
-      title_label: כותר
+      title_help: "התואר פקדי ה-URL ואת כותרת הדף מוצג בשורת כתובת האתר"
+      title_label: כותרת
       update_error: "היתה בעיה לעדכן את התוכן שלך"

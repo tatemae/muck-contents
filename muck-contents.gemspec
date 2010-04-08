@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "0.2.17"
+  s.version = "0.2.18"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-03-23}
+  s.date = %q{2010-04-08}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -33,15 +33,15 @@ Gem::Specification.new do |s|
      "app/views/contents/new.html.erb",
      "app/views/contents/show.html.erb",
      "app/views/layouts/tiny_mce.html.erb",
-     "app/views/tiny_mce/_flickr_photo.html.erb",
-     "app/views/tiny_mce/_init_tiny_mce.html.erb",
-     "app/views/tiny_mce/_tiny_mce_head.html.erb",
-     "app/views/tiny_mce/_tiny_mce_messages_and_scripts_for.html.erb",
-     "app/views/tiny_mce/_tiny_mce_scripts.html.erb",
-     "app/views/tiny_mce/files.html.erb",
-     "app/views/tiny_mce/flickr.html.erb",
-     "app/views/tiny_mce/images.html.erb",
-     "app/views/tiny_mce/links.html.erb",
+     "app/views/tiny_mce/_flickr_photo.erb",
+     "app/views/tiny_mce/_init_tiny_mce.erb",
+     "app/views/tiny_mce/_tiny_mce_head.erb",
+     "app/views/tiny_mce/_tiny_mce_messages_and_scripts_for.erb",
+     "app/views/tiny_mce/_tiny_mce_scripts.erb",
+     "app/views/tiny_mce/files.erb",
+     "app/views/tiny_mce/flickr.erb",
+     "app/views/tiny_mce/images.erb",
+     "app/views/tiny_mce/links.erb",
      "config/initializers/mce_options.rb",
      "config/muck_contents_routes.rb",
      "db/migrate/20090703055724_add_contents.rb",

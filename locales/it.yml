@@ -3,36 +3,36 @@ it:
   muck: 
     contents: 
       add: Aggiungere
-      cancel: Annulla
+      cancel: Annullare
       cant_delete_content: "Non hai il permesso di cancellare il contenuto specificato"
       choose_layout: "Seleziona modello"
-      choose_layout_help: "Selezionare un modello di layout che renderanno il cromo per questa pagina."
+      choose_layout_help: "Selezionare un modello di layout che renderà il cromo per questa pagina."
       confirm_delete_content: "Sei sicuro di voler cancellare questo contenuto? Questo non può essere annullata!"
-      content_help: "Questo è il contenuto che verrà visualizzato sulla pagina."
+      content_help: "Questo è il contenuto che apparirà sulla pagina."
       content_label: Contenuto
       content_removed: "Contenuto rimosso con successo"
       create_error: "C&#39;è stato un problema di aggiungere i tuoi contenuti"
       default_404_body: "Non siamo riusciti a trovare la pagina che stavi cercando."
-      default_404_title: "404 Page not found"
-      delete: Eliminare
-      delete_title: "Elimina questa pagina."
+      default_404_title: "404 Pagina non trovata"
+      delete: Cancellare
+      delete_title: "Eliminare questa pagina."
       edit: Modifica
       edit_title: "Modifica questa pagina."
-      manage_pages_title: "Gestione dei contenuti del sito"
+      manage_pages_title: "Gestione contenuti del sito"
       no_files: "Nessun file disponibile"
       no_images: "Non ci sono immagini disponibili"
-      no_uri_error: "Si prega di impostare un valore per URI prima di salvare il modello, quando contentable è pari a zero"
-      page_doesnt_exist_create: "La pagina che hai richiesto non esiste. Si prega di fornire le seguenti informazioni per creare la pagina."
+      no_uri_error: "Si prega di impostare un valore per uri prima di salvare il modello è pari a zero quando contentable"
+      page_doesnt_exist_create: "La pagina richiesta non esiste. Si prega di fornire le informazioni qui di seguito per creare la pagina."
       permalink: "Permalink:"
       preview: Anteprima
-      problem_adding_content: "C&#39;è stato un problema aggiungendo il contenuto"
+      problem_adding_content: "C&#39;è stato un problema aggiungendo il contenuto di"
       problem_updating_content: "C&#39;è stato un problema di aggiornamento dei contenuti"
       save: Salvare
       submit_content_button: Salvare
       tag_information: "Tags aiutare gli altri utenti a trovare la pagina e verrà utilizzato come meta per le parole chiave del documento."
-      tags: Tags
-      tags_help: "Aggiungere tag per identificare il contenuto. I tag possono essere utilizzati anche per generare elenchi di link per un menu."
-      tags_label: Tags
-      title_help: "Il titolo controlla l&#39;url e il titolo della pagina visualizzata nella barra degli URL"
+      tags: Tag
+      tags_help: "Aggiungi tag per identificare il contenuto. I tag possono anche essere utilizzato per generare elenchi di link per un menu."
+      tags_label: Tag
+      title_help: "Il titolo controlla l&#39;URL e il titolo della pagina visualizzata nella barra degli indirizzi"
       title_label: Titolo
-      update_error: "C&#39;è stato un problema di aggiornare i contenuti"
+      update_error: "C&#39;è stato un problema di aggiornamento dei contenuti"

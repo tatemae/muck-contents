@@ -2,37 +2,37 @@
 sl: 
   muck: 
     contents: 
-      add: Dodati
+      add: Dodaj
       cancel: Prekliči
       cant_delete_content: "Nimate dovoljenja za brisanje določene vsebine"
       choose_layout: "Izberite predlogo"
-      choose_layout_help: "Izberite postavitev predlogo, ki bo postala kromirane za to stran."
-      confirm_delete_content: "Ali ste prepričani, da želite izbrisati to vsebino? Tega ni mogoče razveljaviti!"
-      content_help: "To je vsebina, ki se bo pojavilo na strani."
-      content_label: Vsebina
-      content_removed: "Vsebina uspešno odstranjen"
+      choose_layout_help: "Izberite postavitev predlogo, ki bo postala krom za to stran."
+      confirm_delete_content: "Ali ste prepričani, da želite izbrisati to vsebino? To ni mogoče razveljaviti!"
+      content_help: "To je vsebina, ki bo prikazan na strani."
+      content_label: Content
+      content_removed: "Content uspešno odstranjen"
       create_error: "Prišlo je do težave dodajanje vsebine"
       default_404_body: "Nismo mogli najti strani, ki ste jo iskali."
       default_404_title: "404 Page not found"
-      delete: Izbrisati
+      delete: Izbriši
       delete_title: "Izbriši to stran."
-      edit: Edit
+      edit: Uredi
       edit_title: "Uredi to stran."
-      manage_pages_title: "Upravljanje vsebine mesta"
-      no_files: "No files voljo"
-      no_images: "No slik na voljo"
-      no_uri_error: "Prosimo, določite vrednost uri pred shranjevanjem model, ko je nič contentable"
+      manage_pages_title: "Uredi vsebine mesta"
+      no_files: "Ne datoteke na voljo"
+      no_images: "Ni slik na voljo"
+      no_uri_error: "Prosim, nastavite vrednost uri pred shranjevanjem model, ko contentable je nič"
       page_doesnt_exist_create: "Zahtevana stran ne obstaja. Prosimo, navedite podatke spodaj, da ustvarite stran."
       permalink: "Permalink:"
       preview: Predogled
-      problem_adding_content: "Prišlo je do težave dodajanjem vsebine"
+      problem_adding_content: "Prišlo je do težave dodajanje vsebine"
       problem_updating_content: "Prišlo je do težave posodabljanje vsebine"
-      save: Shraniti
-      submit_content_button: Shraniti
-      tag_information: "Tags pomagajo drugi uporabniki najdejo vaše strani, in bodo uporabljeni kot meta ključnih besed za dokument."
+      save: Shrani
+      submit_content_button: Shrani
+      tag_information: "Tags pomagali drugim uporabnikom najti vaše strani in se bodo uporabljali kot meta ključne besede za dokument."
       tags: Tags
-      tags_help: "Dodaj oznako za pomoč pri identifikaciji vsebine. Tags se lahko uporabljajo tudi za pridobivanje seznamov povezav v meniju."
+      tags_help: "Dodaj oznako za pomoč pri prepoznavanju vsebine. Tags se lahko uporablja tudi za ustvarjanje seznamov povezav za jedilnik."
       tags_label: Tags
-      title_help: "Naslov nadzor url in naslov strani prikaže v url vrstici"
+      title_help: "Naslov kontrole url in naslov strani prikazan v url bar"
       title_label: Naslov
-      update_error: "Prišlo je do težave posodabljanje vsebine"
+      update_error: "Prišlo je do težave posodobitev vašo vsebino"

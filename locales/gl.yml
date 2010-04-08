@@ -6,33 +6,33 @@ gl:
       cancel: Cancelar
       cant_delete_content: "Non ten permiso para borrar o contido indicado"
       choose_layout: "Seleccionar modelo"
-      choose_layout_help: "Seleccione un modelo de deseño que vai procesar o cromo para esta páxina."
-      confirm_delete_content: "¿Está seguro de que desexa eliminar este contido? Isto non pode ser desfeita!"
+      choose_layout_help: "Seleccione un esquema modelo que ha facer o Chrome para esta páxina."
+      confirm_delete_content: "¿Está seguro de querer eliminar este contido? Isto non pode ser desfeito!"
       content_help: "Este é o contido que aparecerá na páxina."
       content_label: Advertencias
-      content_removed: "O contido foi eliminado correctamente"
-      create_error: "Houbo un problema ao engadir o seu contido"
+      content_removed: "Contido eliminado correctamente"
+      create_error: "Houbo un problema engadindo o seu contido"
       default_404_body: "Non atopamos a páxina que busca."
       default_404_title: "404 Páxina non atopada"
       delete: Borrar
-      delete_title: "Borrar esta páxina."
+      delete_title: "Eliminar esta páxina."
       edit: Editar
       edit_title: "Edita esta páxina."
-      manage_pages_title: "Xestionar o contido do sitio web"
-      no_files: "Non hai ficheiros dispoñibles"
+      manage_pages_title: "Administrar o contido do sitio"
+      no_files: "Non hai arquivos dispoñibles"
       no_images: "Ningunha imaxe dispoñible"
-      no_uri_error: "Por favor, estableza un valor para uri antes de gardar o modelo cando contentable é nula"
+      no_uri_error: "Por favor, estableza un valor para uri antes de gardar o modelo cando contentable é nulo"
       page_doesnt_exist_create: "A páxina solicitada non existe. Por favor, forneza a información seguinte para crear a páxina."
-      permalink: "Permalink:"
-      preview: Preview
-      problem_adding_content: "Houbo un erro engadindo o contido"
-      problem_updating_content: "Houbo un problema ao actualizar o contido"
+      permalink: "Link:"
+      preview: Visualización
+      problem_adding_content: "Houbo un problema engadindo o contido"
+      problem_updating_content: "Houbo un problema de actualización do contido"
       save: Gardar
       submit_content_button: Gardar
-      tag_information: "Tags axudar a outros usuarios a atopar a súa páxina e será usado como meta verbas-chave para o papel."
+      tag_information: "Tags axudar a outros usuarios atopar a súa páxina e será usado como meta palabras clave para o documento."
       tags: Tags
-      tags_help: "Engadir etiquetas para axudar a identificar o seu contido. Palabras clave tamén pode ser usado para xerar listas de enlaces a un menú."
+      tags_help: "Engadir etiquetas para axudar a identificar o seu contido. Tags tamén pode ser usado para xerar listas de enlaces a un menú."
       tags_label: Tags
-      title_help: "O título controla o URL eo título da páxina amosada na barra do URL"
+      title_help: "O título controla a url eo título da páxina exhibida na barra de url"
       title_label: Título
       update_error: "Houbo un problema ao actualizar o seu contido"

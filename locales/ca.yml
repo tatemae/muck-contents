@@ -4,35 +4,35 @@ ca:
     contents: 
       add: Afegir
       cancel: Cancel
-      cant_delete_content: "Vostè no té permís per eliminar el contingut especificat"
+      cant_delete_content: "No té permís per eliminar el contingut especificat"
       choose_layout: "Selecciona plantilla"
-      choose_layout_help: "Seleccioneu una plantilla de disseny que farà que el crom d&#39;aquesta pàgina."
-      confirm_delete_content: "Estàs segur que vols eliminar aquest contingut? Això no es pot desfer!"
+      choose_layout_help: "Seleccioneu una plantilla de disseny que farà que el crom per a aquesta pàgina."
+      confirm_delete_content: "Esteu segur que voleu eliminar aquest contingut? Això no es pot desfer!"
       content_help: "Aquest és el contingut que apareixerà a la pàgina."
       content_label: Contingut
-      content_removed: "Contingut eliminat amb èxit"
-      create_error: "Hi va haver un problema en afegir el contingut de la seva"
-      default_404_body: "No hem pogut trobar la pàgina que estàs buscant."
+      content_removed: "Contingut eliminat satisfactòriament"
+      create_error: "Hi ha hagut un problema afegint el contingut"
+      default_404_body: "No hem pogut trobar la pàgina que estaves buscant."
       default_404_title: "404 Pàgina no trobada"
       delete: Esborrar
-      delete_title: "Esborra aquesta pàgina."
+      delete_title: "Esborrar aquesta pàgina."
       edit: Edita
       edit_title: "Edita aquesta pàgina."
       manage_pages_title: "Administrar el contingut del lloc"
       no_files: "No hi ha arxius disponibles"
       no_images: "No hi ha imatges disponibles"
       no_uri_error: "Si us plau, estableix un valor per uri abans de desar el model quan acontentar és nul"
-      page_doesnt_exist_create: "La pàgina demanada no existeix. Sírvase proporcionar la següent informació per a crear la pàgina."
+      page_doesnt_exist_create: "La pàgina demanada no existeix. Sírvase proporcionar la següent informació per crear la pàgina."
       permalink: "Permalink:"
       preview: Prevista
-      problem_adding_content: "Hi va haver un problema en afegir el contingut"
+      problem_adding_content: "Hi ha hagut un problema en afegir el contingut"
       problem_updating_content: "Hi va haver un problema en actualitzar el contingut"
-      save: Salvar
-      submit_content_button: Salvar
-      tag_information: "Etiquetes ajudar a altres usuaris trobar la seva pàgina i s&#39;utilitzarà com les paraules clau de metadades per al document."
+      save: Desa
+      submit_content_button: Desa
+      tag_information: "Etiquetes ajudar a altres usuaris trobar la seva pàgina i serà utilitzat com a meta de les paraules clau del document."
       tags: Etiquetes
-      tags_help: "Afegir etiquetes per ajudar a identificar el seu contingut. Les etiquetes també poden utilitzar per generar llistats d&#39;enllaços per a un menú."
+      tags_help: "Afegeix etiquetes per ajudar a identificar el seu contingut. Les etiquetes també es poden utilitzar per generar llistats d&#39;enllaços per a un menú."
       tags_label: Etiquetes
-      title_help: "El títol dels controls de l&#39;adreça URL i el títol de la pàgina apareix a la barra d&#39;URL"
+      title_help: "El títol dels controls de la URL i el títol de la pàgina apareix a la barra d&#39;adreces"
       title_label: Títol
       update_error: "Hi va haver un problema en actualitzar el contingut"

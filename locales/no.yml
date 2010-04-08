@@ -3,37 +3,37 @@
 : 
   muck: 
     contents: 
-      add: "Legge til"
+      add: "Legg til"
       cancel: Avbryt
       cant_delete_content: "Du har ikke tillatelse til å slette den angitte innholdet"
       choose_layout: "Velg mal"
-      choose_layout_help: "Velg et oppsett mal som skal gjengi chrome på denne siden."
-      confirm_delete_content: "Er du sikker på at du vil slette dette innholdet? Dette kan ikke gjøres om!"
-      content_help: "Dette er innhold som vises på siden."
+      choose_layout_help: "Velg en layout mal som vil gjøre krom for denne siden."
+      confirm_delete_content: "Er du sikker på at du vil slette dette innholdet? Dette kan ikke angres!"
+      content_help: "Dette er innholdet som skal vises på siden."
       content_label: Innhold
       content_removed: "Innhold fjernet"
-      create_error: "Det var et problem å legge innholdet"
+      create_error: "Det oppstod et problem å legge innholdet ditt"
       default_404_body: "Vi kunne ikke finne siden du leter etter."
-      default_404_title: "404 Finner ikke siden"
-      delete: Slette
+      default_404_title: "404 Side ikke funnet"
+      delete: Slett
       delete_title: "Slett denne siden."
       edit: Rediger
       edit_title: "Rediger denne siden."
-      manage_pages_title: "Behandle innhold"
+      manage_pages_title: "Administrere innhold"
       no_files: "Ingen filer"
       no_images: "Ingen bilder tilgjengelig"
       no_uri_error: "Vennligst angi en verdi for URI før du lagrer modellen når contentable er null"
-      page_doesnt_exist_create: "Siden du forespurte finnes ikke. Angi opplysningene nedenfor for å lage siden."
+      page_doesnt_exist_create: "Siden du forespurte finnes ikke. Vennligst oppgi informasjonen nedenfor for å opprette siden."
       permalink: "Permalink:"
       preview: Forhåndsvisning
-      problem_adding_content: "Det var et problem å legge innholdet"
-      problem_updating_content: "Det var et problem oppdaterer innholdet"
+      problem_adding_content: "Det oppstod et problem å legge innholdet"
+      problem_updating_content: "Det oppstod et problem å oppdatere innholdet"
       save: Lagre
       submit_content_button: Lagre
-      tag_information: "Tags å finne andre brukere til siden, og vil bli brukt som meta nøkkelord for dokumentet."
+      tag_information: "Tags å finne andre brukere på siden og brukes som meta søkeord for dokumentet."
       tags: Tags
-      tags_help: "Legg til koder til å identifisere innholdet. Tags kan også brukes til å generere lister med linker for en meny."
+      tags_help: "Legg til koder for å identifisere innholdet. Tags kan også brukes til å generere lister med linker for en meny."
       tags_label: Tags
-      title_help: "Tittelen styrer url og siden tittelen vises i URL-bar"
+      title_help: "Tittelen styrer url og siden tittelen vises i url baren"
       title_label: Tittel
-      update_error: "Det var et problem å oppdatere innholdet"
+      update_error: "Det oppstod et problem å oppdatere innholdet"

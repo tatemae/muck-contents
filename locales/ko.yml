@@ -2,37 +2,37 @@
 ko: 
   muck: 
     contents: 
-      add: 추가
+      add: 추가하기
       cancel: 취소
-      cant_delete_content: "권한이 지정된 콘텐츠를 삭제하지 않아도"
-      choose_layout: "템플릿 선택"
-      choose_layout_help: "레이아웃을 선택 크롬이 페이지에 대한 템플릿으로 렌더링됩니다."
-      confirm_delete_content: "당신이이 내용을 삭제하시겠습니까? 이것은 취소할 수없습니다!"
-      content_help: "이 페이지에 나타납니다 콘텐츠입니다."
-      content_label: 내용
-      content_removed: "콘텐츠를 성공적으로 제거"
-      create_error: "거기에 문제가 귀하의 콘텐츠를 추가했다"
-      default_404_body: "우리는 당신이 찾고 있던 페이지를 찾을 수없습니다."
-      default_404_title: "404 페이지를 찾을 수없습니다"
+      cant_delete_content: "권한이 지정된 콘텐츠를 삭제할 필요가 없습니다"
+      choose_layout: "선택 서식 파일"
+      choose_layout_help: "선택 레이아웃은이 페이지의 크롬을 렌더링합니다 템플릿."
+      confirm_delete_content: "당신은 해당 콘텐츠를 삭제하시겠습니까? 이것은 취소할 수 없습니다!"
+      content_help: "이 페이지에 나타납니다의 내용입니다."
+      content_label: 콘텐츠
+      content_removed: "컨텐츠가 성공적으로 제거"
+      create_error: "문제가 귀하의 콘텐츠를 추가했다"
+      default_404_body: "우리는 당신이 찾고 있던 페이지를 찾을 수 없습니다."
+      default_404_title: "404 페이지를 찾을 수 없습니다"
       delete: 삭제
-      delete_title: "이 페이지를 삭제합니다."
+      delete_title: "이 문서 삭제하기."
       edit: 편집
-      edit_title: "이 페이지를 편집합니다."
-      manage_pages_title: "사이트의 콘텐츠 관리"
-      no_files: "파일을 사용할 수 없음"
-      no_images: 이미지가없습니다
-      no_uri_error: "제발 모델을 저장하기 전에 URI에 대한 값을 설정할 때 무 contentable입니다"
-      page_doesnt_exist_create: "당신이 존재하지 않습니다 요청한 페이지를 엽니다. 제발 페이지를 작성하려면 아래의 정보를 제공합니다."
-      permalink: "바로가기 :"
+      edit_title: "해당 페이지 편집."
+      manage_pages_title: "관리 사이트 콘텐츠"
+      no_files: "아니 파일이 없습니다"
+      no_images: "상세 이미지가 없습니다"
+      no_uri_error: "제발 URI에 대한 모델을 contentable 저장하기 전에 값을 설정은 전무합니다"
+      page_doesnt_exist_create: "페이지가 존재하지 않습니다 요청했습니다. 제발 페이지를 작성하려면 아래의 정보를 제공합니다."
+      permalink: "블로그 바로가기 :"
       preview: 미리보기
-      problem_adding_content: "거기에 문제가 콘텐츠를 추가했다"
-      problem_updating_content: "거기에 문제가 콘텐츠를 업데이 트했습니다"
+      problem_adding_content: "문제가 콘텐츠를 추가했다"
+      problem_updating_content: "문제가있는 콘텐츠를 업데이 트했습니다"
       save: 저장
       submit_content_button: 저장
-      tag_information: "태그 다른 사용자가 페이지를 찾는 데 도움이 문서에 대한 메타 키워드로 사용됩니다."
+      tag_information: "태그 다른 사용자가 귀하의 페이지를 찾는 데 도움이 문서에 대한 메타 키워드로 사용됩니다."
       tags: 태그
-      tags_help: "태그 추가 귀하의 콘텐츠를 식별하는 데 도움합니다. 태그 또한, 메뉴에 대한 링크의 목록을 생성하는 데 사용하실 수있습니다."
+      tags_help: "추가 태그가 귀하의 콘텐츠를 식별할 수 있도록 도와줍니다. 태그도 메뉴에 대한 링크의 목록을 생성하는 데 사용할 수 있습니다."
       tags_label: 태그
-      title_help: "제목과 URL에 페이지 제목 표시줄에 표시되는 URL을 컨트롤"
+      title_help: "제목과 URL을 페이지 제목 표시줄에 표시되는 URL을 조작해서"
       title_label: 제목
-      update_error: "거기에 문제가 귀하의 콘텐츠를 업데이 트했습니다"
+      update_error: "문제가 귀하의 콘텐츠를 업데이 트했습니다"

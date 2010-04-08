@@ -6,33 +6,33 @@ tr:
       cancel: Iptal
       cant_delete_content: "Izniniz belirtilen içeriği silmek zorunda değilsiniz"
       choose_layout: "Şablon Seçin"
-      choose_layout_help: "Bir düzen seçin ki bu sayfa için krom kılacağını şablonu."
-      confirm_delete_content: "Size bu içeriği silmek istediğinizden emin misiniz? Bu geri alınamaz!"
+      choose_layout_help: "Seçin düzeni bu sayfa için krom hale getirecek şablon."
+      confirm_delete_content: "Are sen bu içeriği silmek istediğinizden emin misiniz? Bu geri alınamaz!"
       content_help: "Bu sayfada görünecektir içeriğidir."
       content_label: Içerik
       content_removed: "İçerik başarıyla kaldırıldı"
-      create_error: "Bir sorun içerik ekleyerek edildi"
-      default_404_body: "Biz Aradığınız sayfa bulunamadı."
+      create_error: "Bir sorun içerik ekleyerek oldu"
+      default_404_body: "Biz Aradığınız sayfa bulamadı."
       default_404_title: "404 Sayfa bulunamadı"
       delete: Silmek
-      delete_title: "Bu sayfayı silin."
-      edit: Değiştir
-      edit_title: "Bu sayfayı düzenleyin."
-      manage_pages_title: "Yönetmek site içeriği"
+      delete_title: "Sil Bu sayfa."
+      edit: Düzenle
+      edit_title: "Bu sayfayı düzenle."
+      manage_pages_title: "Yönet site içeriği"
       no_files: "No dosyaları mevcuttur"
       no_images: "Görüntü yok mevcut"
-      no_uri_error: "Lütfen modeli kaydetmeden önce uri için bir değeri sıfır olduğu zaman contentable"
-      page_doesnt_exist_create: "Mevcut değil istenen sayfası. Lütfen sayfa oluşturmak için aşağıdaki bilgileri."
+      no_uri_error: "Lütfen uri için model contentable kaydetmeden önce bir değeri sıfır olan"
+      page_doesnt_exist_create: "Sayfa mevcut değil. Lütfen sayfa oluşturmak için aşağıdaki bilgileri."
       permalink: "Permalink:"
       preview: Önizleme
       problem_adding_content: "Bir sorun içerik ekleyerek oldu"
       problem_updating_content: "Bir sorun içerik güncellenirken"
-      save: Kaydetmek
-      submit_content_button: Kaydetmek
-      tag_information: "Etiketler diğer kullanıcıların sayfası bulmak ve yardım belgenin meta anahtar kelimeler olarak kullanılacaktır."
+      save: Kurtarmak
+      submit_content_button: Kurtarmak
+      tag_information: "Etiketler diğer kullanıcıların sayfanızı bulmasına yardımcı belgenin meta anahtar kelimeler olarak kullanılacaktır."
       tags: Etiketler
-      tags_help: "Etiketler ekleyin içerik tanımlamak için. Tags ayrıca menü için bağlantıların listelerini oluşturmak için kullanılabilir."
+      tags_help: "Eklemek etiketleri içerik tanımlamanıza yardımcı olması için. Etiketler ayrıca bir menü için bağlantılar listesi oluşturmak için kullanılabilir."
       tags_label: Etiketler
-      title_help: "Başlık ve sayfa başlığını url çubuğunda görüntülenen URL&#39;yi kontrol"
-      title_label: Title
+      title_help: "Başlık ve sayfa başlık url çubuğunda görüntülenen url kontrol"
+      title_label: Başlık
       update_error: "Bir sorun içerik güncellenirken"

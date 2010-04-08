@@ -3,36 +3,36 @@ de:
   muck: 
     contents: 
       add: Hinzufügen
-      cancel: Abbrechen
-      cant_delete_content: "Sie haben keine Berechtigung, den angegebenen Inhalt zu löschen"
+      cancel: Stornieren
+      cant_delete_content: "Sie haben keine Berechtigung auf den angegebenen Inhalt zu löschen"
       choose_layout: "Vorlage auswählen"
-      choose_layout_help: "Wählen Sie ein Layout-Vorlage, die Chrom für diese Seite machen wird."
-      confirm_delete_content: "Sind Sie sicher, dass du diese Inhalte zu löschen? Dies kann nicht rückgängig gemacht werden!"
-      content_help: "Dies ist der Inhalt, der auf der Seite erscheinen wird."
+      choose_layout_help: "Wählen Sie ein Layout-Vorlage, die Chrom für diese Seite machen."
+      confirm_delete_content: "Sind Sie sicher, Sie möchten diese Inhalte zu löschen? Dies kann nicht rückgängig gemacht werden!"
+      content_help: "Dies ist der Inhalt, dass auf der Seite angezeigt wird."
       content_label: Inhalt
       content_removed: "Content erfolgreich entfernt"
       create_error: "Es gab ein Problem du deine Inhalte"
-      default_404_body: "Wir konnten nicht gefunden Seite, die Sie suchen."
+      default_404_body: "Wir konnten nicht finden, die von Ihnen gesuchte Seite waren."
       default_404_title: "404 Seite nicht gefunden"
       delete: Löschen
       delete_title: "Diese Seite löschen."
-      edit: Edit
-      edit_title: "Bearbeite diese Seite."
+      edit: Bearbeiten
+      edit_title: "Diese Seite bearbeiten."
       manage_pages_title: "Verwalten von Website-Content"
-      no_files: "Keine Dateien zur Verfügung"
-      no_images: "Keine Bilder verfügbar"
-      no_uri_error: "Bitte setzen Sie einen Wert für uri vor dem Speichern des Modells ist gleich Null, wenn contentable"
-      page_doesnt_exist_create: "Der von Ihnen angeforderte Seite ist nicht vorhanden. Bitte geben Sie die folgenden Informationen, um die Seite zu erstellen."
+      no_files: "Keine Daten verfügbar"
+      no_images: "Keine Bilder vorhanden"
+      no_uri_error: "Bitte setzen Sie einen Wert für uri vor dem Speichern des Modells ist, wenn contentable nil"
+      page_doesnt_exist_create: "Der von Ihnen angeforderte Seite existiert leider nicht. Bitte geben Sie die folgenden Informationen, um die Seite zu erstellen."
       permalink: "Permalink:"
       preview: Vorschau
-      problem_adding_content: "Es gab ein Problem Sie den Inhalt"
+      problem_adding_content: "Es gab ein Problem indem der Inhalt"
       problem_updating_content: "Es gab ein Problem beim Aktualisieren der Inhalte"
-      save: Sichern
-      submit_content_button: Sichern
-      tag_information: "Tags helfen Sie anderen Anwendern finden Sie Ihre Seite und wird als die Meta-Keywords für das Dokument verwendet werden."
+      save: Sparen
+      submit_content_button: Sparen
+      tag_information: "Tags helfen Sie anderen Anwendern zu finden und Ihre Seite wird als Meta-Keywords für das Dokument verwendet werden."
       tags: Tags
-      tags_help: "Tags hinzufügen, um Ihre Inhalte zu identifizieren. Tags können auch verwendet werden, um eine Liste von Links für ein Menü zu erzeugen."
+      tags_help: "Tags hinzufügen, um Ihre Inhalte zu identifizieren. Tags können auch verwendet werden, um Listen von Links für ein Menü zu erzeugen."
       tags_label: Tags
-      title_help: "Der Titel steuert die URL und der Titel der Seite in der Adressleiste angezeigt"
+      title_help: "Der Titel steuert die URL und den Titel der Seite in der Adressleiste angezeigt"
       title_label: Titel
       update_error: "Es gab ein Problem beim Aktualisieren der Inhalte"
