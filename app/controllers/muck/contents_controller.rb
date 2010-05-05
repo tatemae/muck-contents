@@ -79,9 +79,9 @@ class Muck::ContentsController < ApplicationController
       format.html do
         after_create_redirect
       end
-      # HACK there should be a way to force polymorphic_url to use an id instead of to_param
-      update_path = polymorphic_url([@parent, @content]).gsub(@content.to_param, "#{@content.id}") # force the id.  The slugs can cause problems during edit
-      format.json { render :json => { :success => true, :content => @content, :parent_id => @parent ? @parent.id : nil, :update_path => update_path, :preview_path => @content.uri, :type => 'create' } } 
+      format.json do
+        after_create_json
+      end
     end
   rescue ActiveRecord::RecordInvalid => ex
     if @content
@@ -153,6 +153,12 @@ class Muck::ContentsController < ApplicationController
     
     def after_create_redirect
       redirect_to @content.uri
+    end
+    
+    def after_create_json
+      # HACK there should be a way to force polymorphic_url to use an id instead of to_param
+      update_path = polymorphic_url([@parent, @content]).gsub(@content.to_param, "#{@content.id}") # force the id.  The slugs can cause problems during edit
+      render :json => { :success => true, :content => @content, :parent_id => @parent ? @parent.id : nil, :update_path => update_path, :preview_path => @content.uri, :type => 'create' }
     end
     
     def after_update_redirect

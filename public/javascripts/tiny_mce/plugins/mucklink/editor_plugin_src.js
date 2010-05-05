@@ -23,11 +23,12 @@
 				});
 			});
 			// Register buttons
-			ed.addButton('link', {
-				title : 'mucklink.link_desc',
-				cmd : 'mceAdvLinkToo'
+			ed.addButton('mucklink', {
+				title : 'Create Link',
+				cmd : 'mceAdvLinkToo',
+				image : '/images/tinymce/link.jpg'
 			});
-			ed.addShortcut('ctrl+k', 'mucklink.advlink_desc', 'mceAdvLinkToo');
+			ed.addShortcut('ctrl+k', 'Create Link', 'mceAdvLinkToo');
 			ed.onNodeChange.add(function(ed, cm, n, co) {
 				cm.setDisabled('link', co && n.nodeName != 'A');
 				cm.setActive('link', n.nodeName == 'A' && !n.name);

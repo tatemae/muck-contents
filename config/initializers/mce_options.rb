@@ -23,7 +23,7 @@ GlobalConfig.advanced_mce_options = {
                                 bold italic underline strikethrough separator 
                                 justifyleft justifycenter justifyright indent outdent separator 
                                 bullist numlist separator 
-                                link unlink image file media anchor separator  
+                                mucklink muckimage muckfile media anchor separator  
                                 template visualaid separator
                                 fullscreen code},
   :theme_advanced_buttons2 => %w{styleprops styleselect separator

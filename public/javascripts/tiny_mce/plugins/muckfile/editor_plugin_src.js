@@ -22,10 +22,10 @@
 				});
 			});
 			// Register button
-			ed.addButton('file', {
+			ed.addButton('muckfile', {
 				title : 'Upload Files',
 				cmd : 'mceAdvFileToo',
-				image : '/images/tinymce/upload.gif'
+				image : '/images/tinymce/doc.jpg'
 			});
 		},
 		getInfo : function() {
