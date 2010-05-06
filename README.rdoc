@@ -28,6 +28,10 @@ Paste in the following:
   config.gem 'muck-solr', :lib => 'acts_as_solr'
   config.gem 'muck-comments', :lib => 'muck_comments'
 
+==== Note about TinyMCE
+Watch out for updates to the TinyMCE gem. The author has chosen to overwrite all files in the tiny mce asset directories when the server
+starts up. This will delete the muck related plugins in the tiny_mce/plugins directory.
+
 === Gem configuration and setup
 In your app do
   script/generate friendly_id
