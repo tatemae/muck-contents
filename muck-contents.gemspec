@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-04-13}
+  s.date = %q{2010-05-05}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -99,6 +99,9 @@ Gem::Specification.new do |s|
      "locales/zh-TW.yml",
      "locales/zh.yml",
      "muck-contents.gemspec",
+     "public/images/tinymce/doc.jpg",
+     "public/images/tinymce/image.jpg",
+     "public/images/tinymce/link.jpg",
      "public/images/tinymce/sample.gif",
      "public/images/tinymce/upload.gif",
      "public/javascripts/tiny_mce/langs/ar.js",
