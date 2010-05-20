@@ -60,7 +60,7 @@ module ActionController
             # might be time to add to the docs to setup a default route in routes.rb which maps everything that's not 
             # found to the contents controller. - map.connect '*url', :controller => 'pages', :action => 'show'
             # this could replace acts_as_muck_content_handler or we could just handle everything via acts_as_muck_content_handler 
-            if @content.has_better_id?
+            if !@content.friendly_id_status.best?
               redirect_to @content, :status => :moved_permanently
               true
             else

@@ -98,7 +98,7 @@ class ContentTest < ActiveSupport::TestCase
 
     context "translations" do
       should "have localized title" do
-        assert_equal 'hola', @content.locale_title('es')
+        assert_equal '¡Hola', @content.locale_title('es')
       end
       should "have localized body" do
         assert_equal 'hola mundo', @content.locale_body('es')
@@ -112,7 +112,7 @@ class ContentTest < ActiveSupport::TestCase
       end
       should "get a specific translation" do
         translation = @content.translation_for('es')
-        assert_equal 'hola', translation.title
+        assert_equal '¡Hola', translation.title
       end
       context "edited" do
         setup do
