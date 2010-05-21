@@ -19,11 +19,16 @@ module ActionController
 
           # Renders content, shows 404 or redirects to new content as appropriate
           def handle_content_request
-            if !request.format.html?
-              # If the the request is html we can bail.
+            
+            request_type = File.extname(request.url).gsub('.','').downcase
+            # request.format.html? can actually give a false result on ie so try the file extension
+            # Rails html requests won't have  a file extension so request_type should be empty
+            if !request.format.html? || !request_type.empty?
+              # If the the request is not html we can bail.
               render :nothing => true, :status => 404
               return
             end
+            
             get_content
             if @content.blank?
               redirect_to new_content_path(:path => request.path)
