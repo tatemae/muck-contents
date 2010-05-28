@@ -21,9 +21,11 @@ module ActionController
           def handle_content_request
             
             request_type = File.extname(request.url).gsub('.','').downcase
+            # HACK. We can't rely on request.format when the request comes from ie.
             # request.format.html? can actually give a false result on ie so try the file extension
-            # Rails html requests won't have  a file extension so request_type should be empty
-            if !request.format.html? || !request_type.empty?
+            # Requests to the content system won't have a file extension so request_type should be empty
+            
+            if !request_type.empty?
               # If the the request is not html we can bail.
               render :nothing => true, :status => 404
               return
