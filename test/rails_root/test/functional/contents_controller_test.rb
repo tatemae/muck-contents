@@ -37,5 +37,64 @@ class Muck::ContentsControllerTest < ActionController::TestCase
       should_render_template :show
     end
     
+    context "logged in" do
+      
+      setup do
+        @admin = Factory(:user)
+        @admin_role = Factory(:role, :rolename => 'administrator')
+        @admin.roles << @admin_role
+        activate_authlogic
+        login_as @admin
+      end
+      
+      context "GET new" do
+        setup do
+          @path = '/a/test/path'
+          @file = 'file'
+          get :new, :path => File.join(@path, @file)
+        end
+        should_respond_with :success
+        should_render_template :new
+        should "setup content object uri_path" do
+          assert_equal @path, assigns(:content).uri_path
+        end
+      end
+    
+      context "POST create" do
+        setup do
+        end
+      end
+    
+      context "PUT update" do
+        setup do
+        end
+      end
+    
+      context "DELETE destroy" do
+        context "html" do
+          setup do
+            delete :destroy, :id => @content.id
+          end
+          should_respond_with :redirect
+          should_set_the_flash_to I18n.t('muck.contents.content_removed') 
+        end
+        context "js" do
+          setup do
+            delete :destroy, :id => @content.id, :format => 'js'
+          end
+          should_respond_with :success
+        end
+        context "json" do
+          setup do
+            delete :destroy, :id => @content.id, :format => 'json'
+          end
+          should_respond_with :success
+          should "indicate success in the json" do
+            assert @response.body.include?(I18n.t("muck.contents.content_removed"))
+          end
+        end
+      end
+      
+    end
   end
 end

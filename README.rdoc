@@ -227,6 +227,16 @@ NOTE: you must define icon, thumb, small, medium and large as styles.  They can 
   
   end
 
+== Tips
+If friendly_id starts producing errors like this then you need to redo your slugs:
+  ActiveRecord::StatementInvalid (Mysql::Error: Duplicate entry 'my-content-page-/-2' for key 2: UPDATE `slugs` SET `scope` = '/', `sequence` = 2 WHERE `id` = 189):
+
+Run this and you should be good to go:
+  rake friendly_id:redo_slugs MODEL=Content
+
+Cleanup old slugs with:
+  rake friendly_id:remove_old_slugs MODEL=Content
+ 
 == Testing
 This gem uses a full rails application in the test directory for testing and development.  By default there isn't a global_config.yml setup.  
 Use global_config.sample.yml to set one up.

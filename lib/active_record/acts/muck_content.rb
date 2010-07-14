@@ -141,6 +141,12 @@ module ActiveRecord
           File.join(self.scope, self.to_param)
         end
         
+        # uri_path is used to calculate scope on save and therefore must be recovered
+        # before a save is executed. Use this method to set it from the uri method.
+        def setup_uri_path
+          self.uri_path = self.class.scope_from_uri(self.uri)
+        end
+        
         # get scope from the slug
         def scope
           self.slug.scope

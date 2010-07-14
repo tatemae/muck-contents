@@ -155,6 +155,14 @@ class ContentTest < ActiveSupport::TestCase
         should "get uri based on path" do
           assert_equal File.join(@path, @key), @content.uri
         end
+        context "setup_uri_path" do
+          should "load uri_path" do
+            @content.reload
+            assert_equal nil, @content.uri_path
+            @content.setup_uri_path
+            assert_equal @path, @content.uri_path
+          end
+        end
       end
       context "content with contentable" do
         setup do

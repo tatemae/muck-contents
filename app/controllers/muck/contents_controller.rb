@@ -106,6 +106,7 @@ class Muck::ContentsController < ApplicationController
   #
   def edit
     @page_title = @content.locale_title(I18n.locale)
+    @content.setup_uri_path # be sure to recover uri_path or scope will get messed up when the content is saved.
     respond_to do |format|
       format.html { render :template => @edit_template || 'contents/edit'}
       format.pjs { render :template => @edit_template || 'contents/edit', :layout => 'popup'}
@@ -214,7 +215,7 @@ class Muck::ContentsController < ApplicationController
     # Pass the numeric id to this method to ensure that the operations update and delete occur on the correct object
     def get_secure_content
       @content = Content.find(params[:id])
-      unless @content.can_edit?(current_user)
+      if !@content.can_edit?(current_user)
         respond_to do |format|
           format.html do
             flash[:notice] = I18n.t('muck.contents.cant_delete_content')
