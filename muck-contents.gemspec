@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "0.2.25"
+  s.version = "0.2.26"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-06-15}
+  s.date = %q{2010-07-14}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -1626,6 +1626,8 @@ Gem::Specification.new do |s|
      "test/rails_root/public/images/file_icons/text.gif",
      "test/rails_root/public/images/file_icons/text.png",
      "test/rails_root/public/images/file_icons/word.gif",
+     "test/rails_root/public/images/icon_no.gif",
+     "test/rails_root/public/images/icon_success.gif",
      "test/rails_root/public/images/icons/accept.png",
      "test/rails_root/public/images/icons/add.png",
      "test/rails_root/public/images/icons/blue_guy.png",
@@ -2011,6 +2013,7 @@ Gem::Specification.new do |s|
      "test/rails_root/public/javascripts/effects.js",
      "test/rails_root/public/javascripts/fancyzoom.min.js",
      "test/rails_root/public/javascripts/jquery/colorpicker.js",
+     "test/rails_root/public/javascripts/jquery/fg.menu.js",
      "test/rails_root/public/javascripts/jquery/jquery-ui.js",
      "test/rails_root/public/javascripts/jquery/jquery.autocomplete.js.readme",
      "test/rails_root/public/javascripts/jquery/jquery.autocomplete.min.js",
@@ -2033,6 +2036,7 @@ Gem::Specification.new do |s|
      "test/rails_root/public/javascripts/muck-users.js",
      "test/rails_root/public/javascripts/muck.js",
      "test/rails_root/public/javascripts/muck_activities.js",
+     "test/rails_root/public/javascripts/muck_admin.js",
      "test/rails_root/public/javascripts/muck_time/en.js",
      "test/rails_root/public/javascripts/prototype.js",
      "test/rails_root/public/javascripts/scriptaculous.js",
@@ -3429,6 +3433,21 @@ Gem::Specification.new do |s|
      "test/rails_root/public/stylesheets/blueprint/src/print.css",
      "test/rails_root/public/stylesheets/blueprint/src/reset.css",
      "test/rails_root/public/stylesheets/blueprint/src/typography.css",
+     "test/rails_root/public/stylesheets/fgmenu/fg.menu.css",
+     "test/rails_root/public/stylesheets/flick/images/ui-bg_flat_0_aaaaaa_40x100.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-bg_flat_0_eeeeee_40x100.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-bg_flat_55_ffffff_40x100.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-bg_flat_75_ffffff_40x100.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-bg_glass_65_ffffff_1x400.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-bg_highlight-soft_25_0073ea_1x100.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-bg_highlight-soft_50_dddddd_1x100.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-icons_0073ea_256x240.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-icons_454545_256x240.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-icons_666666_256x240.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-icons_ff0084_256x240.png",
+     "test/rails_root/public/stylesheets/flick/images/ui-icons_ffffff_256x240.png",
+     "test/rails_root/public/stylesheets/flick/jquery-ui-1.8.1.custom.css",
      "test/rails_root/public/stylesheets/jquery/cupertino/images/ui-bg_diagonals-small_0_aaaaaa_40x40.png",
      "test/rails_root/public/stylesheets/jquery/cupertino/images/ui-bg_diagonals-thick_15_444444_40x40.png",
      "test/rails_root/public/stylesheets/jquery/cupertino/images/ui-bg_glass_100_f0f0f0_1x400.png",
