@@ -4,6 +4,9 @@
 function save_page() {
 	tinyMCE.triggerSave(true,true);
 	var form = jQuery('#<%= form_id %>');
+	<% if defined?(save_button_id) -%>
+	jQuery('#<%= save_button_id %>').hide();
+	<% end -%>
 	jQuery('#errorExplanation').fadeOut();
 	jQuery.post(form.attr('action') + '.json', form.serialize(),
 	  function(data){

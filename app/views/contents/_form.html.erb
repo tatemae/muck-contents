@@ -28,4 +28,4 @@ message_id = "#{content.dom_id}_message"
   <% end %>
 </div>
 
-<%= tiny_mce_scripts(:form_id => form_id, :mce_id => mce_id, :message_container_id => message_container_id, :message_id => message_id) -%>
+<%= tiny_mce_scripts(:form_id => form_id, :mce_id => mce_id, :message_container_id => message_container_id, :message_id => message_id, :save_button_id => "content_submit_#{content.dom_id}") -%>

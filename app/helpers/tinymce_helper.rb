@@ -57,6 +57,10 @@ module TinymceHelper
   # message_container_id: id of a container for returned messages
   # message_id:           id of the container for the actual message
   # include_save_page:    This script is used include or omit the 'save_page' javascript.  Set to true if the editor includes a save button.
+  # save_button_id:       There are two save buttons on the default content form. One is in the TinyMCE editor the other is at the bottom of the page under
+  #                       all the other controls. If the user presses the save button in the TinyMCE editor and then presses the Save button at the bottom of 
+  #                       the page they will end up with two different content objects. Pass the id of the 'Save' button at the bottom to make it disappear if the user
+  #                       clicks the TinyMCE Save button.
   def tiny_mce_scripts(options = {})
     options[:include_save_page] = true unless options.has_key?(:include_save_page)
     render :partial => 'tiny_mce/tiny_mce_scripts', :locals => options
