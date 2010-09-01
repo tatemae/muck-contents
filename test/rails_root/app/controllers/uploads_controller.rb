@@ -1,7 +1,7 @@
 class UploadsController < Uploader::UploadsController
 
   before_filter :login_required
-  before_filter :setup_parent, :only => [:index, :create, :swfupload, :photos, :files]
+  before_filter :setup_parent, :only => [:index, :create, :multiupload, :photos, :files]
 
   def index
     @upload = Upload.new
