@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-07-15}
+  s.date = %q{2010-09-01}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -1473,7 +1473,6 @@ Gem::Specification.new do |s|
      "test/rails_root/.rake_tasks",
      "test/rails_root/Rakefile",
      "test/rails_root/app/controllers/application_controller.rb",
-     "test/rails_root/app/controllers/contents_controller.rb",
      "test/rails_root/app/controllers/default_controller.rb",
      "test/rails_root/app/controllers/uploads_controller.rb",
      "test/rails_root/app/helpers/application_helper.rb",
@@ -3559,9 +3558,9 @@ Gem::Specification.new do |s|
   s.summary = %q{Add content to your muck based project}
   s.test_files = [
     "test/rails_root/app/controllers/application_controller.rb",
-     "test/rails_root/app/controllers/contents_controller.rb",
      "test/rails_root/app/controllers/default_controller.rb",
      "test/rails_root/app/controllers/uploads_controller.rb",
+     "test/rails_root/app/controllers/users_controller.rb",
      "test/rails_root/app/helpers/application_helper.rb",
      "test/rails_root/app/models/comment.rb",
      "test/rails_root/app/models/content.rb",

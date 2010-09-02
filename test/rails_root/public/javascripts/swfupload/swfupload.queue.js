@@ -16,9 +16,10 @@ if (typeof(SWFUpload) === "function") {
 	SWFUpload.queue = {};
 	
 	SWFUpload.prototype.initSettings = (function (oldInitSettings) {
-		return function () {
+		return function (userSettings) {
+			userSettings = this.tmp_settings; // This fixes a bug where userSettings is undefined
 			if (typeof(oldInitSettings) === "function") {
-				oldInitSettings.call(this);
+				oldInitSettings.call(this, userSettings);
 			}
 			
 			this.queueSettings = {};
@@ -31,7 +32,7 @@ if (typeof(SWFUpload) === "function") {
 			this.settings.upload_complete_handler = SWFUpload.queue.uploadCompleteHandler;
 			this.settings.upload_start_handler = SWFUpload.queue.uploadStartHandler;
 			
-			this.settings.queue_complete_handler = this.settings.queue_complete_handler || null;
+			this.settings.queue_complete_handler = userSettings.queue_complete_handler || null;
 		};
 	})(SWFUpload.prototype.initSettings);
 
