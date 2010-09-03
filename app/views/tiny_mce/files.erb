@@ -1,7 +1,7 @@
 <div id="file-upload">
   <fieldset>
     <legend>Upload New File</legend>
-    <%= tiny_mce_upload_form(@parent) %>
+    <%= tiny_mce_upload_form(@parent, true, 'mce_uploader') %>
   </fieldset>
 </div>  
 <br />
@@ -82,8 +82,8 @@
   <%= javascript_include_tag 'tiny_mce/plugins/muckfile/js/functions.js' -%>
 <% end -%>
 <script language="javascript" type="text/javascript">
-jQuery(document).ready(function()
-{
+
+tinyMCEPopup.onInit.add(function(ed) {
   jQuery.getJSON('<%=@load_files_path%>', function(json){
     if (json.length <= 0){
       jQuery("#upload-list-message").html('<%= t('muck.contents.no_files') %>');
@@ -94,7 +94,9 @@ jQuery(document).ready(function()
       }
     }
   });
+  jQuery('#mce_uploader_upload').uploadify(mce_uploader_options);
 });
+
 function upload_completed_callback(data){
   jQuery('#upload-list-message').html('');
   var json = eval('(' + data + ')');

@@ -30,7 +30,7 @@ class UploadsController < Uploader::UploadsController
   protected
   
     def get_upload_text(upload)
-      raise 'get_upload_text not implemented'
+      upload.thumb
     end
     
     def get_redirect

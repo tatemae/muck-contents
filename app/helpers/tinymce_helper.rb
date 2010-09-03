@@ -34,8 +34,8 @@ module TinymceHelper
   # container_prefix: Prefixes each id in the html with the specified text.  Useful if there is to be more than one form on a page.
   # options: Options to pass for setting up uploadify:
   #   http://www.uploadify.com/documentation/
-  def tiny_mce_upload_form(parent, display_upload_indicators = true, container_prefix = '', options = {})
-    uploadify_form(parent, display_upload_indicators, container_prefix = 'background', options, 'json')
+  def tiny_mce_upload_form(parent, display_upload_indicators = true, container_prefix = 'mce_uploader', options = {})
+    uploadify_form(parent, { :format => 'json', :omit_initializer => true, :container_prefix => container_prefix, :display_upload_indicators => display_upload_indicators }, options)
   end
   
   # Renders script required for a single tinymce editor on a page.  This script will enable

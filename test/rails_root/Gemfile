@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "rails", "3.0.0"
+gem "rails", "2.3.5"
 gem 'mysql'
 
 gem "will_paginate"
@@ -16,6 +16,8 @@ gem 'tiny_mce'
 gem 'fleakr'
 gem 'overlord'
 gem "uploader"
+#gem "uploader", :path => "~/projects/uploader"
+
 gem "babelphish"
 gem 'muck-engine', :require => 'muck_engine'
 gem 'muck-users', :require => 'muck_users'

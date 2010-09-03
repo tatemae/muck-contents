@@ -1,7 +1,7 @@
 <div id="image-upload">
   <fieldset>
     <legend>Upload New Image</legend>
-    <%= tiny_mce_upload_form(@parent, true, '', :file_types => '*.jpg;*.gif;*.jpeg,*.tif;*.tiff;*.png') %>
+    <%= tiny_mce_upload_form(@parent, true, 'mce_uploader', :fileExt => '*.jpg;*.gif;*.jpeg,*.tif;*.tiff;*.png', :fileDesc => 'Images') %>
   </fieldset>
 </div>  
 <br />
@@ -247,19 +247,22 @@
   <%= javascript_include_tag 'tiny_mce/plugins/muckimage/js/functions.js' -%>
 <% end -%>
 <script language="javascript" type="text/javascript">
-jQuery(document).ready(function()
-{
-  jQuery.getJSON('<%=@load_files_path%>', function(json){
-    if (json.length <= 0){
-      jQuery("#upload-list-message").html('<%= t('muck.contents.no_files') %>');
-    } else {
-      jQuery('#upload-list-message').html('');
-      for(i=0;i<json.length;i++){
-        add_image(json[i], 'append');
-      }
-    }
-  });
+
+tinyMCEPopup.onInit.add(function(ed) {
+   jQuery.getJSON('<%=@load_files_path%>', function(json){
+     if (json.length <= 0){
+       jQuery("#upload-list-message").html('<%= t('muck.contents.no_files') %>');
+     } else {
+       jQuery('#upload-list-message').html('');
+       for(i=0;i<json.length;i++){
+         add_image(json[i], 'append');
+       }
+     }
+   });
+   jQuery('#mce_uploader_upload').uploadify(mce_uploader_options);
 });
+
+
 function upload_completed_callback(data){
   var json = eval('(' + data + ')');
   jQuery('#upload-list-message').html('');
