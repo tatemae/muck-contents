@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "0.2.27"
+  s.version = "0.2.28"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-09-02}
+  s.date = %q{2010-09-04}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
-     "Gemfile",
      "MIT-LICENSE",
      "README.rdoc",
      "Rakefile",
@@ -1472,6 +1471,8 @@ Gem::Specification.new do |s|
      "tasks/muck_contents_tasks.rake",
      "test/rails_root/.gitignore",
      "test/rails_root/.rake_tasks",
+     "test/rails_root/Gemfile",
+     "test/rails_root/Gemfile.lock",
      "test/rails_root/Rakefile",
      "test/rails_root/app/controllers/application_controller.rb",
      "test/rails_root/app/controllers/default_controller.rb",
@@ -1506,6 +1507,7 @@ Gem::Specification.new do |s|
      "test/rails_root/config/initializers/requires.rb",
      "test/rails_root/config/initializers/s3_credentials.rb",
      "test/rails_root/config/initializers/session_store.rb",
+     "test/rails_root/config/preinitializer.rb",
      "test/rails_root/config/routes.rb",
      "test/rails_root/config/tiny_mce.yml",
      "test/rails_root/db/.keep",
@@ -3641,6 +3643,7 @@ Gem::Specification.new do |s|
      "test/rails_root/config/initializers/requires.rb",
      "test/rails_root/config/initializers/s3_credentials.rb",
      "test/rails_root/config/initializers/session_store.rb",
+     "test/rails_root/config/preinitializer.rb",
      "test/rails_root/config/routes.rb",
      "test/rails_root/db/migrate/20090320174818_create_muck_permissions_and_roles.rb",
      "test/rails_root/db/migrate/20090327231918_create_users.rb",
