@@ -54,11 +54,20 @@ describe Content do
     it { should scope_newer_than }
     it { should scope_is_public }
     it { should scope_by_title }
-    it { should scope_created_by }
+    it { should scope_by_creator }
     it { should sanitize :title }
     it { should sanitize :body }
 
     describe "named scopes" do
+      before do
+        @creator = Factory(:user)
+        @content = Factory(:content, :creator => @creator)
+        @other_content = Factory(:content)
+        @contentable = Factory(:content, :contentable => @creator)
+        @no_contentable = Factory(:content, :contentable => nil)
+        @custom_scope = '/something-custom'
+        @content_with_custom_scope = Factory(:content, :custom_scope => @custom_scope)
+      end
       describe "no_contentable" do
         # named_scope :no_contentable, :conditions => 'contentable_id IS NULL'
         before do
@@ -94,11 +103,39 @@ describe Content do
           items.should_not include(@item1)
         end
       end
+      describe "by_parent" do
+        before do
+          @parent_content = Factory(:content)
+          @content.move_to_child_of(@parent_content)
+        end
+        it "should find by parent object" do
+          Content.by_parent(@parent_content).should include(@content)
+        end
+        it "should not find content" do
+          Content.by_parent(@parent_content).should_not include(@other_content)
+        end
+      end
+      describe "by_creator" do
+        it "should find by creator" do
+          Content.by_creator(@creator).should include(@content)
+        end
+        it "should not find content" do
+          Content.by_creator(@creator).should_not include(@other_content)
+        end
+      end
+      describe "no_contentable" do
+        it "should find content without contentable" do
+          Content.no_contentable.should include(@no_contentable)
+        end
+        it "should not find content with contentable" do
+          Content.no_contentable.should_not include(@contentable)
+        end
+      end
     end
 
     describe "translations" do
       it "should have localized title" do
-        @content.locale_title('es').should == '¡Hola'
+        @content.locale_title('es').should == 'hola'
       end
       it "should have localized body" do
         @content.locale_body('es').should == 'hola mundo'
@@ -112,7 +149,7 @@ describe Content do
       end
       it "should get a specific translation" do
         translation = @content.translation_for('es')
-        translation.title.should == '¡Hola'
+        translation.title.should == 'hola'
       end
       describe "edited" do
         before do
@@ -188,7 +225,7 @@ describe Content do
       #     u = Factory.build(:content, :contentable => nil)
       #     u.should_not be_valid
       #     u.errors.should_not be_blank
-      }.should change(Content, :count)
+      # }.should change(Content, :count)
       # end
     end
   
@@ -215,46 +252,6 @@ describe Content do
       end
       it "should not find content" do
         Content.tagged_with('test', :on => :tags).should_not include(@other_content)
-      end
-    end
-  
-    describe "named scopes" do
-      before do
-        @creator = Factory(:user)
-        @content = Factory(:content, :creator => @creator)
-        @other_content = Factory(:content)
-        @contentable = Factory(:content, :contentable => @creator)
-        @no_contentable = Factory(:content, :contentable => nil)
-        @custom_scope = '/something-custom'
-        @content_with_custom_scope = Factory(:content, :custom_scope => @custom_scope)
-      end
-      describe "by_parent" do
-        before do
-          @parent_content = Factory(:content)
-          @content.move_to_child_of(@parent_content)
-        end
-        it "should find by parent object" do
-          Content.by_parent(@parent_content).should include(@content)
-        end
-        it "should not find content" do
-          Content.by_parent(@parent_content).should_not include(@other_content)
-        end
-      end
-      describe "by_creator" do
-        it "should find by creator" do
-          Content.by_creator(@creator).should include(@content)
-        end
-        it "should not find content" do
-          Content.by_creator(@creator).should_not include(@other_content)
-        end
-      end
-      describe "no_contentable" do
-        it "should find content without contentable" do
-          Content.no_contentable.should include(@no_contentable)
-        end
-        it "should not find content with contentable" do
-          !Content.no_contentable.should include(@contentable)
-        end
       end
     end
 

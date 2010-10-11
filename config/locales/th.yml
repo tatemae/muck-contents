@@ -6,33 +6,33 @@ th:
       cancel: ยกเลิก
       cant_delete_content: คุณไม่ได้รับสิทธิ์ในการลบเนื้อหาที่ระบุ
       choose_layout: เลือกแม่แบบ
-      choose_layout_help: เลือกรูปแบบแม่แบบที่จะทำให้โครเมี่ยมสำหรับหน้านี้
-      confirm_delete_content: "คุณแน่ใจหรือว่าต้องการลบเนื้อหานี้ นี้ไม่สามารถยกเลิกได้!"
+      choose_layout_help: เลือกแม่แบบรูปแบบที่จะทำให้โครเมี่ยมสำหรับหน้านี้
+      confirm_delete_content: "คุณแน่ใจหรือว่าต้องการลบเนื้อหานี้หรือไม่ นี้ไม่สามารถยกเลิกได้!"
       content_help: นี่คือเนื้อหาที่จะปรากฏบนหน้า
       content_label: Content
-      content_removed: "Content สำเร็จออก"
-      create_error: มีปัญหาการเพิ่มเนื้อหาของคุณได้
+      content_removed: ลบเนื้อหาเรียบร้อยแล้ว
+      create_error: เกิดปัญหาในการเพิ่มเนื้อหาของคุณได้
       default_404_body: เราไม่พบหน้าคุณกำลังหา
       default_404_title: "404 ไม่พบหน้า"
       delete: ลบ
       delete_title: ลบหน้านี้
       edit: Edit
       edit_title: แก้ไขหน้านี้
-      manage_pages_title: เนื้อหาในเว็บไซต์การจัดการ
-      no_files: ไฟล์ไม่สามารถใช้ได้
-      no_images: ภาพไม่สามารถใช้ได้
-      no_uri_error: "กรุณาตั้งค่าสำหรับพิมพ์ก่อนบันทึกแบบ contentable เมื่อเป็นศูนย์"
-      page_doesnt_exist_create: "หน้าที่คุณร้องขอไม่พบ โปรดให้ข้อมูลด้านล่างเพื่อสร้างเพจ"
+      manage_pages_title: การจัดการเนื้อหาในเว็บไซต์
+      no_files: ไม่มีไฟล์ใช้ได้
+      no_images: ไม่มีภาพใช้ได้
+      no_uri_error: "กรุณาตั้งค่าสำหรับ URI ก่อนที่จะบันทึกรูปแบบเมื่อ contentable เป็นศูนย์"
+      page_doesnt_exist_create: "หน้าที่คุณขอไม่พบ โปรดระบุข้อมูลด้านล่างเพื่อสร้างเพจ"
       permalink: "Permalink :"
-      preview: Preview
-      problem_adding_content: มีปัญหาการเพิ่มเนื้อหาได้
-      problem_updating_content: มีปัญหาในการปรับปรุงเนื้อหาเป็น
-      save: ประหยัด
-      submit_content_button: ประหยัด
-      tag_information: "Tags ช่วยผู้อื่นหาหน้าของคุณและจะใช้เป็นคำหลัก meta สำหรับเอกสาร"
+      preview: แสดงตัวอย่าง
+      problem_adding_content: เกิดปัญหาในการเพิ่มเนื้อหาได้
+      problem_updating_content: เกิดปัญหาในการปรับปรุงเนื้อหาเป็น
+      save: บันทึก
+      submit_content_button: บันทึก
+      tag_information: "Tags ช่วยให้ผู้ใช้อื่น ๆ หาหน้าของคุณและจะนำมาใช้เป็นคำหลักเมตาสำหรับเอกสาร"
       tags: Tags
-      tags_help: "แท็ก Add เพื่อระบุเนื้อหาของคุณ Tags สามารถใช้เพื่อสร้างรายชื่อของการเชื่อมโยงสำหรับเมนู"
+      tags_help: "เพิ่มแท็กในการระบุเนื้อหาของคุณ Tags ยังสามารถใช้ในการสร้างรายชื่อของการเชื่อมโยงสำหรับเมนู"
       tags_label: Tags
-      title_help: "title ควบคุม url และชื่อหน้าแสดงในแถบ url"
+      title_help: "ชื่อเรื่องควบคุม URL และชื่อหน้าแสดงในแถบ URL"
       title_label: ชื่อเรื่อง
-      update_error: มีปัญหาในการปรับปรุงเนื้อหาของคุณได้
+      update_error: เกิดปัญหาในการปรับปรุงเนื้อหาของคุณได้

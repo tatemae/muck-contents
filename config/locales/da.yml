@@ -4,13 +4,13 @@ da:
     contents: 
       add: Tilføj
       cancel: Annuller
-      cant_delete_content: "Du har ikke tilladelse til at slette de angivne indhold"
+      cant_delete_content: "Du har ikke tilladelse til at slette den angivne indhold"
       choose_layout: "Vælg skabelon"
-      choose_layout_help: "Vælg en layout skabelon, som vil gøre krom til denne side."
+      choose_layout_help: "Vælg et layout skabelon, der vil gøre Chrome til denne side."
       confirm_delete_content: "Er du sikker på du vil slette dette indhold? Dette kan ikke fortrydes!"
       content_help: "Dette er indholdet, der vises på siden."
       content_label: Indhold
-      content_removed: "Indhold succesfuldt fjernet"
+      content_removed: "Indhold blev fjernet"
       create_error: "Der var et problem at tilføje dit indhold"
       default_404_body: "Vi kunne ikke finde den side, du søgte."
       default_404_title: "404 Siden blev ikke fundet"
@@ -21,18 +21,18 @@ da:
       manage_pages_title: "Administrer webstedsindhold"
       no_files: "Ingen filer til rådighed"
       no_images: "Ingen billeder til rådighed"
-      no_uri_error: "Angiv en værdi for uri, før du gemmer model, når contentable er nul"
-      page_doesnt_exist_create: "Den ønskede side findes ikke. Angiv de oplysninger nedenfor for at oprette siden."
+      no_uri_error: "Angiv en værdi for URI før du gemmer den model, når contentable er nul"
+      page_doesnt_exist_create: "Den ønskede side findes ikke. Angiv venligst nedenstående oplysninger for at oprette siden."
       permalink: "Permalink:"
       preview: Preview
       problem_adding_content: "Der var et problem at tilføje indhold"
-      problem_updating_content: "Der var et problem at ajourføre indholdet"
+      problem_updating_content: "Der var et problem opdatering af indhold"
       save: Gem
       submit_content_button: Gem
       tag_information: "Tags hjælpe andre brugere med at finde din side og vil blive brugt som meta nøgleord for dokumentet."
       tags: Tags
-      tags_help: "Tilføj tags til at identificere dit indhold. Tags kan også bruges til at generere lister med links til en menu."
+      tags_help: "Tilføje tags til hjælpe med at identificere dit indhold. Tags kan også bruges til at generere lister over links til en menu."
       tags_label: Tags
-      title_help: "Titlen styrer url og sidens titel vises i url baren"
+      title_help: "Titlen styrer url og sidetitlen vises i url baren"
       title_label: Titel
       update_error: "Der opstod et problem opdatering dit indhold"

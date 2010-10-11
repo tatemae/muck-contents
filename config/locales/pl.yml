@@ -2,37 +2,37 @@
 pl: 
   muck: 
     contents: 
-      add: Dodać
-      cancel: Anulować
+      add: Dodaj
+      cancel: Anuluj
       cant_delete_content: "Nie masz uprawnień do usuwania określonych treści"
       choose_layout: "Wybierz szablon"
-      choose_layout_help: "Wybierz układ szablonu, który mógł doprowadzić do chrome na tej stronie."
-      confirm_delete_content: "Czy na pewno chcesz usunąć tę treść? Nie można cofnąć!"
-      content_help: "Jest to treści, które pojawią się na stronie."
-      content_label: Zawartość
+      choose_layout_help: "Wybierz szablon układu, który będzie świadczyć, chrom na tej stronie."
+      confirm_delete_content: "Czy na pewno chcesz usunąć tę treść? To nie może być cofnięta!"
+      content_help: "To jest treść, która będzie wyświetlana na stronie."
+      content_label: Treść
       content_removed: "Treść pomyślnie usunięty"
-      create_error: "Wystąpił problem przy dodawaniu treści"
-      default_404_body: "Nie można znaleźć strony, którego szukasz."
-      default_404_title: "404 Strony nie znaleziono"
-      delete: Usunąć
+      create_error: "Wystąpił problem z dodaniem treści"
+      default_404_body: "Nie znaleźliśmy strona, której szukasz."
+      default_404_title: "404 Strona nie znaleziona"
+      delete: Usuń
       delete_title: "Usuń tę stronę."
       edit: Edytuj
       edit_title: "Edytuj tę stronę."
-      manage_pages_title: "Zarządzanie treścią strony"
+      manage_pages_title: "Zarządzanie zawartością strony"
       no_files: "Żadne pliki dostępne"
       no_images: "Brak zdjęć dostępna"
-      no_uri_error: "Proszę ustawić wartość uri przed zapisaniem model gdy contentable jest zerowa"
-      page_doesnt_exist_create: "Żądana strona nie istnieje. Proszę podać poniżej dane do tworzenia strony."
+      no_uri_error: "Należy ustawić wartość uri przed zapisaniem model gdy contentable jest zerowa"
+      page_doesnt_exist_create: "Żądana strona nie istnieje. Prosimy podać poniżej dane do tworzenia strony."
       permalink: "Adres URL tego postu:"
       preview: Podgląd
       problem_adding_content: "Wystąpił problem z dodaniem treści"
-      problem_updating_content: "Wystąpił problem aktualizacji treści"
-      save: Zaoszczędzić
-      submit_content_button: Zaoszczędzić
+      problem_updating_content: "Wystąpił problem z aktualizacja treści"
+      save: Zapisz
+      submit_content_button: Zapisz
       tag_information: "Tagi pomóc innym użytkownikom znaleźć na stronie i będzie jako słów kluczowych w meta dokumentu."
       tags: Tagi
       tags_help: "Dodaj tagi do identyfikacji zawartości. Tagi mogą być również wykorzystywane do generowania listy odnośników do menu."
       tags_label: Tagi
-      title_help: "Tytuł kontroli url i tytuł strony wyświetlany w pasku adresu"
+      title_help: "Title kontroluje URL i tytułu strony w pasku URL"
       title_label: Tytuł
       update_error: "Wystąpił problem z aktualizacją treści"

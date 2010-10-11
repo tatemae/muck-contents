@@ -2,7 +2,6 @@ class ApplicationController < ActionController::Base
 
   helper :all
   protect_from_forgery
-  acts_as_muck_content_handler
   
   layout 'default'
 

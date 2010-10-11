@@ -2,37 +2,37 @@
 zh: 
   muck: 
     contents: 
-      add: 加
+      add: 新增
       cancel: 取消
       cant_delete_content: 您没有权限删除指定的内容
       choose_layout: 选择模板
-      choose_layout_help: 选择一个布局模板，会使此网页的铬。
-      confirm_delete_content: 你确定要删除此内容？这不能被撤消！
+      choose_layout_help: 选择布局模板，会使此网页浏览器。
+      confirm_delete_content: 你确定要删除此内容？这不能被撤销！
       content_help: 这是内容将出现在页面上。
       content_label: 内容
       content_removed: 成功删除内容
       create_error: 有一个问题，增加您的内容
-      default_404_body: 我们无法找到该页您要寻找的。
+      default_404_body: 我们无法找到该页您正在寻找。
       default_404_title: 404找不到网页
       delete: 删除
-      delete_title: 删除此页。
+      delete_title: 删除这个页面。
       edit: 编辑
       edit_title: 编辑此页。
       manage_pages_title: 网站内容管理
-      no_files: 没有文件可用
+      no_files: 无任何可下载
       no_images: 没有图像可用
-      no_uri_error: 请设置为保存前模型的uri时contentable值为零
-      page_doesnt_exist_create: 您请求的页面不存在。请提供以下信息来创建页面。
+      no_uri_error: 保存前请设置模式，提出一个URI值为零时contentable
+      page_doesnt_exist_create: 您要求的网页不存在。请提供以下信息来创建页面。
       permalink: 固定链接：
       preview: 预览
       problem_adding_content: 有一个问题，添加的内容
-      problem_updating_content: 有一个问题，更新的内容
+      problem_updating_content: 有一个问题，更新内容
       save: 保存
       submit_content_button: 保存
-      tag_information: 标签帮助其他用户查找您的网页，将作为该文件的meta关键字使用。
+      tag_information: 标签帮助其他用户找到您的网页，将作为该文件的meta关键字使用。
       tags: 标签
-      tags_help: 添加标签，以帮助确定您的内容。标签也可用于生成一个菜单链接列表。
+      tags_help: 添加标签，以帮助确定您的内容。标签也可以用来产生一个菜单的链接列表。
       tags_label: 标签
-      title_help: 标题控制URL和页面标题栏中显示的URL
+      title_help: 标题控制URL和页面标题栏中显示的网址
       title_label: 标题
-      update_error: 有一个问题，更新您的内容
+      update_error: 有一个问题更新您的内容

@@ -2,37 +2,37 @@
 hr: 
   muck: 
     contents: 
-      add: Dodati
+      add: Dodaj
       cancel: Otkazati
-      cant_delete_content: "Nemate dozvolu za brisanje određenog sadržaja"
+      cant_delete_content: "Nemate dopuštenje za izbrisati određeni sadržaj"
       choose_layout: "Odaberite predložak"
       choose_layout_help: "Odaberite izgled predložak koji će uzvratiti krom za ovu stranicu."
-      confirm_delete_content: "Jeste li sigurni da želite izbrisati ovaj sadržaj? To se ne može poništiti!"
+      confirm_delete_content: "Jeste li sigurni da želite izbrisati ovaj sadržaj? Ovo se ne može poništiti!"
       content_help: "To je sadržaj koji će se pojaviti na stranici."
       content_label: Sadržaj
       content_removed: "Sadržaj je uspješno uklonjen"
-      create_error: "Pojavio se problem dodavanje sadržaja"
-      default_404_body: "Nismo uspjeli pronaći stranicu koju ste tražili."
+      create_error: "Došlo je do problema prilikom dodavanja vaše sadržaj"
+      default_404_body: "Nismo mogli naći na stranici koju tražite."
       default_404_title: "404 Stranica nije pronađena"
       delete: Izbrisati
-      delete_title: "Izbrisati ovaj stranica."
+      delete_title: "Obriši ovu stranicu."
       edit: Uredi
-      edit_title: "Urediti ovu stranicu."
+      edit_title: "Uredite ovu stranicu."
       manage_pages_title: "Upravljanje sadržaja web-mjesta"
-      no_files: "Nema nacrti proizvoda"
-      no_images: "Nema dostupne slike"
-      no_uri_error: "Molim unesite vrijednosti za URI prije spremanja modela kada contentable je nula"
-      page_doesnt_exist_create: "Stranicu koju ste tražili ne postoji. Molimo navedite informacije ispod da biste stvorili stranicu."
+      no_files: "Nema datoteka dostupnih"
+      no_images: "Nema slika dostupnih"
+      no_uri_error: "Molimo vas da postavite vrijednost za URI prije spremanja model kada contentable je nula"
+      page_doesnt_exist_create: "Stranica koju ste tražili ne postoji. Molimo unesite podatke u nastavku kako biste stvorili stranicu."
       permalink: "Permalink:"
       preview: Pregled
-      problem_adding_content: "Došlo je do problema dodavanjem sadržaja"
-      problem_updating_content: "Došlo je do problema ažuriranju sadržaja"
+      problem_adding_content: "Došlo je do problema prilikom dodavanja sadržaj"
+      problem_updating_content: "Došlo je do problema ažuriranje sadržaja"
       save: Spasiti
       submit_content_button: Spasiti
-      tag_information: "Tags pomoći drugim korisnicima pronaći Vašu stranicu, te će se koristiti kao meta ključne riječi za dokument."
+      tag_information: "Tags pomoći drugim korisnicima da pronađu Vašu stranicu, te će se koristiti kao meta ključne riječi za dokument."
       tags: Tags
-      tags_help: "Dodajte oznake na pomoći identificirati sadržaj. Oznake se također može koristiti za generiranje popisa linkova za izbornika."
+      tags_help: "Dodajte oznake na pomoći identificirati sadržaj. Tags također može koristiti za generiranje popisa linkova za izbornika."
       tags_label: Tags
-      title_help: "Naslov kontrolira URL i naslov stranice prikazane u url baru"
+      title_help: "Naslov kontrolira URL i naslov prikazuje u url baru"
       title_label: Naslov
-      update_error: "Došlo je do problema ažuriranju sadržaja"
+      update_error: "Došlo je do problema ažuriranju sadržaj"

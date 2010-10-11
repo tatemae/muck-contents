@@ -2,36 +2,36 @@
 sq: 
   muck: 
     contents: 
-      add: Shtoj
+      add: Shto
       cancel: Anuloj
       cant_delete_content: "Ju nuk keni leje për të fshirë përmbajtjen e specifikuar"
-      choose_layout: "Zgjidhni Template"
-      choose_layout_help: "Zgjidh një plan urbanistik që do të bëjë template të kromit për këtë faqe."
-      confirm_delete_content: "A jeni i sigurt që dëshironi të fshini këtë përmbajtje? Kjo nuk mund të zhbëhet!"
-      content_help: "Kjo është përmbajtja që do të shfaqet në faqe."
+      choose_layout: "Zgjidh Template"
+      choose_layout_help: "Zgjidh një template plan urbanistik që do të bëjë kromit për këtë faqe."
+      confirm_delete_content: "A jeni i sigurt se doni të fshini këtë përmbajtje? Kjo nuk mund të zhbëhet!"
+      content_help: "Kjo është përmbajtja që do të shfaqen në faqe."
       content_label: Përmbajtje
-      content_removed: "Përmbajtja sukses hequr"
+      content_removed: "Përmbajtja hoq me sukses"
       create_error: "Nuk ishte një problem duke shtuar përmbajtjen tuaj"
-      default_404_body: "Ne nuk mund të gjeni faqen që po kërkonit."
-      default_404_title: "404 Page Not Found"
+      default_404_body: "Ne nuk mund të gjeni në faqen e ju po kërkoni."
+      default_404_title: "404 Faqja nuk u gjet"
       delete: Fshij
-      delete_title: "Grise faqen."
+      delete_title: "Fshije këtë faqe."
       edit: Redaktoj
-      edit_title: "Redaktoni faqen."
-      manage_pages_title: "Përmbajtja Manage faqe"
+      edit_title: "Redaktoni këtë faqe."
+      manage_pages_title: "Manage përmbajtja e faqes"
       no_files: "Nuk ka fotografi në dispozicion"
       no_images: "Nuk ka imazhe në dispozicion"
       no_uri_error: "Ju lutemi të vendosur një vlerë për URI përpara se të kryeni modeli kur contentable është zero"
-      page_doesnt_exist_create: "Faqja që e kërkuar nuk ekziston. Ju lutemi të japë informacionin e mëposhtëm për të krijuar faqe."
+      page_doesnt_exist_create: "Faqja që kërkuat nuk ekziston. Ju lutemi të japin informacionin e mëposhtëm për të krijuar faqe."
       permalink: "Permalink:"
       preview: Preview
       problem_adding_content: "Nuk ishte një problem duke shtuar përmbajtjen"
       problem_updating_content: "Nuk ishte një problem përditësimin e përmbajtjes"
       save: Ruaj
       submit_content_button: Ruaj
-      tag_information: "Tags të ndihmuar përdoruesit e tjerë të gjeni faqen tuaj dhe do të përdoret si fjalë kyçe të meta për dokumentin."
+      tag_information: "Tags ndihmojë përdoruesit e tjerë të gjeni faqen tuaj dhe do të përdoret si fjalë kyçe të meta për dokumentin."
       tags: Tags
-      tags_help: "tags Shtoni në të ndihmojë në identifikimin e përmbajtjen tuaj. Tags mund të përdoret gjithashtu për të krijuar listat e lidhjet për një menu."
+      tags_help: "Add tags për të ndihmuar në identifikimin përmbajtjen tuaj. Tags mund gjithashtu të përdoret për të gjeneruar listat e lidhjeve për një menu."
       tags_label: Tags
       title_help: "Titulli kontrollon url dhe titull në faqe shfaqur në shtyllën url"
       title_label: Titull

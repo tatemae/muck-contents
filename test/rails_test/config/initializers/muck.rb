@@ -62,9 +62,9 @@ end
 
 MuckContents.configure do |config|
   config.sanitize_content = true
-  config.enable_auto_translations = false
+  config.enable_auto_translations = true
   config.enable_solr = true
-  config.enable_comments = false
+  config.enable_comments = true
   config.flickr_api_key = Secrets.flickr_api_key
   if Rails.env.production?
     config.content_css = ['/stylesheets/all.css']
@@ -73,6 +73,28 @@ MuckContents.configure do |config|
   end
 end                                    
   
+  
+Uploader.configure do |config|
+  config.enable_s3 = false                         # Turns S3 on/off
+  config.s3_no_wait = false                        # Send the file to S3 immediately. If this is false you will need to setup a daemon process to upload to S3. See below.
+  config.keep_local_file = true                   # Even when uploading to S3 keep the local file.
+  config.disable_halt_nonimage_processing = false # Paperclip will try to generate thumbnails for pdfs unless this is set to true
+  # These are the settings that will be passed to Paperclip:
+  config.has_attached_file_options = {
+    :url     => "/system/:attachment/:id_partition/:style/:basename.:extension",
+    :path    => ":rails_test/public/system/:attachment/:id_partition/:style/:basename.:extension",
+    :styles  => { :icon => "30x30!", 
+                  :thumb => "100>", 
+                  :small => "150>", 
+                  :medium => "300>", 
+                  :large => "660>" },
+    :default_url => "/images/default.jpg",
+    :convert_options => {
+      :all => '-quality 80'
+    }
+  }            
+end
+
 if defined?(ActiveRecord)
   # Don't Include Active Record class name as root for JSON serialized output.
   ActiveRecord::Base.include_root_in_json = false

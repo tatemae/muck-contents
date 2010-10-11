@@ -6,11 +6,11 @@ pt-PT:
       cancel: Cancelar
       cant_delete_content: "Você não tem permissão para excluir o conteúdo especificado"
       choose_layout: "Selecionar modelo"
-      choose_layout_help: "Selecione um layout modelo que irá tornar o Chrome para esta página."
+      choose_layout_help: "Selecione um modelo de layout que vai processar o cromo para esta página."
       confirm_delete_content: "Tem certeza de que deseja excluir esse conteúdo? Isso não pode ser desfeito!"
-      content_help: "Este é o conteúdo que aparecerá na página."
+      content_help: "Este é o conteúdo que será exibido na página."
       content_label: Conteúdo
-      content_removed: "Conteúdo removido com êxito"
+      content_removed: "Conteúdo removido com sucesso"
       create_error: "Houve um problema adicionando o seu conteúdo"
       default_404_body: "Não encontramos a página que você estava procurando."
       default_404_title: "404 Página não encontrada"
@@ -21,18 +21,18 @@ pt-PT:
       manage_pages_title: "Gerenciar o conteúdo do site"
       no_files: "Não há arquivos disponíveis"
       no_images: "Não há imagens disponíveis"
-      no_uri_error: "Por favor, defina um valor para uri antes de salvar o modelo quando contentable é nulo"
+      no_uri_error: "Por favor, defina um valor para uri antes de salvar o modelo quando contentable é nula"
       page_doesnt_exist_create: "A página solicitada não existe. Por favor, forneça as informações abaixo para criar a página."
-      permalink: "Link:"
-      preview: Visualização
+      permalink: "Permalink:"
+      preview: Preview
       problem_adding_content: "Houve um problema adicionando o conteúdo"
-      problem_updating_content: "Houve um problema de atualização do conteúdo"
-      save: Salvar
-      submit_content_button: Salvar
-      tag_information: "Tags ajudar outros usuários encontrar sua página e será usado como meta palavras-chave para o documento."
+      problem_updating_content: "Houve um problema na atualização do conteúdo"
+      save: Guardar
+      submit_content_button: Guardar
+      tag_information: "Tags ajudar outros usuários a encontrar sua página e será usado como meta palavras-chave para o documento."
       tags: Tags
-      tags_help: "Adicione tags para ajudar a identificar o seu conteúdo. Tags também pode ser usado para gerar listas de links para um menu."
+      tags_help: "Adicione tags para ajudar a identificar o seu conteúdo. Tags também pode ser usado para gerar listas de links de um menu."
       tags_label: Tags
-      title_help: "O título controla a url eo título da página exibida na barra de url"
+      title_help: "O título controla a url eo título da página exibida na barra de URL"
       title_label: Título
       update_error: "Houve um problema ao atualizar o seu conteúdo"

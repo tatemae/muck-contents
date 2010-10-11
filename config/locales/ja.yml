@@ -4,35 +4,35 @@ ja:
     contents: 
       add: 追加
       cancel: キャンセル
-      cant_delete_content: あなたはアクセス許可を指定されたコンテンツを削除する必要はありません
-      choose_layout: テンプレートの選択
-      choose_layout_help: を選択してレイアウトは、このページのchromeを表示するテンプレート。
-      confirm_delete_content: あなたは、このコンテンツを削除しますか？これは、元に戻すことはできません！
-      content_help: このページに表示される内容です。
+      cant_delete_content: あなたは指定されたコンテンツを削除する権限を持っていない
+      choose_layout: テンプレートを選択
+      choose_layout_help: このページのクロムを表示するレイアウトテンプレートを選択します。
+      confirm_delete_content: あなたは、このコンテンツを削除してもよろしいですか？これは、元に戻すことはできません！
+      content_help: これは、ページに表示される内容です。
       content_label: コンテンツ
       content_removed: コンテンツが正常に削除
-      create_error: 問題が自分のコンテンツを追加した
-      default_404_body: 私たちはあなたが探しているページを見つけることができなかった。
-      default_404_title: 404ページが見つかりません
+      create_error: コンテンツを追加中に問題があった
+      default_404_body: 我々は、あなたが探していたページを見つけることができませんでした。
+      default_404_title: 404ページが見つかりませんでした
       delete: 削除
       delete_title: このページを削除。
       edit: "[編集]"
-      edit_title: このページを編集。
-      manage_pages_title: 管理サイトのコンテンツ
-      no_files: いいえ、ファイルを利用できる
-      no_images: 画像なし利用
-      no_uri_error: ごuriのモデルをcontentable保存する前に値を設定しますnilである
-      page_doesnt_exist_create: ページが存在しない旨。してくださいページを作成するには、以下の情報を提供します。
-      permalink: 固定リンク：
+      edit_title: このページを編集します。
+      manage_pages_title: サイトのコンテンツを管理する
+      no_files: いいえ、利用可能なファイル
+      no_images: 画像なし可能
+      no_uri_error: contentableがnilであるときにモデルを保存する前に、URIの値を設定してください
+      page_doesnt_exist_create: あなたが要求されたページは存在しません。ページを作成するには、以下の情報を提供してください。
+      permalink: リンク：
       preview: プレビュー
-      problem_adding_content: 問題がコンテンツを追加した
-      problem_updating_content: 問題がコンテンツを更新した
-      save: 保存
-      submit_content_button: 保存
-      tag_information: タグは、他のユーザーがページを見つけやすくドキュメントのメタキーワードとして使用されます。
+      problem_adding_content: コンテンツを追加して問題が発生しました
+      problem_updating_content: コンテンツの更新に問題が発生しました
+      save: 名前を付けて保存
+      submit_content_button: 名前を付けて保存
+      tag_information: タグは、他のユーザーがあなたのページを見つけるドキュメントのメタキーワードとして使用されますがお手伝いします。
       tags: タグ
-      tags_help: 追加タグは、コンテンツを識別するため。タグは、メニューのリンクのリストを生成するために使用することができます。
+      tags_help: コンテンツを識別するためのタグを追加します。タグは、メニューのリンクのリストを生成するために使用することができます。
       tags_label: タグ
-      title_help: タイトルとページタイトルのURLバーに表示されたURLを制御する
+      title_help: タイトルは、URLバーに表示されるURLとページタイトルを制御
       title_label: タイトル
-      update_error: 問題が自分のコンテンツを更新した
+      update_error: コンテンツの更新に問題が発生しました

@@ -4,35 +4,35 @@ sv:
     contents: 
       add: "Lägg till"
       cancel: Avbryt
-      cant_delete_content: "Du har inte behörighet att ta bort den angivna innehåll"
+      cant_delete_content: "Du har inte behörighet att ta bort det angivna innehållet"
       choose_layout: "Välj mall"
-      choose_layout_help: "Välj en layout mall som kommer att göra krom för den här sidan."
+      choose_layout_help: "Välj en layout mall som kommer att göra krom för denna sida."
       confirm_delete_content: "Är du säker på att du vill ta bort detta innehåll? Detta kan inte ångras!"
       content_help: "Detta är innehållet som kommer att visas på sidan."
       content_label: Innehåll
-      content_removed: "Innehåll tagits bort"
+      content_removed: "Innehållet har tagits bort"
       create_error: "Det uppstod ett problem att lägga till ditt innehåll"
-      default_404_body: "Vi kunde inte hitta den sida du letade efter."
+      default_404_body: "Vi kunde inte hitta den sida du söker."
       default_404_title: "404 Sidan kunde inte hittas"
-      delete: "Ta bort"
-      delete_title: "Ta bort den här sidan."
+      delete: Radera
+      delete_title: "Radera denna sida."
       edit: Redigera
       edit_title: "Redigera denna sida."
-      manage_pages_title: "Hantera webbplatsens innehåll"
+      manage_pages_title: "Hantera innehållet på webbplatsen"
       no_files: "Inga filer finns"
       no_images: "Inga bilder tillgängliga"
-      no_uri_error: "Ställ in ett värde för URI innan du sparar den modellen när contentable är lika med noll"
-      page_doesnt_exist_create: "Sidan du begärde finns inte. Ange informationen nedan för att skapa sidan."
+      no_uri_error: "Ange ett värde för uri innan du sparar modellen när contentable är lika med noll"
+      page_doesnt_exist_create: "Sidan du söker finns inte. Ange informationen nedan för att skapa sidan."
       permalink: "Permalink:"
       preview: Förhandsgranska
-      problem_adding_content: "Det var ett problem att lägga till innehåll"
+      problem_adding_content: "Det fanns ett problem att lägga till innehåll"
       problem_updating_content: "Det fanns ett problem uppdatera innehållet"
       save: Spara
       submit_content_button: Spara
-      tag_information: "Taggar hjälpa andra användare att hitta din sida och kommer att användas som meta sökord för dokumentet."
+      tag_information: "Taggar hjälp andra användare att hitta din sida och kommer att användas som meta sökord för dokumentet."
       tags: Taggar
       tags_help: "Lägg till taggar för att identifiera innehållet. Taggar kan också användas för att generera listor med länkar till en meny."
       tags_label: Taggar
-      title_help: "Titeln styr url och sidan titel som visas i URL bar"
+      title_help: "Titeln styr url och sidan titel som visas i adressfältet"
       title_label: Titel
-      update_error: "Det uppstod ett problem uppdatera ditt innehåll"
+      update_error: "Det uppstod ett problem att uppdatera ditt innehåll"

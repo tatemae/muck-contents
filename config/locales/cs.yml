@@ -4,35 +4,35 @@ cs:
     contents: 
       add: Přidat
       cancel: Zrušit
-      cant_delete_content: "Nemáte oprávnění mazat uvedené obsah"
+      cant_delete_content: "Nemáte oprávnění k odstranění uvedených obsah"
       choose_layout: "Vybrat šablonu"
-      choose_layout_help: "Vyberte rozložení šablonu, která bude poskytovat Chrome pro tuto stránku."
-      confirm_delete_content: "Jste si jisti, že chcete smazat tento obsah? To nelze vzít zpět!"
+      choose_layout_help: "Vyberte rozvržení šablonu, která bude skýtat chrom na této stránce."
+      confirm_delete_content: "Jste si jisti, že chcete smazat tento obsah? Toto nelze vrátit zpět!"
       content_help: "To je obsah, který se objeví na stránce."
       content_label: Obsah
       content_removed: "Obsah byl úspěšně odstraněn"
-      create_error: "Došlo k problému při přidávání obsahu"
+      create_error: "Tam byl problém přidat svůj obsah"
       default_404_body: "Nemohli jsme najít stránku, kterou hledáte."
       default_404_title: "404 Stránka nenalezena"
-      delete: Vymazat
+      delete: Odstranit
       delete_title: "Odstranit tuto stránku."
       edit: Upravit
-      edit_title: "Upravit tuto stránku."
+      edit_title: "Editovat tuto stránku."
       manage_pages_title: "Správa obsahu webu"
-      no_files: "Žádné soubory k dispozici"
+      no_files: "Žádné soubory jsou dostupné"
       no_images: "Žádné obrázky k dispozici"
-      no_uri_error: "Prosím nastavte hodnotu URI před uložením model, kdy contentable je nulová"
-      page_doesnt_exist_create: "Požadovaná stránka neexistuje. Uveďte, prosím, níže uvedené informace pro vytvoření stránky."
+      no_uri_error: "Prosím nastavte hodnotu uri před uložením modelu, když contentable je nula"
+      page_doesnt_exist_create: "Vámi požadovaná stránka neexistuje. Uveďte, prosím, níže uvedené informace pro vytvoření stránky."
       permalink: "Permalink:"
-      preview: Preview
-      problem_adding_content: "Došlo k problému při přidávání obsahu"
-      problem_updating_content: "Došlo k problému při aktualizaci obsahu"
+      preview: Náhled
+      problem_adding_content: "Tam byl problém přidávání obsahu"
+      problem_updating_content: "Tam byl problém aktualizaci obsahu"
       save: Uložit
       submit_content_button: Uložit
       tag_information: "Štítky pomáhají ostatním uživatelům najít vaši stránku a bude použit jako meta klíčová slova pro dokument."
       tags: Tagy
-      tags_help: "Přidejte značky na pomoci identifikovat obsah. Značky lze použít také k vytváření seznamů odkazů na menu."
+      tags_help: "Přidat značky s cílem pomoci identifikovat obsah. Značky mohou být také použity ke generování seznamů odkazů na menu."
       tags_label: Tagy
-      title_help: "Název kontroly URL a název stránky zobrazené v url bar"
+      title_help: "Název řídí url a titulek stránky zobrazené v url baru"
       title_label: Název
-      update_error: "Došlo k problému při aktualizaci obsahu"
+      update_error: "Tam byl problém, aktualizace obsahu"

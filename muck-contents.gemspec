@@ -26,9 +26,6 @@ Gem::Specification.new do |s|
      "app/controllers/muck/tiny_mce_controller.rb",
      "app/helpers/muck_contents_helper.rb",
      "app/helpers/tinymce_helper.rb",
-     "app/models/country.rb",
-     "app/models/language.rb",
-     "app/models/state.rb",
      "app/views/admin/contents/index.html.erb",
      "app/views/contents/_admin.html.erb",
      "app/views/contents/_form.html.erb",
@@ -103,6 +100,7 @@ Gem::Specification.new do |s|
      "lib/muck_contents/models/content_translation.rb",
      "lib/muck_contents/routes.rb",
      "lib/tasks/muck_contents.rake",
+     "muck-contents.gemspec",
      "public/images/tinymce/doc.jpg",
      "public/images/tinymce/image.jpg",
      "public/images/tinymce/link.jpg",
@@ -3602,6 +3600,9 @@ Gem::Specification.new do |s|
      "test/rails_test/app/models/content.rb",
      "test/rails_test/app/models/content_permission.rb",
      "test/rails_test/app/models/content_translation.rb",
+     "test/rails_test/app/models/country.rb",
+     "test/rails_test/app/models/language.rb",
+     "test/rails_test/app/models/state.rb",
      "test/rails_test/app/models/upload.rb",
      "test/rails_test/app/models/user.rb",
      "test/rails_test/app/models/user_session.rb",
@@ -3661,6 +3662,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<muck-engine>, [">= 0"])
       s.add_runtime_dependency(%q<muck-users>, [">= 0"])
       s.add_runtime_dependency(%q<muck-comments>, [">= 0"])
+      s.add_runtime_dependency(%q<babelphish>, [">= 0"])
       s.add_runtime_dependency(%q<awesome_nested_set>, [">= 0"])
       s.add_runtime_dependency(%q<sanitize>, [">= 0"])
       s.add_runtime_dependency(%q<acts-as-taggable-on>, [">= 0"])
@@ -3671,6 +3673,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<muck-engine>, [">= 0"])
       s.add_dependency(%q<muck-users>, [">= 0"])
       s.add_dependency(%q<muck-comments>, [">= 0"])
+      s.add_dependency(%q<babelphish>, [">= 0"])
       s.add_dependency(%q<awesome_nested_set>, [">= 0"])
       s.add_dependency(%q<sanitize>, [">= 0"])
       s.add_dependency(%q<acts-as-taggable-on>, [">= 0"])
@@ -3682,6 +3685,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<muck-engine>, [">= 0"])
     s.add_dependency(%q<muck-users>, [">= 0"])
     s.add_dependency(%q<muck-comments>, [">= 0"])
+    s.add_dependency(%q<babelphish>, [">= 0"])
     s.add_dependency(%q<awesome_nested_set>, [">= 0"])
     s.add_dependency(%q<sanitize>, [">= 0"])
     s.add_dependency(%q<acts-as-taggable-on>, [">= 0"])

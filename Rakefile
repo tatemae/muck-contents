@@ -56,6 +56,7 @@ begin
     gemspec.add_dependency "muck-engine"
     gemspec.add_dependency "muck-users"
     gemspec.add_dependency "muck-comments"
+    gemspec.add_dependency "babelphish"
     gemspec.add_dependency "awesome_nested_set"
     gemspec.add_dependency "sanitize"
     gemspec.add_dependency "acts-as-taggable-on"

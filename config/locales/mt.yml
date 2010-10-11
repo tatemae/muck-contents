@@ -4,35 +4,35 @@ mt:
     contents: 
       add: Żid
       cancel: Ikkanċella
-      cant_delete_content: "Inti ma għandekx permess li jitħassar il-kontenut speċifikat"
+      cant_delete_content: "Inti ma għandekx permess biex jitħassar il-kontenut speċifikat"
       choose_layout: "Agħżel Template"
-      choose_layout_help: "Agħżel tqassim template li se jagħmlu l-chrome għal din il-paġna."
+      choose_layout_help: "Ċikli relatati mad-template tqassim li jrendu l-chrome għal din il-paġna."
       confirm_delete_content: "Inti żgur li int tixtieq li jitħassar dan il-kontenut? Dan ma jistax jiġi tneħħew!"
       content_help: "Dan huwa l-kontenut li se jidhru fuq il-paġna."
       content_label: Kontenut
-      content_removed: "Kontenut b&#39;suċċess jitneħħew"
+      content_removed: "Kontenut jitneħħew b&#39;suċċess"
       create_error: "Kien hemm problema żżid kontenut tiegħek"
-      default_404_body: "Aħna ma setgħetx issib il-paġna li kont qed tfittex."
+      default_404_body: "Aħna ma setgħetx issib il-paġna għandek kienu qed ifittxu."
       default_404_title: "404 Page ma sabet"
       delete: Ħassar
       delete_title: "Ħassar din il-paġna."
       edit: Edit
-      edit_title: Editja.
-      manage_pages_title: "kontenut tas-sit Manage"
+      edit_title: "Edit din il-paġna."
+      manage_pages_title: "Manage kontenut tas-sit"
       no_files: "Nru fajls disponibbli"
       no_images: "Nru immaġini disponibbli"
-      no_uri_error: "Jekk jogħġbok stabbilit valur għal URI qabel iffrankar-mudell meta contentable hija żero"
-      page_doesnt_exist_create: "Il-paġna li inti mitlub ma jeżistix. Jekk jogħġbok ipprovdi l-informazzjoni t&#39;hawn taħt biex joħolqu l-paġna."
+      no_uri_error: "Jekk jogħġbok jistabbilixxu valur għall-URI qabel l-iffrankar tal-mudell meta huwa contentable żero"
+      page_doesnt_exist_create: "Il-paġna, inti mitlub ma jeżistix. Jekk jogħġbok ipprovdi l-informazzjoni hawn taħt biex joħolqu l-paġna."
       permalink: "Permalink:"
       preview: Preview
       problem_adding_content: "Kien hemm problema żżid il-kontenut"
-      problem_updating_content: "Kien hemm problema taġġorna l-kontenut"
+      problem_updating_content: "Kien hemm problema-aġġornament tal-kontenut"
       save: Save
       submit_content_button: Save
-      tag_information: "Tags jgħinu lill-utenti l-oħra jsibu paġna tiegħek u se tintuża bħala l-kliem kjavi meta għad-dokument."
+      tag_information: "Tags jgħinu lill-utenti l-oħra jsibu tiegħek paġna u se jintużaw bħala l-keywords meta għad-dokument."
       tags: Tags
-      tags_help: "tags Żid biex tgħin tidentifika l-kontenut tiegħek. Tags jista &#39;jintuża wkoll biex jiġġeneraw listi ta&#39; links għal menu."
+      tags_help: "Żid tags biex tgħin tidentifika l-kontenut tiegħek. Tags jista &#39;jintuża wkoll biex jiġġeneraw listi ta&#39; links għal menu."
       tags_label: Tags
       title_help: "It-titolu kontrolli l-url u t-titolu paġna li tidher fil-bar url"
       title_label: Titolu
-      update_error: "Kien hemm problema aġġornament kontenut tiegħek"
+      update_error: "Kien hemm problema tiegħek aġġornament tal-kontenut"

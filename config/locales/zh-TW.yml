@@ -2,37 +2,37 @@
 zh-TW: 
   muck: 
     contents: 
-      add: 加
+      add: 新增
       cancel: 取消
       cant_delete_content: 您沒有權限刪除指定的內容
       choose_layout: 選擇模板
-      choose_layout_help: 選擇一個佈局模板，會使鉻的這一頁。
-      confirm_delete_content: 你確定要刪除此內容？這不能被撤消！
+      choose_layout_help: 選擇佈局模板，將呈現鉻此網頁。
+      confirm_delete_content: 你確定要刪除此內容？這不能被撤銷！
       content_help: 這是內容將出現在頁面上。
       content_label: 內容
       content_removed: 成功刪除內容
       create_error: 有一個問題，增加您的內容
-      default_404_body: 我們無法找到該頁您要尋找的。
+      default_404_body: 我們無法找到該頁您正在尋找。
       default_404_title: 404找不到網頁
       delete: 刪除
-      delete_title: 刪除此頁。
+      delete_title: 刪除這個頁面。
       edit: 編輯
       edit_title: 編輯此頁。
       manage_pages_title: 網站內容管理
-      no_files: 沒有文件可用
+      no_files: 無任何可下載
       no_images: 沒有圖像可用
-      no_uri_error: "請設置一個值的uri保存前的模型時 contentable為零"
-      page_doesnt_exist_create: 您請求的頁面不存在。請提供以下信息來創建頁面。
+      no_uri_error: "請設置一個值，然後保存為 URI的模式為 nil時 contentable"
+      page_doesnt_exist_create: 您要求的網頁不存在。請提供以下信息來創建頁面。
       permalink: 固定鏈接：
       preview: 預覽
       problem_adding_content: 有一個問題，添加的內容
-      problem_updating_content: 有一個問題，更新的內容
+      problem_updating_content: 有一個問題，更新內容
       save: 保存
       submit_content_button: 保存
-      tag_information: 標籤幫助其他用戶查找您的網頁，將被用作中繼關鍵字的文檔。
+      tag_information: 標籤幫助其他用戶找到您的網頁，將被用作meta關鍵字的文檔。
       tags: 標籤
-      tags_help: 添加標籤，以幫助確定您的內容。標籤也可以用來生成鏈接列表的菜單。
+      tags_help: 添加標籤，以幫助確定您的內容。標籤也可以用於生成列表的鏈接菜單。
       tags_label: 標籤
       title_help: 標題控制URL和頁面標題顯示在地址欄
       title_label: 標題
-      update_error: 有一個問題，更新您的內容
+      update_error: 有一個問題更新您的內容

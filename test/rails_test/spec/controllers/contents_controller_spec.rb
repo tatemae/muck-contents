@@ -74,7 +74,7 @@ describe Muck::ContentsController do
             delete :destroy, :id => @content.id
           end
           it { should respond_with :redirect }
-          should_set_the_flash_to I18n.t('muck.contents.content_removed') 
+          it { should set_the_flash.to(I18n.t('muck.contents.content_removed')) }
         end
         describe "js" do
           before do
@@ -88,7 +88,7 @@ describe Muck::ContentsController do
           end
           it { should respond_with :success }
           it "should indicate success in the json" do
-            @response.body.should include(I18n.t("muck.contents.content_removed")
+            @response.body.should include(I18n.t("muck.contents.content_removed"))
           end
         end
       end

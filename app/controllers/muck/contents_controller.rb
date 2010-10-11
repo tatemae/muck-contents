@@ -175,7 +175,7 @@ class Muck::ContentsController < ApplicationController
     # layout will need to exist in your 'views/layouts' directory
     def setup_layouts
       @content_layouts = []
-      get_layouts(File.join(RAILS_ROOT, 'app', 'views', 'layouts')).each do |layout|
+      get_layouts(File.join(::Rails.root.to_s, 'app', 'views', 'layouts')).each do |layout|
         @content_layouts << OpenStruct.new(:name => layout.titleize, :value => layout)
       end
     end

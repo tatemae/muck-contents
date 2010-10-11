@@ -22,9 +22,5 @@
 #
 
 class Content < ActiveRecord::Base
-  include MuckContents::Models::MuckContent(
-    :git_repository => GlobalConfig.git_repository,
-    :enable_auto_translations => GlobalConfig.enable_auto_translations,
-    :enable_solr => GlobalConfig.enable_solr
-  )
+  include MuckContents::Models::MuckContent
 end

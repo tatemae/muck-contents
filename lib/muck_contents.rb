@@ -1,3 +1,9 @@
+require 'friendly_id'
+require 'acts-as-taggable-on'
+require 'tiny_mce'
+require 'sanitize'
+require 'babelphish'
+
 require 'muck_contents/config.rb'
 require 'muck_contents/models/content.rb'
 require 'muck_contents/models/content_permission.rb'

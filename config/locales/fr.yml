@@ -6,17 +6,17 @@ fr:
       cancel: Annuler
       cant_delete_content: "Vous n&#39;avez pas la permission de supprimer le contenu spécifié"
       choose_layout: "Sélectionner un modèle"
-      choose_layout_help: "Sélectionnez une mise en modèle qui rendra le chrome pour cette page."
+      choose_layout_help: "Sélectionnez un modèle de mise en page qui rendra le chrome pour cette page."
       confirm_delete_content: "Etes-vous sûr de vouloir supprimer ce contenu? Cela ne peut pas être annulée!"
       content_help: "C&#39;est le contenu qui apparaîtra sur la page."
-      content_label: Teneur
+      content_label: Contenu
       content_removed: "Contenu supprimé avec succès"
       create_error: "Il y avait un problème d&#39;ajouter votre contenu"
       default_404_body: "Nous n&#39;avons pas pu trouver la page que vous recherchez."
       default_404_title: "404 Page not found"
-      delete: Effacer
+      delete: Supprimer
       delete_title: "Supprimer cette page."
-      edit: Éditer
+      edit: Modifier
       edit_title: "Modifier cette page."
       manage_pages_title: "Gérer le contenu du site"
       no_files: "Aucun fichier disponible"
@@ -24,15 +24,15 @@ fr:
       no_uri_error: "S&#39;il vous plaît définir une valeur pour uri avant d&#39;enregistrer le modèle lorsque contentable est nul"
       page_doesnt_exist_create: "La page demandée n&#39;existe pas. S&#39;il vous plaît fournir les informations ci-dessous pour créer la page."
       permalink: "Permalink:"
-      preview: Avant-première
+      preview: Extrait
       problem_adding_content: "Il y avait un problème en ajoutant le contenu"
       problem_updating_content: "Il y avait un problème mise à jour du contenu"
-      save: Sauver
-      submit_content_button: Sauver
+      save: Enregistrer
+      submit_content_button: Enregistrer
       tag_information: "Tags aider les autres utilisateurs à trouver votre page et sera utilisé comme meta keywords pour le document."
       tags: Tags
       tags_help: "Ajouter des tags pour aider à identifier votre contenu. Les étiquettes peuvent également être utilisés pour générer des listes de liens pour un menu."
       tags_label: Tags
-      title_help: "Le titre de contrôle de l&#39;URL et le titre de la page affichée dans la barre d&#39;adresse"
+      title_help: "Le titre de contrôle l&#39;url et le titre de la page affichée dans la barre d&#39;url"
       title_label: Titre
       update_error: "Il y avait un problème mise à jour de votre contenu"

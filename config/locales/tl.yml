@@ -2,37 +2,37 @@
 tl: 
   muck: 
     contents: 
-      add: Idagdag
-      cancel: Ikansela
-      cant_delete_content: "Ikaw ay walang pahintulot na burahin ang mga tinukoy na nilalaman"
+      add: Magdagdag
+      cancel: Kanselahin
+      cant_delete_content: "Ikaw ay walang pahintulot na tanggalin ang mga tinukoy na nilalaman"
       choose_layout: "Pumili ng Template"
-      choose_layout_help: "Pumili ng layout ng isang template na awitin ang kromo para sa pahinang ito."
-      confirm_delete_content: "Sigurado ka bang gusto mong burahin ang nilalaman? Ito ay hindi maaaring bawiin!"
+      choose_layout_help: "Pumili ng isang layout template na render ang chrome para sa pahinang ito."
+      confirm_delete_content: "Sigurado ka bang nais mong tanggalin ang nilalaman? Ito ay hindi na maibabalik!"
       content_help: "Ito ay ang nilalaman na lilitaw sa pahina."
       content_label: Nilalaman
-      content_removed: "Nilalaman ng matagumpay na tinanggal"
+      content_removed: "Nilalaman matagumpay na natanggal"
       create_error: "May problema sa pagdagdag ng iyong nilalaman"
       default_404_body: "Hindi namin mahanap ang pahina na iyong hinahanap."
       default_404_title: "404 Page hindi natagpuan"
       delete: Alisin
-      delete_title: "Burahin ang pahinang ito."
-      edit: "I-edit ang"
+      delete_title: "Tanggalin ang pahinang ito."
+      edit: I-edit
       edit_title: "I-edit ang pahina na ito."
       manage_pages_title: "Pamahalaan ang mga nilalaman ng site"
-      no_files: "Walang magagamit na mga file"
-      no_images: "Walang magagamit na imahe"
-      no_uri_error: "Mangyaring magtakda ng isang halaga para sa uri bago nagse-save ang modelo kapag contentable ay kawalan"
-      page_doesnt_exist_create: "Ang pahina na iyong hiniling ay hindi umiiral. Mangyaring magbigay ng impormasyon sa ibaba upang lumikha ng pahina."
+      no_files: "Walang mga file na magagamit"
+      no_images: "Walang mga larawan na magagamit"
+      no_uri_error: "Mangyaring magtakda ng isang halaga para sa URI bago i-save ang mga modelo kapag contentable ay kawalan"
+      page_doesnt_exist_create: "Ang pahina na iyong hiniling ay hindi umiiral. Mangyaring magbigay ng impormasyon sa ibaba upang lumikha ng mga pahina."
       permalink: "Permalink:"
       preview: Preview
-      problem_adding_content: "May problema sa pagdagdag ng nilalaman"
+      problem_adding_content: "May problema sa pagdagdag ng mga nilalaman"
       problem_updating_content: "May problema sa pag-update ng nilalaman"
       save: Iligtas
       submit_content_button: Iligtas
-      tag_information: "Tags ng tulong sa ibang mga manggagamit na hanapin ang iyong pahina at ito ay gagamitin bilang ng mga keyword meta para sa dokumento."
+      tag_information: "Tags makatulong sa iba pang mga gumagamit na mahanap ang iyong pahina at ito ay gagamitin bilang ng mga keyword meta para sa dokumento."
       tags: Tags
-      tags_help: "Magdagdag ng mga tag sa mga tulong na makilala ang iyong nilalaman. Tags ay maaari ding gamitin upang bumuo ng mga listahan ng mga link para sa isang menu."
+      tags_help: "Magdagdag ng mga tag upang makatulong na makilala ang iyong nilalaman. Tags ay maaari ding gamitin upang bumuo ng mga listahan ng mga link para sa isang menu."
       tags_label: Tags
-      title_help: "Ang pamagat ng kontrol ang url at ang mga pahina ng pamagat na ipinapakita sa url bar"
+      title_help: "Ang pamagat kontrol ang url at ang pamagat ng pahina na ipinapakita sa bar sa url"
       title_label: Pamagat
       update_error: "May problema sa pag-update ng iyong nilalaman"

@@ -1,5 +1,3 @@
-require 'friendly_id'
-
 #include MuckContents::Models::MuckContent
 module MuckContents
   module Models
@@ -11,7 +9,7 @@ module MuckContents
           
         acts_as_nested_set :scope => [:contentable_id, :contentable_type]
         acts_as_taggable
-        include MuckComments::Models::MuckCommentable if options[:enable_comments]
+        include ::MuckComments::Models::MuckCommentable if MuckContents.configuration.enable_comments
                 
         validates_presence_of :title 
         validates_presence_of :body_raw
@@ -24,7 +22,7 @@ module MuckContents
 
         scope :by_newest, order("contents.created_at DESC")
         scope :newer_than, lambda { |*args| where("contents.created_at > ?", args.first || 1.week.ago) }
-        scope :by_alpha, order("contents.title ASC")
+        scope :by_title, order("contents.title ASC")
         scope :is_public, where("contents.is_public = true")
         scope :by_parent, lambda { |*args| where('contents.parent_id = ?', args.first || 0) }
         scope :by_creator, lambda { |*args| where('contents.creator_id = ?', args.first || 0) }
@@ -43,9 +41,9 @@ module MuckContents
         # then you could be working on a revision without it being live
 
         # TODO add versions
-        # if options[:git_repository]
+        # if MuckContents.configuration.git_repository
         #   versioning(:title) do |version|
-        #     version.repository = options[:git_repository]
+        #     version.repository = MuckContents.configuration.git_repository
         #     version.message = lambda { |content| "Committed by #{content.author.name}" }
         #   end
         # end

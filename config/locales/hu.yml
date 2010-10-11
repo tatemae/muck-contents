@@ -2,37 +2,37 @@
 hu: 
   muck: 
     contents: 
-      add: Összead
+      add: Hozzáadása
       cancel: Mégsem
-      cant_delete_content: "Önnek nincs jogosultsága, hogy törölje az adott tartalmat"
-      choose_layout: "Válasszuk a Sablon"
-      choose_layout_help: "Válasszon egy elrendezési sablont, hogy teszi a króm az oldal."
-      confirm_delete_content: "Biztos benne, hogy törölni szeretné a tartalmat? Ez nem lehet visszavonni!"
+      cant_delete_content: "Önnek nincs jogosultsága törölni a megadott tartalmi"
+      choose_layout: "Válassza ki a sablon"
+      choose_layout_help: "Válasszon ki egy elrendezést sablon teszi a króm esetében ezt az oldalt."
+      confirm_delete_content: "Biztosan törölni kívánja a tartalom? Ez nem lehet visszavonni!"
       content_help: "Ez a tartalom jelenik meg az oldalon."
       content_label: Tartalom
-      content_removed: "Tartalom sikeresen eltávolított"
-      create_error: "Hiba történt a tartalom hozzáadása"
+      content_removed: "Tartalom sikeresen eltávolította"
+      create_error: "Volt egy probléma, hozzátéve, a tartalom"
       default_404_body: "Nem tudtuk megtalálni az oldalon, amit keresett."
       default_404_title: "404 Az oldal nem található"
-      delete: Töröl
-      delete_title: "Törlés ezt az oldalt."
+      delete: Törlés
+      delete_title: "Az oldal törléséhez."
       edit: Edit
-      edit_title: "Az oldal szerkesztése."
-      manage_pages_title: "Kezelésére webhelytartalom"
-      no_files: "Nincs file kérhető"
-      no_images: "Nincs kép elérhető"
-      no_uri_error: "Adjon meg egy értéket uri mentés előtt a modell, ha contentable nulla"
-      page_doesnt_exist_create: "A kért oldal nem létezik. Kérjük, adja meg az alábbi adatokat kell létrehozni az oldal."
+      edit_title: "Az oldal szerkesztéséhez."
+      manage_pages_title: "Kezelése webhelytartalom"
+      no_files: "Nincs fájl elérhetővé"
+      no_images: "Nincs kép áll rendelkezésre"
+      no_uri_error: "Adjon meg egy értéket uri mentése előtt a modellt, amikor contentable nulla"
+      page_doesnt_exist_create: "A kért oldal nem létezik. Kérjük, adja meg az alábbi adatokat, hogy hozzon létre az oldalt."
       permalink: "Permalink:"
-      preview: Sajtóbemutató
-      problem_adding_content: "Hiba történt a tartalom hozzáadása"
-      problem_updating_content: "Hiba történt a tartalom frissítése"
-      save: Megment
-      submit_content_button: Megment
-      tag_information: "Címkék segítsenek a többieknek meg az oldalt, és használják a meta kulcsszavakat a dokumentum."
+      preview: Előnézet
+      problem_adding_content: "Volt egy probléma, hozzátéve, a tartalom"
+      problem_updating_content: "Volt egy probléma a tartalom frissítése"
+      save: Mentés
+      submit_content_button: Mentés
+      tag_information: "Címkék segítsenek a többieknek meg az oldalt, és használni fogják a meta kulcsszavakat a dokumentum."
       tags: Címkék
-      tags_help: "Add hozzá címkék segítségével azonosítani tudja a tartalmat. Címkék is használhatók, hogy létrehoz listája linkeket a menüt."
+      tags_help: "Címkéket, hogy segítsen azonosítani a tartalmat. Címkék is használhatók, hogy létre listákat linkek a menüt."
       tags_label: Címkék
-      title_help: "A cím ellenőrzése a url és az oldal címe jelenik meg az url bar"
+      title_help: "A cím ellenőrzése URL-t és az oldal címe jelenik meg az URL sáv"
       title_label: Cím
-      update_error: "Hiba történt a frissítés a tartalom"
+      update_error: "Volt egy probléma frissítése tartalom"

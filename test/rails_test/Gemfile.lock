@@ -36,6 +36,7 @@ PATH
     muck-contents (3.0.0)
       acts-as-taggable-on
       awesome_nested_set
+      babelphish
       friendly_id
       muck-comments
       muck-engine
@@ -106,6 +107,9 @@ GEM
       builder
       mime-types
       xml-simple
+    babelphish (0.2.8)
+      json
+      ya2yaml
     babosa (0.2.0)
     bcrypt-ruby (2.1.2)
     builder (2.1.2)
@@ -227,6 +231,7 @@ GEM
       rack
     will_paginate (3.0.pre2)
     xml-simple (1.0.12)
+    ya2yaml (0.30)
 
 PLATFORMS
   ruby
@@ -248,7 +253,6 @@ DEPENDENCIES
   muck-solr
   muck-users!
   mysql
-  nested_set
   overlord
   rails (= 3.0.0)
   rcov
@@ -257,6 +261,6 @@ DEPENDENCIES
   ruby-debug
   shoulda!
   spork
-  tiny_mce
+  uploader
   validation_reflection!
   will_paginate (~> 3.0.pre2)

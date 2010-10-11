@@ -2,37 +2,37 @@
 lt: 
   muck: 
     contents: 
-      add: Papildyti
+      add: Pridėti
       cancel: Atšaukti
       cant_delete_content: "Jūs neturite leidimo ištrinti nurodyto turinio"
       choose_layout: "Pasirinkite šabloną"
-      choose_layout_help: "Pasirinkite išdėstymo šabloną, kuris bus padaryti chromo šio puslapio."
+      choose_layout_help: "Pasirinkite išdėstymo šabloną, kuris bus padaryti su šiuo puslapiu, chromas."
       confirm_delete_content: "Ar tikrai norite ištrinti šį turinį? Tai negali būti atšauktas!"
       content_help: "Tai turinys, kuris bus rodomas puslapyje."
-      content_label: Kiekis
+      content_label: Turinys
       content_removed: "Turinio sėkmingai pašalintas"
-      create_error: "Iškilo problema įtraukti savo turinį"
-      default_404_body: "Mums nepavyko rasti puslapį, kurį jūs ieškote."
+      create_error: "Iškilo problema pridedant turinio"
+      default_404_body: "Mums nepavyko rasti puslapį, kurio ieškote."
       default_404_title: "404 Puslapis nerastas"
-      delete: Panaikinti
+      delete: Ištrinti
       delete_title: "Ištrinti šį puslapį."
       edit: Redaguoti
-      edit_title: "Redaguoti šį puslapį."
-      manage_pages_title: "Valdymas svetainės turinį"
+      edit_title: "Redaguoti šį puslapį &quot;."
+      manage_pages_title: "Tvarkyti svetainės turinį"
       no_files: "Nėra failų rasti"
-      no_images: "Nr vaizdų"
-      no_uri_error: "Nurodykite vertę uri prieš išsaugant modelis, kai contentable lygus nuliui"
+      no_images: "Nėra nuotraukų prieinamas"
+      no_uri_error: "Prašome nurodyti už uri vertė prieš taupymo modelį, kai contentable yra nulis"
       page_doesnt_exist_create: "Jūsų prašomas puslapis neegzistuoja. Prašome pateikti šią informaciją siekiant sukurti puslapį."
       permalink: "Nuolatinė nuoroda:"
       preview: Peržiūrėti
       problem_adding_content: "Iškilo problema pridedant turinio"
       problem_updating_content: "Iškilo problema atnaujinimo turinio"
-      save: Išskyrus
-      submit_content_button: Išskyrus
-      tag_information: "Tags padėti kitiems vartotojams rasti jūsų puslapį ir bus naudojamas kaip meta raktažodžius dokumentas."
+      save: Prisiminti
+      submit_content_button: Prisiminti
+      tag_information: "Žymos padės kitiems vartotojams rasti jūsų puslapį ir bus naudojamas kaip meta raktažodžius dokumentą."
       tags: Žymos
-      tags_help: "Įtraukti žymes, kad padėtų nustatyti jūsų turinį. Tags taip pat gali būti naudojamas kuriant sąrašus nuorodos meniu."
+      tags_help: "Įtraukti žymes padėti nustatyti jūsų turinį. Žymos taip pat gali būti naudojamas generuoti sąrašus nuorodos meniu."
       tags_label: Žymos
-      title_help: "Pavadinimas kontrolės URL ir puslapio pavadinimą rodomas URL baras"
+      title_help: "Pavadinimas kontrolės url ir puslapio pavadinimą rodomas URL baras"
       title_label: Pavadinimas
-      update_error: "Iškilo problema atnaujinimo turinio"
+      update_error: "Iškilo problema atnaujinti savo turinį"

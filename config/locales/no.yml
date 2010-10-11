@@ -7,12 +7,12 @@
       cancel: Avbryt
       cant_delete_content: "Du har ikke tillatelse til å slette den angitte innholdet"
       choose_layout: "Velg mal"
-      choose_layout_help: "Velg en layout mal som vil gjøre krom for denne siden."
-      confirm_delete_content: "Er du sikker på at du vil slette dette innholdet? Dette kan ikke angres!"
+      choose_layout_help: "Velg en layout mal som vil gjengi krom for denne siden."
+      confirm_delete_content: "Er du sikker på at du vil slette dette innholdet? Dette kan ikke gjøres om!"
       content_help: "Dette er innholdet som skal vises på siden."
       content_label: Innhold
-      content_removed: "Innhold fjernet"
-      create_error: "Det oppstod et problem å legge innholdet ditt"
+      content_removed: "Innhold er fjernet"
+      create_error: "Det oppstod et problem å legge innholdet"
       default_404_body: "Vi kunne ikke finne siden du leter etter."
       default_404_title: "404 Side ikke funnet"
       delete: Slett
@@ -22,7 +22,7 @@
       manage_pages_title: "Administrere innhold"
       no_files: "Ingen filer"
       no_images: "Ingen bilder tilgjengelig"
-      no_uri_error: "Vennligst angi en verdi for URI før du lagrer modellen når contentable er null"
+      no_uri_error: "Vennligst angi en verdi for URI før du lagrer modellen når contentable er lik null"
       page_doesnt_exist_create: "Siden du forespurte finnes ikke. Vennligst oppgi informasjonen nedenfor for å opprette siden."
       permalink: "Permalink:"
       preview: Forhåndsvisning
@@ -30,10 +30,10 @@
       problem_updating_content: "Det oppstod et problem å oppdatere innholdet"
       save: Lagre
       submit_content_button: Lagre
-      tag_information: "Tags å finne andre brukere på siden og brukes som meta søkeord for dokumentet."
+      tag_information: "Tags hjelper andre brukere med å finne siden din og vil bli brukt som meta nøkkelord for dokumentet."
       tags: Tags
-      tags_help: "Legg til koder for å identifisere innholdet. Tags kan også brukes til å generere lister med linker for en meny."
+      tags_help: "Legg koder til å identifisere innholdet. Tags kan også brukes til å generere lister med linker for en meny."
       tags_label: Tags
-      title_help: "Tittelen styrer url og siden tittelen vises i url baren"
+      title_help: "Tittelen styrer url og sidetittelen vises i url baren"
       title_label: Tittel
       update_error: "Det oppstod et problem å oppdatere innholdet"
