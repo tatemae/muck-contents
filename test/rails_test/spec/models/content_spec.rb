@@ -24,7 +24,7 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
 # Used to test muck_content
-class ContentTest < ActiveSupport::TestCase
+describe Content do
 
   describe "content" do
     before do
@@ -40,8 +40,6 @@ class ContentTest < ActiveSupport::TestCase
       @editor.add_to_role('editor')
       @user = Factory(:user)
     end
-    
-    
     
     it { should belong_to :contentable }
     it { should belong_to :creator }

@@ -24,20 +24,20 @@ Create a new initializer or add the following to muck.rb file and change as is a
 be sure to set content_css to any css files you want to have show up in your tinymce editor. Example:
 
   MuckContents.configure do |config|
-    self.sanitize_content = true
-    self.enable_auto_translations = false         # If true then all content objects will automatically be translated into all languages supported by Google Translate
-    self.enable_solr = true                       # Enables solr for the content system.  If you are using solr then set this to true.  If you do not wish to setup and manage solr 
-                                                  # then set this value to false (but search will be disabled).
-    self.enable_comments = false
+    config.sanitize_content = true
+    config.enable_auto_translations = false         # If true then all content objects will automatically be translated into all languages supported by Google Translate
+    config.enable_solr = true                       # Enables solr for the content system.  If you are using solr then set this to true.  If you do not wish to setup and manage solr 
+                                                    # then set this value to false (but search will be disabled).
+    config.enable_comments = false
     
     # CSS files that should be fed into the tiny_mce content editor.  
     # Note that Rails will typically generate a single all.css stylesheet.  Setting the stylesheets here let's 
     # the site administrator control which css is present in the content editor and thus which css an end 
     # user has access to to style their content.
     if Rails.env.production?
-      self.content_css = ['/stylesheets/all.css']
+      config.content_css = ['/stylesheets/all.css']
     else
-      self.content_css = ['/stylesheets/reset.css', '/stylesheets/styles.css']
+      config.content_css = ['/stylesheets/reset.css', '/stylesheets/styles.css']
     end
   end           
 

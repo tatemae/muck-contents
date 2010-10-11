@@ -22,24 +22,20 @@ module MuckContents
         has_many   :content_permissions, :dependent => :destroy
         has_many   :content_translations, :dependent => :destroy
 
-        named_scope :by_newest, :order => "contents.created_at DESC"
+        scope :by_newest, order("contents.created_at DESC")
         scope :newer_than, lambda { |*args| where("contents.created_at > ?", args.first || 1.week.ago) }
-      
-        named_scope :by_alpha, :order => "contents.title ASC"
-        named_scope :public, :conditions => "contents.is_public = true"
-        named_scope :by_parent, lambda { |parent_id| { :conditions => ['contents.parent_id = ?', parent_id || 0] } }
-        named_scope :by_creator, lambda { |creator_id| { :conditions => ['contents.creator_id = ?', creator_id || 0] } }
-        named_scope :no_contentable, :conditions => 'contents.contentable_id IS NULL'
+        scope :by_alpha, order("contents.title ASC")
+        scope :is_public, where("contents.is_public = true")
+        scope :by_parent, lambda { |*args| where('contents.parent_id = ?', args.first || 0) }
+        scope :by_creator, lambda { |*args| where('contents.creator_id = ?', args.first || 0) }
+        scope :no_contentable, :conditions => 'contents.contentable_id IS NULL'
         # include the '/' in case the user forgets.  Note 'get_content_scope' will add the '/' so 
         # if we don't include it here the content won't be found as the scope won't match up. 
-        named_scope :by_scope, lambda { |scope| { :conditions => ["slugs.scope = ?", File.join('/', scope)], :include => [:slugs] } } 
+        scope :by_scope, lambda { |scope| where("slugs.scope = ?", File.join('/', scope)).includes(:slugs) } 
       
         has_friendly_id :title, :use_slug => true, :scope => :get_content_scope
 
-        if options[:sanitize_content]
-          before_save :sanitize_attributes
-        end
-      
+        before_save :sanitize_attributes if MuckContents.configuration.sanitize_content
         before_save :ensure_locale_is_string
       
         # TODO add states - draft, published
@@ -54,11 +50,9 @@ module MuckContents
         #   end
         # end
 
-        if options[:enable_auto_translations]
-          after_save :auto_translate
-        end
-
-        if options[:enable_solr]
+        after_save :auto_translate if MuckContents.configuration.enable_auto_translations
+        
+        if MuckContents.configuration.enable_solr
           require 'acts_as_solr'
           acts_as_solr({ :fields => [ :search_content => 'string' ] }, { :multi_core => true, :default_core => 'en' })
         end

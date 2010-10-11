@@ -3,15 +3,8 @@ require 'rake/testtask'
 require 'rake/rdoctask'
 
 desc 'Default: run unit tests.'
-task :default => :test
+task :default => :spec
 
-desc 'Test muck-contents.'
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.libs << 'test/rails_test/test'
-  t.pattern = 'test/rails_test/test/**/*_test.rb'
-  t.verbose = true
-end
 
 begin
   require 'rcov/rcovtask'
@@ -47,7 +40,7 @@ end
 
 desc 'Translate this gem'
 task :translate do
-  file = File.join(File.dirname(__FILE__), 'locales', 'en.yml')
+  file = File.join(File.dirname(__FILE__), 'config', 'locales', 'en.yml')
   system("babelphish -o -y #{file}")
 end
 
@@ -69,7 +62,6 @@ begin
     gemspec.add_dependency "friendly_id"
     gemspec.add_dependency "uploader"
     gemspec.add_dependency "tiny_mce"
-    gemspec.add_dependency "fleakr"
   end
   Jeweler::GemcutterTasks.new
   Jeweler::RubyforgeTasks.new do |rubyforge|

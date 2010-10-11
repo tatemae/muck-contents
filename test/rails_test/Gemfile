@@ -14,7 +14,6 @@ gem "validation_reflection", :git => "http://github.com/redinger/validation_refl
 
 gem "bcrypt-ruby", :require => "bcrypt"
 gem 'tiny_mce'
-gem 'fleakr'
 
 gem 'overlord'
 

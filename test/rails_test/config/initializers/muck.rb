@@ -61,15 +61,15 @@ MuckComments.configure do |config|
 end
 
 MuckContents.configure do |config|
-  self.sanitize_content = true
-  self.enable_auto_translations = false
-  self.enable_solr = true
-  self.enable_comments = false
-  self.flickr_api_key = Secrets.flickr_api_key
+  config.sanitize_content = true
+  config.enable_auto_translations = false
+  config.enable_solr = true
+  config.enable_comments = false
+  config.flickr_api_key = Secrets.flickr_api_key
   if Rails.env.production?
-    self.content_css = ['/stylesheets/all.css']
+    config.content_css = ['/stylesheets/all.css']
   else
-    self.content_css = ['/stylesheets/reset.css', '/stylesheets/styles.css']
+    config.content_css = ['/stylesheets/reset.css', '/stylesheets/styles.css']
   end
 end                                    
   

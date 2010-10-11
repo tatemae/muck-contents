@@ -12,14 +12,12 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
 # Used to test muck_content_permission
-class ContentPermissionTest < ActiveSupport::TestCase
+describe ContentPermission do
 
   describe "A content permission instance" do
     before do
       @content_permission = Factory(:content_permission)
     end
-    
-    
     
     it { should belong_to :content }
     it { should belong_to :user }

@@ -12,7 +12,7 @@ module MuckContents
 
   class Configuration
     
-    attr_accessor :content_git_repository     # Not currently used.  Eventually this will be the path to a git repository that the content system uses to store revisions.
+    attr_accessor :git_repository             # Not currently used.  Eventually this will be the path to a git repository that the content system uses to store revisions.
     attr_accessor :enable_auto_translations   # If true then all content objects will automatically be translated into all languages supported by Google Translate
     attr_accessor :enable_solr                # Enables solr for the content system.  If you are using solr then set this to true.  If you do not wish to setup and manage solr 
                                               # then set this value to false (but search will be disabled).
@@ -23,6 +23,11 @@ module MuckContents
     attr_accessor :flickr_api_key             # Not currently used but will be used to load pictures from a flickr account so they can be inserted into a document.
     attr_accessor :sanitize_content           # Leave this one on or suffer hacker wrath.
     attr_accessor :enable_comments            # Turns comments on and off for a content page.
+    
+    # Tiny MCE options
+    attr_accessor :advanced_mce_options
+    attr_accessor :simple_mce_options
+    attr_accessor :raw_mce_options
     
     def initialize
       self.sanitize_content = true

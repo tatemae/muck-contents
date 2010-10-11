@@ -1,6 +1,6 @@
-GlobalConfig.advanced_mce_options = {
+MuckContents.configuration.advanced_mce_options = {
   :theme => 'advanced',
-  :content_css => GlobalConfig.content_css,
+  :content_css => MuckContents.configuration.content_css,
   :body_id => 'content',
   :mode => "textareas",
   :height => 650,
@@ -51,9 +51,9 @@ GlobalConfig.advanced_mce_options = {
   :accessibility_warnings => false
   }
    
-GlobalConfig.simple_mce_options = {
+MuckContents.configuration.simple_mce_options = {
   :theme => 'advanced',
-  :content_css => GlobalConfig.content_css,
+  :content_css => MuckContents.configuration.content_css,
   :body_id => 'content',
   :browsers => %w{msie gecko safari},
   :cleanup_on_startup => true,
@@ -69,7 +69,7 @@ GlobalConfig.simple_mce_options = {
   :plugins => %w{inlinepopups safari}
   }
 
-GlobalConfig.raw_mce_options = 'template_templates : [
+MuckContents.configuration.raw_mce_options = 'template_templates : [
   {
     title : "A page",
     src : "/javascripts/tiny_mce/templates/bio.htm",
