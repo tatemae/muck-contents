@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<%= I18n.locale %>" xml:lang="<%= I18n.locale %>">
   <head>
-    <title><%= @page_title || GlobalConfig.application_name %></title>
+    <title><%= @page_title || MuckEngine.configuration.application_name %></title>
     <%= javascript_include_tag %w{
       jquery/jquery.js
       jquery/jquery.queryString.js

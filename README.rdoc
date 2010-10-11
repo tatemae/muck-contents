@@ -4,29 +4,8 @@ Add contents to you website.  News stories, blog posts and pages are all basical
 it easy to add this content to your website.
 
 === Gems
-Note that all gems below should be installed automatically as a muck-contents has them set as a dependency.  
-  sudo gem install muck-contents
-  
-=== Configure environment.rb
-Paste in the following:
-  config.gem "will_paginate"
-  config.gem "authlogic"
-  config.gem "searchlogic"
-  config.gem "bcrypt-ruby", :lib => "bcrypt", :version => ">=2.0.5"
-  config.gem "acts-as-taggable-on"
-  config.gem "awesome_nested_set"
-  config.gem "friendly_id"
-  config.gem "sanitize"
-  config.gem 'paperclip'
-  config.gem 'tiny_mce'
-  config.gem 'fleakr'
-  config.gem "uploader"
-  config.gem "babelphish"
-  config.gem 'muck-engine', :lib => 'muck_engine'
-  config.gem 'muck-users', :lib => 'muck_users'
-  config.gem 'muck-activities', :lib => 'muck_activities'
-  config.gem 'muck-solr', :lib => 'acts_as_solr'
-  config.gem 'muck-comments', :lib => 'muck_comments'
+Add the following to your Gemfile:
+  gem 'muck-contents', :require => 'muck_contents'
 
 ==== Note about TinyMCE
 Watch out for updates to the TinyMCE gem. The author has chosen to overwrite all files in the tiny mce asset directories when the server
@@ -40,17 +19,29 @@ In your app do
 
 == Setup
 
-=== Global Config
-Add the following settings to your global_config.yml file and change as is appropriate for your application.  In particular
-be sure to set content_css to any css files you want to have show up in your tinymce editor.
-  # Content options
-  content_git_repository: "#{File.join(RAILS_ROOT, 'repo', RAILS_ENV)}"
-  enable_auto_translations: true
-  content_enable_solr: false
-  content_css: ['/stylesheets/reset.css', '/stylesheets/styles.css']
-  flickr_api_key:  #get from www.flickr.com/services/api/misc.api_keys.html
+=== Muck Contents Initializer
+Create a new initializer or add the following to muck.rb file and change as is appropriate for your application.  In particular
+be sure to set content_css to any css files you want to have show up in your tinymce editor. Example:
 
-=== Initializer
+  MuckContents.configure do |config|
+    self.sanitize_content = true
+    self.enable_auto_translations = false         # If true then all content objects will automatically be translated into all languages supported by Google Translate
+    self.enable_solr = true                       # Enables solr for the content system.  If you are using solr then set this to true.  If you do not wish to setup and manage solr 
+                                                  # then set this value to false (but search will be disabled).
+    self.enable_comments = false
+    
+    # CSS files that should be fed into the tiny_mce content editor.  
+    # Note that Rails will typically generate a single all.css stylesheet.  Setting the stylesheets here let's 
+    # the site administrator control which css is present in the content editor and thus which css an end 
+    # user has access to to style their content.
+    if Rails.env.production?
+      self.content_css = ['/stylesheets/all.css']
+    else
+      self.content_css = ['/stylesheets/reset.css', '/stylesheets/styles.css']
+    end
+  end           
+
+=== Tiny MCE Initializer
 Running rake muck:contents:sync will copy all the needed javascript, image and css files into your project.  It will also create an initializer called mce_options.rb.  That file
 contains two basic configurations for tinymce as well as examples on how to create templates.  It is recommended that you don't modify that file as it will be overwritten the
 next time you run rake muck:contents:sync.  Instead use it as an example and create the desired tinymce setup.
@@ -70,28 +61,15 @@ a page for you at that location if the logged in user has a method can_add_root_
 Create the following models in your project.  This let's you add any other methods that you see fit.
 
   class Content < ActiveRecord::Base
-    # This assumes you are using GlobalConfig.  You can also set these values directly in the model
-    acts_as_muck_content(
-      :git_repository => GlobalConfig.content_git_repository,
-      :enable_translations => GlobalConfig.enable_auto_translations,
-      :enable_solr => GlobalConfig.content_enable_solr
-    )
+    include MuckContents::Models::MuckContent
   end
   
   class ContentTranslation < ActiveRecord::Base
-    acts_as_muck_content_translation
+    include MuckContents::Models::MuckContentTranslation
   end
   
   class ContentPermission < ActiveRecord::Base
-    acts_as_muck_content_permission
-  end
-
-=== Application controller
-Add acts_as_muck_content_handler if you want muck_contents to intercept pages that are not found and provide authorized users
-and opportunity to add them.
-
-  class ApplicationController < ActionController::Base
-    acts_as_muck_content_handler
+    include MuckContents::Models::MuckContentPermission
   end
 
 === Contents controller
@@ -102,7 +80,7 @@ we'd have to hard code the routes to go to muck/contents which prevent modificat
   end
 
 Add a route for the new controller:
-  ActionController::Routing::Routes.draw do |map|
+  MyApp::Application.routes.draw do
     map.resource :contents
   end
   
@@ -195,36 +173,27 @@ the uploads controller.  The security for uploads to your site should be handled
   end
 
 ==== Example upload model:
-NOTE: you must define icon, thumb, small, medium and large as styles.  They can be any size you like.
+NOTE: you must define icon, thumb, small, medium and large as styles.  They can be any size you like. Be sure to look at the 'uploader' gem documentation for more
+information on setting up uploads.
 
   class Upload < ActiveRecord::Base
-  
-    acts_as_uploader  :enable_s3 => false,
-                      :has_attached_file => {
-                        :url     => "/system/:attachment/:id_partition/:style/:basename.:extension",
-                        :path    => ":rails_root/public/system/:attachment/:id_partition/:style/:basename.:extension",
-                        :styles  => { :icon => "30x30!", 
-                                      :thumb => "100>", 
-                                      :small => "150>", 
-                                      :medium => "300>", 
-                                      :large => "660>" },
-                        :default_url => "/images/profile_default.jpg",
-                        :storage => :s3,
-                        :s3_credentials => AMAZON_S3_CREDENTIALS,
-                        :bucket => "assets.#{GlobalConfig.application_url}",
-                        :s3_host_alias => "assets.#{GlobalConfig.application_url}",
-                        :convert_options => {
-                           :all => '-quality 80'
-                         }
-                      },
-                      :s3_path => ':id_partition/:style/:basename.:extension'
 
-  
-    acts_as_taggable
-  
-    named_scope :public, :conditions => "is_public = true"
-    named_scope :tagged_with, lambda {|tag_name| {:conditions => ["tags.name = ?", tag_name], :include => :tags} }
-  
+    include Uploader::Models::Upload
+                                                                   
+    # only allow images:
+    # validates_attachment_content_type :file, :content_type => ['image/jpeg', 'image/pjpeg', 'image/jpg']
+    
+    # limit uploads to 10 MB
+    # validates_attachment_size :local, :less_than => 10.megabytes
+    
+    # The following method is implemented in the upload model mixin.  This is the method destroy will check to see if
+    # the user has permission to delete the object.  Add additional logic as needed or if the existing logic
+    # looks fine then feel free to delete this comment and the can_edit? method.
+    def can_edit?(check_user)
+      return false if user.blank?
+      check_user == self.user
+    end
+    
   end
 
 == Tips
@@ -238,7 +207,6 @@ Cleanup old slugs with:
   rake friendly_id:remove_old_slugs MODEL=Content
  
 == Testing
-This gem uses a full rails application in the test directory for testing and development.  By default there isn't a global_config.yml setup.  
-Use global_config.sample.yml to set one up.
+This gem uses a full rails application in the test directory for testing and development. Running rake spec there will run the tests.
 
-Copyright (c) 2009 Tatemae, released under the MIT license
+Copyright (c) 2009-2010 Tatemae, released under the MIT license
