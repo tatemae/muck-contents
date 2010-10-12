@@ -50,7 +50,7 @@ module MuckContents
         def get_content
           return if @content # in case @content is setup by an overriding method
           id = params[:id] || Content.id_from_uri(env["muck_contents.request_uri"])
-          scope = params[:scope] || Content.scope_from_uri(env["muck_contents.request_uri"])
+          scope = params[:scope] || Content.scope_from_uri(env["muck_contents.request_uri"]) 
           @content = Content.find(id, :scope => scope) rescue nil
           if @content.blank?
             @contentable = get_parent

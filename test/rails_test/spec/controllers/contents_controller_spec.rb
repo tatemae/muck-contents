@@ -2,6 +2,8 @@ require File.dirname(__FILE__) + '/../spec_helper'
 
 describe Muck::ContentsController do
   
+  render_views
+  
   describe "content controller" do
     before do
       @user = Factory(:user)
@@ -29,7 +31,20 @@ describe Muck::ContentsController do
     
     describe "GET show using parent" do
       before do
+        @env = {}
+        controller.stub!(:env).and_return(@env)
         get :show, make_parent_params(@user).merge(:id => @content.to_param)
+      end
+      it { should respond_with :success }
+      it { should render_template :show }
+    end
+    
+    describe "GET show using parent" do
+      before do
+        @env = {}
+        @env["muck_contents.request_uri"] = @content.uri
+        controller.stub!(:env).and_return(@env)
+        get :show
       end
       it { should respond_with :success }
       it { should render_template :show }

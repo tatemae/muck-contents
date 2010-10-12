@@ -85,10 +85,12 @@ module MuckContents
         end
         
         def id_from_uri(uri)
+          return '' if uri.blank?
           File.basename(uri)
         end
         
         def scope_from_uri(uri)
+          return '' if uri.blank?
           File.dirname(uri)
         end
         
