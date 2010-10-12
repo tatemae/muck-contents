@@ -32,7 +32,7 @@ function undirty(){
 <% end -%>
 
 function show_message(message){
-  <% if GlobalConfig.growl_enabled -%>
+  <% if MuckEngine.configuration.growl_enabled -%>
 	  jQuery.jGrowl.info(message);
 	<% else -%>
 	  jQuery('#<%=message_container_id%>').show();

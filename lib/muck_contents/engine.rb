@@ -8,16 +8,12 @@ module MuckContents
       'muck-contents'
     end
     
+    config.app_middleware.insert_before("ActionDispatch::ShowExceptions", "MuckContents::Routing::Rack")
+    
     initializer 'muck_contents.helpers' do |app|
       ActiveSupport.on_load(:action_view) do
         include MuckContentsHelper
         include TinymceHelper
-      end
-    end
-    
-    initializer 'muck_contents.controllers' do |app|
-      ActiveSupport.on_load(:action_controller) do
-        include MuckContents::Controllers::MuckContentHandler
       end
     end
     

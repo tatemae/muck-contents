@@ -1,5 +1,5 @@
 class Muck::ContentsController < ApplicationController
-  unloadable
+  include MuckContents::Models::MuckContentHandler
   
   uses_tiny_mce(:options => MuckContents.configuration.advanced_mce_options,
                 :raw_options => MuckContents.configuration.raw_mce_options, 
@@ -30,7 +30,7 @@ class Muck::ContentsController < ApplicationController
   # and add something similar to the following:
   #    <div id="add_content">
   #      <%= output_errors(t('muck.contents.problem_adding_content'), {:class => 'help-box'}, @content) %>
-  #      <% content_form(@content) do |f| -%>
+  #      <%= content_form(@content) do |f| -%>
   #        <%# Add custom fields here.  ie %>
   #        <%= f.text_field :custom_thing %>
   #      <% end -%>

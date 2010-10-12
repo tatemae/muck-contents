@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :contents, :controller => 'muck/contents'
+  resources :contents_missing, :controller => 'muck/contents_missing'
   match '/tiny_mce_files' => 'muck/tiny_mce#tiny_mce_files', :as => :tiny_mce_files
   match '/tiny_mce_images' => 'muck/tiny_mce#tiny_mce_images', :as => :tiny_mce_images
   match '/tiny_mce_links' => 'muck/tiny_mce#tiny_mce_links', :as => :tiny_mce_links

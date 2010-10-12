@@ -55,11 +55,19 @@ describe Content do
     it { should scope_is_public }
     it { should scope_by_title }
     it { should scope_by_creator }
-    it { should sanitize :title }
-    it { should sanitize :body }
-
-    describe "named scopes" do
+    
+    describe "sanitize" do
       before do
+        @content = Factory(:content)
+      end
+      it "should sanitize user input fields" do
+        @content.should sanitize(:title)
+        @content.should sanitize(:body)
+      end
+    end
+    
+    describe "named scopes" do
+      before(:each) do
         @creator = Factory(:user)
         @content = Factory(:content, :creator => @creator)
         @other_content = Factory(:content)
@@ -70,7 +78,7 @@ describe Content do
       end
       describe "no_contentable" do
         # named_scope :no_contentable, :conditions => 'contentable_id IS NULL'
-        before do
+        before(:each) do
           @user = Factory(:user)
           @content_not = Factory(:content, :contentable => nil)
           @content = Factory(:content, :contentable => @user)
@@ -91,7 +99,7 @@ describe Content do
         end
       end      
       describe "by_parent" do
-        before do
+        before(:each) do
           Content.delete_all
           @parent_content = Factory(:content)
           @item = Factory(:content, :parent => @parent_content)
@@ -104,7 +112,7 @@ describe Content do
         end
       end
       describe "by_parent" do
-        before do
+        before(:each) do
           @parent_content = Factory(:content)
           @content.move_to_child_of(@parent_content)
         end
@@ -173,7 +181,7 @@ describe Content do
   
     describe "uri" do
       describe "global content (contentable is nil)" do
-        before do
+        before(:each) do
           @path = '/a/test/path'
           @key =  'key'
           @content = Factory.build(:content, :contentable => nil)
@@ -194,7 +202,7 @@ describe Content do
         end
         describe "setup_uri_path" do
           it "should load uri_path" do
-            @content.reload
+            @content = Content.find(@content.id) # Reload the content. Note that @content.reload doesn't work here.
             @content.uri_path.should == nil
             @content.setup_uri_path
             @content.uri_path.should == @path
@@ -202,7 +210,7 @@ describe Content do
         end
       end
       describe "content with contentable" do
-        before do
+        before(:each) do
           @user = Factory(:user)
           @content = Factory(:content, :contentable => @user)
         end
@@ -211,7 +219,7 @@ describe Content do
         end
       end
       describe "invalid content uri" do
-        before do
+        before(:each) do
           @content = Factory.build(:content, :contentable => nil)
         end
         it "should indicate uri is not valid" do
@@ -230,7 +238,7 @@ describe Content do
     end
   
     describe "singleton methods" do
-      before do
+      before(:each) do
         @user = Factory(:user)
       end
       it "should build path based on user object" do
@@ -242,7 +250,7 @@ describe Content do
     end
   
     describe "tags" do
-      before do
+      before(:each) do
         @other_content = Factory(:content)
         @content.tag_list = 'test'
         @content.save!
@@ -283,7 +291,7 @@ describe Content do
     end
   
     describe "current editor" do
-      before do
+      before(:each) do
         @creator = Factory(:user)
         @content = Factory(:content, :creator => @creator)
         @current_editor = Factory(:user)
