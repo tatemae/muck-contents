@@ -5,7 +5,7 @@ it easy to add this content to your website.
 
 === Gems
 Add the following to your Gemfile:
-  gem 'muck-contents', :require => 'muck_contents'
+  gem 'muck-contents'
 
 ==== Note about TinyMCE
 Watch out for updates to the TinyMCE gem. The author has chosen to overwrite all files in the tiny mce asset directories when the server

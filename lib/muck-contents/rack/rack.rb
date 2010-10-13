@@ -15,7 +15,7 @@ module MuckContents
           # request.format.html? can actually give a false result on ie so try the file extension
           # Requests to the content system won't have a file extension so request_type should be empty
           if request_type.empty?
-            env["muck_contents.request_uri"] = env["REQUEST_URI"].gsub("http://#{env["HTTP_HOST"]}", '')
+            env["muck-contents.request_uri"] = env["REQUEST_URI"].gsub("http://#{env["HTTP_HOST"]}", '')
             env["PATH_INFO"] = env["REQUEST_URI"] = "/contents_missing"
           end
         end

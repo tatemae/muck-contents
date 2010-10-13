@@ -8,7 +8,7 @@ module MuckContents
         def handle_content_request
           get_content
           if @content.blank?
-            redirect_to new_content_path(:path => env["muck_contents.request_uri"])
+            redirect_to new_content_path(:path => env["muck-contents.request_uri"])
           else
             return if ensure_current_url
             render_show_content
@@ -49,8 +49,8 @@ module MuckContents
         # Tries to find content using parameters from the url
         def get_content
           return if @content # in case @content is setup by an overriding method
-          id = params[:id] || Content.id_from_uri(env["muck_contents.request_uri"])
-          scope = params[:scope] || Content.scope_from_uri(env["muck_contents.request_uri"]) 
+          id = params[:id] || Content.id_from_uri(env["muck-contents.request_uri"])
+          scope = params[:scope] || Content.scope_from_uri(env["muck-contents.request_uri"]) 
           @content = Content.find(id, :scope => scope) rescue nil
           if @content.blank?
             @contentable = get_parent

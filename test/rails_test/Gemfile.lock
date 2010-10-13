@@ -6,13 +6,6 @@ GIT
     authlogic (2.1.3)
       activesupport
 
-GIT
-  remote: http://github.com/redinger/validation_reflection.git
-  revision: f0d81d3732304e2baa66e6caad1bb2ba09e9f293
-  branch: rails-3
-  specs:
-    validation_reflection (1.0.0.rc.1)
-
 PATH
   remote: /Users/jbasdf/projects/muck-activities
   specs:
@@ -50,8 +43,8 @@ PATH
   specs:
     muck-engine (3.0.1)
       overlord
-      validation_reflection (>= 1.0.0.rc.1)
-      will_paginate
+      validation_reflection
+      will_paginate (~> 3.0.beta)
 
 PATH
   remote: /Users/jbasdf/projects/muck-users
@@ -229,6 +222,7 @@ GEM
       mime-types
       paperclip
       rack
+    validation_reflection (1.0.0)
     will_paginate (3.0.pre2)
     xml-simple (1.0.12)
     ya2yaml (0.30)
@@ -253,7 +247,6 @@ DEPENDENCIES
   muck-solr
   muck-users!
   mysql
-  overlord
   rails (= 3.0.0)
   rcov
   rspec (>= 2.0.0.beta.22)
@@ -262,5 +255,3 @@ DEPENDENCIES
   shoulda!
   spork
   uploader
-  validation_reflection!
-  will_paginate (~> 3.0.pre2)

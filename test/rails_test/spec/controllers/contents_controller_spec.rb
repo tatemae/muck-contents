@@ -42,7 +42,7 @@ describe Muck::ContentsController do
     describe "GET show using parent" do
       before do
         @env = {}
-        @env["muck_contents.request_uri"] = @content.uri
+        @env["muck-contents.request_uri"] = @content.uri
         controller.stub!(:env).and_return(@env)
         get :show
       end

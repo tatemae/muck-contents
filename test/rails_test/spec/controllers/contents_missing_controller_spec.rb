@@ -13,7 +13,7 @@ describe Muck::ContentsMissingController do
     describe "page exists" do
       before do
         @env = {}
-        @env["muck_contents.request_uri"] = @content.uri
+        @env["muck-contents.request_uri"] = @content.uri
         controller.stub!(:env).and_return(@env)
         get :index
       end
@@ -23,7 +23,7 @@ describe Muck::ContentsMissingController do
     describe "page doesn't exist" do
       before do
         @env = {}
-        @env["muck_contents.request_uri"] = '/test_page'
+        @env["muck-contents.request_uri"] = '/test_page'
         controller.stub!(:env).and_return(@env)
         get :index
       end
