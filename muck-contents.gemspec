@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-10-11}
+  s.date = %q{2010-10-13}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -92,15 +92,15 @@ Gem::Specification.new do |s|
      "db/migrate/20090703055724_add_contents.rb",
      "db/migrate/20090806230610_add_layout_to_contents.rb",
      "db/migrate/20090808175401_add_contents_comment_counter_cache.rb",
-     "lib/muck_contents.rb",
-     "lib/muck_contents/config.rb",
-     "lib/muck_contents/controllers/content_handler.rb",
-     "lib/muck_contents/engine.rb",
-     "lib/muck_contents/models/content.rb",
-     "lib/muck_contents/models/content_permission.rb",
-     "lib/muck_contents/models/content_translation.rb",
-     "lib/muck_contents/rack/rack.rb",
-     "lib/muck_contents/routes.rb",
+     "lib/muck-contents.rb",
+     "lib/muck-contents/config.rb",
+     "lib/muck-contents/controllers/content_handler.rb",
+     "lib/muck-contents/engine.rb",
+     "lib/muck-contents/models/content.rb",
+     "lib/muck-contents/models/content_permission.rb",
+     "lib/muck-contents/models/content_translation.rb",
+     "lib/muck-contents/rack/rack.rb",
+     "lib/muck-contents/routes.rb",
      "lib/tasks/muck_contents.rake",
      "muck-contents.gemspec",
      "public/images/tinymce/doc.jpg",
@@ -3597,7 +3597,8 @@ Gem::Specification.new do |s|
      "test/rails_test/spec/models/content_permission_spec.rb",
      "test/rails_test/spec/models/content_spec.rb",
      "test/rails_test/spec/models/content_translation_spec.rb",
-     "test/rails_test/spec/spec_helper.rb"
+     "test/rails_test/spec/spec_helper.rb",
+     "test/rails_test/test/fixtures/rails.png"
   ]
   s.homepage = %q{http://github.com/tatemae/muck_contents}
   s.rdoc_options = ["--charset=UTF-8"]
