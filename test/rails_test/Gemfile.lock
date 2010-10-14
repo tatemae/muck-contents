@@ -101,7 +101,6 @@ GEM
       mime-types
       xml-simple
     babelphish (0.2.8)
-      json
       ya2yaml
     babosa (0.2.0)
     bcrypt-ruby (2.1.2)
@@ -217,7 +216,7 @@ GEM
     treetop (1.4.8)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
-    uploader (3.0.1)
+    uploader (3.0.2)
       aws-s3
       mime-types
       paperclip

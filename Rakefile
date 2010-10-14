@@ -1,9 +1,12 @@
 require 'rake'
-require 'rake/testtask'
 require 'rake/rdoctask'
+require 'spec/rake/spectask'
 
-desc 'Default: run unit tests.'
+desc 'Default: run specs.'
 task :default => :spec
+Spec::Rake::SpecTask.new('spec') do |t|
+  t.spec_files = FileList['test/rails_test/spec/**/*_spec.rb']
+end
 
 
 begin
@@ -50,7 +53,7 @@ begin
     gemspec.name = "muck-contents"
     gemspec.summary = "Add content to your muck based project"
     gemspec.email = "justin@tatemae.com"
-    gemspec.homepage = "http://github.com/tatemae/muck_contents"
+    gemspec.homepage = "http://github.com/tatemae/muck-contents"
     gemspec.authors = ["Justin Ball", "Joel Duffin"]
     gemspec.rubyforge_project = 'muck-contents'
     gemspec.add_dependency "muck-engine"
