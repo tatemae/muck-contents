@@ -11,8 +11,8 @@ gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => '
 gem "bcrypt-ruby", :require => "bcrypt"
 gem 'uploader'
 
-gem 'muck-engine', :require => 'muck_engine', :path => "~/projects/muck-engine"
-gem 'muck-users', :require => 'muck_users', :path => "~/projects/muck-users"
+gem 'muck-engine', :path => "~/projects/muck-engine"
+gem 'muck-users', :path => "~/projects/muck-users"
 gem 'muck-activities', :path => "~/projects/muck-activities"
 gem 'muck-comments', :path => "~/projects/muck-comments" 
 gem 'muck-contents', :path => '../../'  
