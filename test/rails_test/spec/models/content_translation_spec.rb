@@ -51,7 +51,6 @@ describe ContentTranslation do
     end
     
     describe "find by locale" do
-      #named_scope :by_locale, lambda { |locale| { :conditions => ['content_translations.locale = ?', locale] } }
       before do
         ContentTranslation.destroy_all
         @content_one = Factory(:content)

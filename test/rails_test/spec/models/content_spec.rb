@@ -77,7 +77,6 @@ describe Content do
         @content_with_custom_scope = Factory(:content, :custom_scope => @custom_scope)
       end
       describe "no_contentable" do
-        # named_scope :no_contentable, :conditions => 'contentable_id IS NULL'
         before(:each) do
           @user = Factory(:user)
           @content_not = Factory(:content, :contentable => nil)
