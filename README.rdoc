@@ -41,6 +41,14 @@ be sure to set content_css to any css files you want to have show up in your tin
     end
   end           
 
+=== Tests
+Muck-Contents inserts an exception handler. If this handler is not loaded the gem will prevent your application from loading. This is mainly a problem in tests
+where show_exceptions is set to false. Enable 'show_exceptions' in test.rb:
+
+  RailsTest::Application.configure do
+    config.action_dispatch.show_exceptions = true # Must be true to include the rack middleware require to generate missing page exceptions
+  end
+    
 === Tiny MCE Initializer
 Running rake muck:contents:sync will copy all the needed javascript, image and css files into your project.  It will also create an initializer called mce_options.rb.  That file
 contains two basic configurations for tinymce as well as examples on how to create templates.  It is recommended that you don't modify that file as it will be overwritten the
