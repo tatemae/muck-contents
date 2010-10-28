@@ -14,6 +14,7 @@ module MuckContents
     
     attr_accessor :git_repository             # Not currently used.  Eventually this will be the path to a git repository that the content system uses to store revisions.
     attr_accessor :enable_auto_translations   # If true then all content objects will automatically be translated into all languages supported by Google Translate
+    attr_accessor :enable_sunspot             # This enables or disables sunspot for profiles. Only use acts_as_solr or sunspot not both. Sunspot does not include multicore support.
     attr_accessor :enable_solr                # Enables solr for the content system.  If you are using solr then set this to true.  If you do not wish to setup and manage solr 
                                               # then set this value to false (but search will be disabled).
     attr_accessor :content_css                # CSS files that should be fed into the tiny_mce content editor.  
@@ -32,6 +33,7 @@ module MuckContents
     def initialize
       self.sanitize_content = true
       self.enable_auto_translations = true
+      self.enable_sunspot = false
       self.enable_solr = false
       self.enable_comments = false
       self.git_repository = nil #"#{File.join(RAILS_ROOT, 'repo', RAILS_ENV)}"

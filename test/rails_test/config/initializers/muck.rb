@@ -64,6 +64,7 @@ MuckContents.configure do |config|
   config.sanitize_content = true
   config.enable_auto_translations = true
   config.enable_solr = true
+  config.enable_sunspot = false
   config.enable_comments = true
   config.flickr_api_key = Secrets.flickr_api_key
   if Rails.env.production?

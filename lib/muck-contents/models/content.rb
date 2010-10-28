@@ -55,6 +55,13 @@ module MuckContents
           acts_as_solr({ :fields => [ :search_content => 'string' ] }, { :multi_core => true, :default_core => 'en' })
         end
 
+        if MuckContents.configuration.enable_sunspot
+          require 'sunspot'          
+          searchable do
+            text :search_content, :more_like_this => true
+          end
+        end
+
         attr_accessor :uri_path
         attr_accessor :custom_scope
       
