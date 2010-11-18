@@ -29,3 +29,4 @@ pkg/*
 log/*
 global_config.yml
 secrets.yml
+test/log/*

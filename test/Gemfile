@@ -15,7 +15,7 @@ gem 'muck-engine', :path => "~/projects/muck-engine"
 gem 'muck-users', :path => "~/projects/muck-users"
 gem 'muck-activities', :path => "~/projects/muck-activities"
 gem 'muck-comments', :path => "~/projects/muck-comments" 
-gem 'muck-contents', :path => '../../'  
+gem 'muck-contents', :path => '../'  
 gem 'muck-solr', :require => 'acts_as_solr'
   
 if RUBY_VERSION < '1.9'
