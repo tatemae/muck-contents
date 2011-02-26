@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "3.1.2"
+  s.version = "3.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "app/controllers/muck/tiny_mce_controller.rb",
     "app/helpers/muck_contents_helper.rb",
     "app/helpers/tinymce_helper.rb",
+    "app/views/admin/contents/_content.erb",
     "app/views/admin/contents/index.html.erb",
     "app/views/contents/_admin.erb",
     "app/views/contents/_form.erb",
