@@ -77,6 +77,16 @@ Then the user's content can be accessed via:
   
   @user.contents
   
+=== Content Permissions
+By default users are not allowed to add content. Add 'can_add_root_content?' to your user model to determine which users can add content to the root of the
+website. A default configuration might be admins only:
+  
+  class User < ActiveRecord::Base
+    def can_add_root_content?
+      admin?
+    end
+  end
+  
 === Content models
 Create the following models in your project.  This let's you add any other methods that you see fit.
 

@@ -53,7 +53,6 @@ module MuckContents
           scope = params[:scope] || Content.scope_from_uri(env["muck-contents.request_uri"]) 
           @content = Content.find(id, :include => :slugs, :conditions => {:slugs => {:scope => scope}}) rescue nil
           if @content.blank?
-            debugger
             @contentable = get_parent
             if @contentable
               @content = @contentable.contents.find(params[:id]) rescue nil

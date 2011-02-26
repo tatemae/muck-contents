@@ -7,6 +7,7 @@ require 'uploader'
 
 require 'muck-contents/config.rb'
 require 'muck-contents/rack/rack.rb'
+require 'muck-contents/models/contentable.rb'
 require 'muck-contents/models/content.rb'
 require 'muck-contents/models/content_permission.rb'
 require 'muck-contents/models/content_translation.rb'
