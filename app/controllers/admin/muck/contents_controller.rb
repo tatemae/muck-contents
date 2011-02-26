@@ -1,15 +1,10 @@
-class Admin::Muck::ContentsController < ApplicationController
-  unloadable
+class Admin::Muck::ContentsController < Admin::Muck::BaseController
   
   def index
-  end
-  
-  def edit
-    @content = Content.find(params[:id])
-    @title = @content.title
+    @contents = Content.by_title.by_newest
     respond_to do |format|
-      format.html { render :template => 'contents/edit' }
+      format.html { render :template => 'admin/contents/index' }
     end
   end
-
+  
 end

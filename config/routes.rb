@@ -9,4 +9,10 @@ Rails.application.routes.draw do
   match '/images_for_content' => 'muck/tiny_mce#images_for_content', :as => :images_for_content
   match '/files_for_content' => 'muck/tiny_mce#files_for_content', :as => :files_for_content
   match '/links_for_content' => 'muck/tiny_mce#links_for_content', :as => :links_for_content
+  
+  # admin
+  namespace :admin do
+    resources :contents, :controller => 'muck/contents'
+  end
+  
 end

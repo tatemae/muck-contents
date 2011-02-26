@@ -1,0 +1,6 @@
+<li id="<%=content.dom_id%>" class="contentContainer delete-container">
+	<span class="link"><a href="<%=content.uri%>" target="_blank"><%= content.title %></a></span>
+	<span class="content-controls">
+		<%= render :partial => 'contents/admin', :locals => {:content => content} %>
+	</span>
+</li>
