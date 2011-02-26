@@ -66,6 +66,17 @@ This method determines who can add content to any url on your website.  For exam
 http://www.example.com/a/test/page and that page does not exist, muck contents will automatically create
 a page for you at that location if the logged in user has a method can_add_root_content? that returns true.
 
+=== Attach content to a parent model
+Content can be scoped to a specific model. ie
+
+  class User < ActiveRecord::Base
+    include MuckContents::Models::MuckContentable
+  end
+
+Then the user's content can be accessed via:
+  
+  @user.contents
+  
 === Content models
 Create the following models in your project.  This let's you add any other methods that you see fit.
 
@@ -83,14 +94,13 @@ Create the following models in your project.  This let's you add any other metho
 
 === Contents controller
 
-Create a ContentsController and inherit from Muck::ContentsController.  Unfortunately, due to routing issues this is required or 
-we'd have to hard code the routes to go to muck/contents which prevent modification of the contents_controller.
+Optionally create a ContentsController and inherit from Muck::ContentsController. This step is only needed if you intend to override the default contents controller functionality.
   class ContentsController < Muck::ContentsController
   end
 
 Add a route for the new controller:
   MyApp::Application.routes.draw do
-    map.resource :contents
+    resources :contents
   end
   
 Override the contents controller to change the the security model.  For example:

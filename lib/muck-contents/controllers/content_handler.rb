@@ -51,11 +51,12 @@ module MuckContents
           return if @content # in case @content is setup by an overriding method
           id = params[:id] || Content.id_from_uri(env["muck-contents.request_uri"])
           scope = params[:scope] || Content.scope_from_uri(env["muck-contents.request_uri"]) 
-          @content = Content.find(id, :scope => scope) rescue nil
+          @content = Content.find(id, :include => :slugs, :conditions => {:slugs => {:scope => scope}}) rescue nil
           if @content.blank?
+            debugger
             @contentable = get_parent
             if @contentable
-              @content = Content.find(params[:id], :scope => Content.contentable_to_scope(@contentable)) rescue nil
+              @content = @contentable.contents.find(params[:id]) rescue nil
             end
           end
         end

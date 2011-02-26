@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-11-18}
+  s.date = %q{2011-02-26}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -1473,11 +1473,10 @@ Gem::Specification.new do |s|
   ]
   s.homepage = %q{http://github.com/tatemae/muck-contents}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.5.2}
   s.summary = %q{Add content to your muck based project}
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
@@ -1488,7 +1487,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<awesome_nested_set>, [">= 0"])
       s.add_runtime_dependency(%q<sanitize>, [">= 0"])
       s.add_runtime_dependency(%q<acts-as-taggable-on>, [">= 0"])
-      s.add_runtime_dependency(%q<friendly_id>, [">= 0"])
+      s.add_runtime_dependency(%q<friendly_id>, [">= 3.2.0"])
       s.add_runtime_dependency(%q<uploader>, [">= 0"])
       s.add_runtime_dependency(%q<tiny_mce>, [">= 0"])
     else
@@ -1499,7 +1498,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<awesome_nested_set>, [">= 0"])
       s.add_dependency(%q<sanitize>, [">= 0"])
       s.add_dependency(%q<acts-as-taggable-on>, [">= 0"])
-      s.add_dependency(%q<friendly_id>, [">= 0"])
+      s.add_dependency(%q<friendly_id>, [">= 3.2.0"])
       s.add_dependency(%q<uploader>, [">= 0"])
       s.add_dependency(%q<tiny_mce>, [">= 0"])
     end
@@ -1511,7 +1510,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<awesome_nested_set>, [">= 0"])
     s.add_dependency(%q<sanitize>, [">= 0"])
     s.add_dependency(%q<acts-as-taggable-on>, [">= 0"])
-    s.add_dependency(%q<friendly_id>, [">= 0"])
+    s.add_dependency(%q<friendly_id>, [">= 3.2.0"])
     s.add_dependency(%q<uploader>, [">= 0"])
     s.add_dependency(%q<tiny_mce>, [">= 0"])
   end

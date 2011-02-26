@@ -64,7 +64,7 @@ begin
     gem.add_dependency "awesome_nested_set"
     gem.add_dependency "sanitize"
     gem.add_dependency "acts-as-taggable-on"
-    gem.add_dependency "friendly_id"
+    gem.add_dependency "friendly_id", ">=3.2.0"
     gem.add_dependency "uploader"
     gem.add_dependency "tiny_mce"
     gem.files.exclude 'test/**'

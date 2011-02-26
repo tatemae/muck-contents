@@ -35,7 +35,7 @@ class User < ActiveRecord::Base
   end
   include MuckUsers::Models::MuckUser
   include MuckActivities::Models::MuckActivityConsumer
-  has_many :uploads, :as => :uploadable, :order => 'created_at desc', :dependent => :destroy 
+  include MuckContents::Models::MuckContentable
   
   def can_add_root_content?
     admin?
