@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "3.1.0"
+  s.version = "3.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
@@ -91,6 +91,7 @@ Gem::Specification.new do |s|
     "db/migrate/20090703055724_add_contents.rb",
     "db/migrate/20090806230610_add_layout_to_contents.rb",
     "db/migrate/20090808175401_add_contents_comment_counter_cache.rb",
+    "db/migrate/20110226174321_add_cached_slugs.rb",
     "lib/muck-contents.rb",
     "lib/muck-contents/config.rb",
     "lib/muck-contents/controllers/content_handler.rb",
@@ -98,6 +99,7 @@ Gem::Specification.new do |s|
     "lib/muck-contents/models/content.rb",
     "lib/muck-contents/models/content_permission.rb",
     "lib/muck-contents/models/content_translation.rb",
+    "lib/muck-contents/models/contentable.rb",
     "lib/muck-contents/rack/rack.rb",
     "lib/muck-contents/routes.rb",
     "lib/tasks/muck_contents.rake",
