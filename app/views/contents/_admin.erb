@@ -2,6 +2,6 @@
   <% if current_user.can_add_root_content? -%>
     <%= link_to t('muck.contents.add'), new_content_path, :title => t('muck.contents.add_title'), :class => 'admin-content' -%> |
   <% end -%>
-  <%= link_to t('muck.contents.edit'), edit_content_path(content.id), :title => t('muck.contents.edit_this_page'), :class => 'admin-content' -%> | 
+  <%= link_to t('muck.contents.edit'), edit_content_path(content.id), :title => t('muck.contents.edit_title'), :class => 'admin-content' -%> | 
   <%= link_to t('muck.contents.delete'), content_path(content.id), :method => :delete, :title => t('muck.contents.delete_title'), :class => 'admin-content', :confirm => t('muck.contents.confirm_delete_content') -%>
 <% end -%>
