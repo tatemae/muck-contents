@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "3.1.3"
+  s.version = "3.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2011-02-26}
+  s.date = %q{2011-03-09}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -1476,7 +1476,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = %q{http://github.com/tatemae/muck-contents}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.5.2}
+  s.rubygems_version = %q{1.6.0}
   s.summary = %q{Add content to your muck based project}
 
   if s.respond_to? :specification_version then
@@ -1493,6 +1493,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<friendly_id>, [">= 3.2.0"])
       s.add_runtime_dependency(%q<uploader>, [">= 0"])
       s.add_runtime_dependency(%q<tiny_mce>, [">= 0"])
+      s.add_runtime_dependency(%q<nested_set>, [">= 0"])
     else
       s.add_dependency(%q<muck-engine>, [">= 0"])
       s.add_dependency(%q<muck-users>, [">= 0"])
@@ -1504,6 +1505,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<friendly_id>, [">= 3.2.0"])
       s.add_dependency(%q<uploader>, [">= 0"])
       s.add_dependency(%q<tiny_mce>, [">= 0"])
+      s.add_dependency(%q<nested_set>, [">= 0"])
     end
   else
     s.add_dependency(%q<muck-engine>, [">= 0"])
@@ -1516,6 +1518,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<friendly_id>, [">= 3.2.0"])
     s.add_dependency(%q<uploader>, [">= 0"])
     s.add_dependency(%q<tiny_mce>, [">= 0"])
+    s.add_dependency(%q<nested_set>, [">= 0"])
   end
 end
 

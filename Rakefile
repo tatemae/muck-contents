@@ -67,6 +67,7 @@ begin
     gem.add_dependency "friendly_id", ">=3.2.0"
     gem.add_dependency "uploader"
     gem.add_dependency "tiny_mce"
+    gem.add_dependency "nested_set"
     gem.files.exclude 'test/**'
     gem.test_files.exclude 'test/**' # exclude test directory
   end
