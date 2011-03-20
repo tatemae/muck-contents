@@ -10,7 +10,7 @@
     </ul>
   </div>
 </div>
-
+<% content_for :javascript do -%>
 <script type="text/javascript" language="JavaScript">
 jQuery(document).ready(function() {
   var data = <%= @contents.collect{|content| { :title => content.title, :id => content.id } }.to_json.html_safe %>;
@@ -24,3 +24,4 @@ jQuery(document).ready(function() {
   }).result(function(event, item) { location.href = '/contents/' + item.id + '/edit'; });
 });
 </script>
+<% end -%>

@@ -26,6 +26,7 @@ be sure to set content_css to any css files you want to have show up in your tin
   MuckContents.configure do |config|
     config.sanitize_content = true
     config.enable_auto_translations = false         # If true then all content objects will automatically be translated into all languages supported by Google Translate
+    config.translate_to = ['es', 'fr']              # If auto translate is enabled this indicates which languages to translate the content into. Specify Babelphish::GoogleTranslate::LANGUAGES to translate to all available language (not recommended).
     config.enable_sunspot = false                   # This enables or disables sunspot for profiles. Only use acts_as_solr or sunspot not both. Sunspot does not include multicore support.
     config.enable_solr = true                       # Enables solr for the content system.  If you are using solr then set this to true.  If you do not wish to setup and manage solr 
                                                     # then set this value to false (but search will be disabled).

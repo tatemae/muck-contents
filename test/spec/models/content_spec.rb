@@ -27,7 +27,7 @@ require File.dirname(__FILE__) + '/../spec_helper'
 describe Content do
 
   describe "content" do
-    before do
+    before(:all) do
       @title = 'hello'
       @body = 'hello world'
       @creator = Factory(:user)
@@ -140,38 +140,58 @@ describe Content do
       end
     end
 
+    describe "enable_auto_translations" do
+      it "should auto translate the content" do
+        original_enable_auto_translations = MuckContents.configuration.enable_auto_translations
+        MuckContents.configuration.enable_auto_translations = true
+        translated_content = Factory.build(:content, :title => @title, :body_raw => @body, :creator => @creator)
+        translated_content.should_receive(:auto_translate)
+        translated_content.save!
+        MuckContents.configuration.enable_auto_translations = original_enable_auto_translations
+      end
+    end
+    
     describe "translations" do
+      before(:all) do
+        @original_enable_auto_translations = MuckContents.configuration.enable_auto_translations
+        MuckContents.configuration.enable_auto_translations = true
+        @translated_content = Factory.build(:content, :title => 'hello', :body_raw => 'hello world')
+        @translated_content.save!
+      end
+      after(:all) do
+        MuckContents.configuration.enable_auto_translations = @original_enable_auto_translations
+      end
       it "should have localized title" do
-        @content.locale_title('es').should == 'hola'
+        @translated_content.locale_title('es').should == 'hola'
       end
       it "should have localized body" do
-        @content.locale_body('es').should == 'hola mundo'
+        @translated_content.locale_body('es').should == 'hola mundo'
       end
       it "should give back title" do
-        @content.locale_title('en').should == @title
+        @translated_content.locale_title('en').should == @title
       end
       it "should give back body" do
-        @content.locale_body('en').should == @body
-        @content.body.should == @body
+        @translated_content.locale_body('en').should == @body
+        @translated_content.body.should == @body
       end
       it "should get a specific translation" do
-        translation = @content.translation_for('es')
+        translation = @translated_content.translation_for('es')
         translation.title.should == 'hola'
       end
       describe "edited" do
         before do
-          @translation = @content.content_translations.first
+          @translation = @translated_content.content_translations.first
           @translation.title = 'junk'
           @translation.user_edited = true
           @translation.save!
         end
         it "should not change user edited translations" do
-          @content.translate(false)
+          @translated_content.translate(false)
           @translation.reload
           @translation.title.should == 'junk'
         end
         it "should change user edited translations" do
-          @content.translate(true)
+          @translated_content.translate(true)
           @translation.reload
           @translation.title.should_not == 'junk'
         end

@@ -78,9 +78,9 @@
   
 </form>
 
-<% content_for :head do  -%>
+<% content_for :javascript do  -%>
   <%= javascript_include_tag 'tiny_mce/plugins/muckfile/js/functions.js' -%>
-<% end -%>
+
 <script language="javascript" type="text/javascript">
 
 tinyMCEPopup.onInit.add(function(ed) {
@@ -139,3 +139,4 @@ function insert_file_too(url, name){
 	mcTabs.displayTab('general_tab','general_panel');
 }
 </script>
+<% end -%>

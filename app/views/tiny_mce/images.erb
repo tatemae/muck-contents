@@ -243,9 +243,8 @@
 </div>
 </form>
 
-<% content_for :head do  -%>
+<% content_for :javascript do  -%>
   <%= javascript_include_tag 'tiny_mce/plugins/muckimage/js/functions.js' -%>
-<% end -%>
 <script language="javascript" type="text/javascript">
 
 tinyMCEPopup.onInit.add(function(ed) {
@@ -316,3 +315,4 @@ function insert_image_too(url, alt_text){
 	ImageDialog.showPreviewImage(url);
 }
 </script>
+<% end -%>

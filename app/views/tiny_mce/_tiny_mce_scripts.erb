@@ -1,4 +1,5 @@
 <%= init_tiny_mce %>
+<% content_for :javascript do -%>
 <script language="javascript" type="text/javascript">
 <% if include_save_page -%>
 function save_page() {
@@ -40,3 +41,4 @@ function show_message(message){
 	<% end -%>
 }
 </script>
+<% end -%>

@@ -35,7 +35,8 @@ module MuckContents
 
         before_save :sanitize_attributes if MuckContents.configuration.sanitize_content
         before_save :ensure_locale_is_string
-      
+        after_save :auto_translate
+        
         # TODO add states - draft, published
         # maybe move content body_raw -> body_draft -> body
         # then you could be working on a revision without it being live
@@ -48,8 +49,6 @@ module MuckContents
         #   end
         # end
 
-        after_save :auto_translate if MuckContents.configuration.enable_auto_translations
-        
         if MuckContents.configuration.enable_solr
           require 'acts_as_solr'
           acts_as_solr({ :fields => [ :search_content => 'string' ] }, { :multi_core => true, :default_core => 'en' })
@@ -188,6 +187,7 @@ module MuckContents
 
       # Called after 'save' if auto translate is enabled
       def auto_translate
+        return unless MuckContents.configuration.enable_auto_translations
         begin
           translate(false)
         rescue => ex
@@ -200,19 +200,22 @@ module MuckContents
       end
       
       # Translate title and body using Google
-      def translate(overwrite_user_edited_translations = false)
-        title_translations = Babelphish::Translator.multiple_translate(self.title, Babelphish::GoogleTranslate::LANGUAGES, self.locale)
-        body_translations = Babelphish::Translator.multiple_translate(self.body, Babelphish::GoogleTranslate::LANGUAGES, self.locale)
+      def translate(overwrite_user_edited_translations = false, translate_to = nil)
+        translate_to ||= MuckContents.configuration.translate_to
+        return if translate_to.blank?
+        
+        title_translations = Babelphish::Translator.multiple_translate(self.title, translate_to, self.locale)
+        body_translations = Babelphish::Translator.multiple_translate(self.body, translate_to, self.locale)
         existing_translations = {}
         self.content_translations.each do |translation|
           existing_translations[translation.locale] = translation
         end
         
-        Babelphish::GoogleTranslate::LANGUAGES.each do |language|
+        translate_to.each do |language|
           if translation = existing_translations[language]
             if !translation.user_edited || overwrite_user_edited_translations
               translation.update_attributes!(:title => title_translations[language],
-                                            :body => body_translations[language])
+                                             :body => body_translations[language])
             end
           else
             self.content_translations.create!(:title => title_translations[language],

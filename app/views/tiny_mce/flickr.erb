@@ -22,9 +22,8 @@
 </div>
 </form>
 
-<% content_for :head do  -%>
+<% content_for :javascript do  -%>
   <%= javascript_include_tag 'tiny_mce/plugins/muckflickr/js/functions.js' -%>
-<% end -%>
 <script language="javascript" type="text/javascript">
 jQuery(document).ready(function() { 
   jQuery('.image-container').click(function() {
@@ -33,3 +32,4 @@ jQuery(document).ready(function() {
   });
 });
 </script>
+<% end -%>

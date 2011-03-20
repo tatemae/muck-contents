@@ -55,6 +55,7 @@ describe ContentTranslation do
         ContentTranslation.destroy_all
         @content_one = Factory(:content)
         @content_two = Factory(:content)
+        MuckContents.configuration.stub!(:enable_auto_translations).and_return(true)
       end
       it "should find two English translations" do
         translations = ContentTranslation.by_locale('en')
