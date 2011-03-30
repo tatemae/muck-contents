@@ -50,6 +50,30 @@ describe Muck::ContentsController do
       it { should render_template :show }
     end
     
+    describe "GET new" do
+      before do
+        @path = '/a/test/path'
+        @file = 'file'
+      end
+      
+      describe "not logged in" do
+        before do
+          get :new, :path => File.join(@path, @file)
+        end
+        it { should respond_with 404 }
+      end
+      
+      describe "GET new - 404 page exists" do
+        it "should not build more than one 404 page" do
+          get :new, :path => File.join(@path, @file)
+          lambda {
+            get :new, :path => 'a/different/missing/file'
+          }.should_not change(Content, :count)
+        end
+      end      
+      
+    end
+        
     describe "logged in" do
       
       before do

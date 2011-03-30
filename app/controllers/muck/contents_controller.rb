@@ -52,7 +52,7 @@ class Muck::ContentsController < ApplicationController
       end
     else
       # TODO think about caching this:
-      @content = Content.find('404-page-not-found', :scope => MuckContents::GLOBAL_SCOPE) rescue nil
+      @content = Content.find('404-page-not-found', :include => :slugs, :conditions => {:slugs => {:scope => MuckContents::GLOBAL_SCOPE}}) rescue nil
       if @content.blank?
         @content = Content.new(:title => I18n.t('muck.contents.default_404_title'), :body_raw => I18n.t('muck.contents.default_404_body'), :locale => I18n.locale.to_s)
         @content.uri = '/404-page-not-found'
