@@ -13,15 +13,35 @@
 <% content_for :javascript do -%>
 <script type="text/javascript" language="JavaScript">
 jQuery(document).ready(function() {
-  var data = <%= @contents.collect{|content| { :title => content.title, :id => content.id } }.to_json.html_safe %>;
-  jQuery("#auto-search").autocomplete(data, {
-    minChars: 0,
-    autoFill: true,
-    mustMatch: false,
-    formatItem: function(item) {
-      return item.title;
-    }
-  }).result(function(event, item) { location.href = '/contents/' + item.id + '/edit'; });
+  var cache = {};
+  var lastXhr;
+  jQuery("#auto-search").autocomplete({
+		source: function(request, response){
+			var term = request.term;
+			if(term in cache){
+				response(cache[term]);
+				return;
+			}
+			lastXhr = jQuery.getJSON("<%=admin_contents_path(:format => 'json')%>", request, function(data, status, xhr){
+			  var reduced_data = jQuery.map(data, function(item){
+					return {
+						label: item.title,
+						value: item.id
+					}
+				});
+				cache[term] = reduced_data;
+				if(xhr === lastXhr){
+					response(reduced_data);
+				}
+			});
+		},
+		minLength: 2,
+		select: function(event, ui) {
+		  if(ui.item){
+		    location.href = '/contents/' + ui.item.value + '/edit';
+		  }
+		}
+	});
 });
 </script>
 <% end -%>
