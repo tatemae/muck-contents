@@ -51,11 +51,15 @@ describe ContentTranslation do
     end
     
     describe "find by locale" do
-      before do
+      before(:all) do
+        original_enable_auto_translations = MuckContents.configuration.enable_auto_translations
+        MuckContents.configuration.enable_auto_translations = true
         ContentTranslation.destroy_all
-        @content_one = Factory(:content)
-        @content_two = Factory(:content)
-        MuckContents.configuration.stub!(:enable_auto_translations).and_return(true)
+        @content_one = Factory(:content, :title => 'hello', :body_raw => 'hello world')
+        @content_two = Factory(:content, :title => 'hello again', :body_raw => 'hello world')
+      end
+      after(:all) do
+        MuckContents.configuration.enable_auto_translations = @original_enable_auto_translations
       end
       it "should find two English translations" do
         translations = ContentTranslation.by_locale('en')

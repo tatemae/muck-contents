@@ -193,6 +193,7 @@ module MuckContents
         rescue => ex
           #TODO figure out a way to bubble up the error
           puts ex
+          debugger
           # Translations failed, but update the default language
           translation = translation_for(self.locale)
           translation.update_attributes!(:title => self.title, :body => self.body) unless translation.blank?

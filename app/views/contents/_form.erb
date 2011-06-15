@@ -27,5 +27,6 @@ message_id = "#{content.dom_id}_message"
     <%= mce_fields(@parent).html_safe -%>
   <% end %>
 </div>
-
-<%= tiny_mce_scripts(:form_id => form_id, :mce_id => mce_id, :message_container_id => message_container_id, :message_id => message_id, :save_button_id => "content_submit_#{content.dom_id}") -%>
+<% content_for :javascript do  -%>
+  <%= tiny_mce_scripts(:form_id => form_id, :mce_id => mce_id, :message_container_id => message_container_id, :message_id => message_id, :save_button_id => "content_submit_#{content.dom_id}") -%>
+<% end -%>
