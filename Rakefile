@@ -1,5 +1,5 @@
-require 'rake'
-require 'rake/rdoctask'
+require 'rubygems'
+require 'bundler'
 require 'rspec/core/rake_task'
 
 desc 'Default: run specs.'
@@ -9,6 +9,37 @@ RSpec::Core::RakeTask.new(:spec) do |t|
   t.pattern = 'test/spec/**/*_spec.rb'  
 end
 
+desc 'Translate this gem'
+task :translate do
+  file = File.join(File.dirname(__FILE__), 'config', 'locales', 'en.yml')
+  system("babelphish -o -y #{file}")
+end
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gem|
+    gem.name = "muck-contents"
+    gem.summary = "Add content to your muck based project"
+    gem.email = "justin@tatemae.com"
+    gem.homepage = "http://github.com/tatemae/muck-contents"
+    gem.authors = ["Justin Ball", "Joel Duffin"]    
+    gem.add_dependency "muck-engine"
+    gem.add_dependency "muck-users"
+    gem.add_dependency "muck-comments"
+    gem.add_dependency "babelphish"
+    gem.add_dependency "awesome_nested_set"
+    gem.add_dependency "sanitize"
+    gem.add_dependency "acts-as-taggable-on"
+    gem.add_dependency "friendly_id", ">=3.2.0"
+    gem.add_dependency "uploader"
+    gem.add_dependency "tiny_mce"
+    gem.add_dependency "nested_set"
+    gem.files.exclude 'test/**'
+  end
+  Jeweler::RubygemsDotOrgTasks.new
+rescue LoadError
+  puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
+end
 
 begin
   require 'rcov/rcovtask'
@@ -42,39 +73,5 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
-desc 'Translate this gem'
-task :translate do
-  file = File.join(File.dirname(__FILE__), 'config', 'locales', 'en.yml')
-  system("babelphish -o -y #{file}")
-end
 
-begin
-  require 'jeweler'
-  Jeweler::Tasks.new do |gem|
-    gem.name = "muck-contents"
-    gem.summary = "Add content to your muck based project"
-    gem.email = "justin@tatemae.com"
-    gem.homepage = "http://github.com/tatemae/muck-contents"
-    gem.authors = ["Justin Ball", "Joel Duffin"]
-    
-    gem.add_dependency "muck-engine"
-    gem.add_dependency "muck-users"
-    gem.add_dependency "muck-comments"
-    gem.add_dependency "babelphish"
-    gem.add_dependency "awesome_nested_set"
-    gem.add_dependency "sanitize"
-    gem.add_dependency "acts-as-taggable-on"
-    gem.add_dependency "friendly_id", ">=3.2.0"
-    gem.add_dependency "uploader"
-    gem.add_dependency "tiny_mce"
-    gem.add_dependency "nested_set"
-    gem.files.exclude 'test/**'
-    gem.test_files.exclude 'test/**' # exclude test directory
-  end
-  Jeweler::GemcutterTasks.new
-  Jeweler::RubyforgeTasks.new do |rubyforge|
-    rubyforge.doc_task = "rdoc"
-  end
-rescue LoadError
-  puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
-end
+
