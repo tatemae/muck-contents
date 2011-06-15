@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-contents}
-  s.version = "3.1.6"
+  s.version = "3.1.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2011-03-30}
+  s.date = %q{2011-06-15}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -1476,7 +1476,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = %q{http://github.com/tatemae/muck-contents}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.0}
+  s.rubygems_version = %q{1.6.2}
   s.summary = %q{Add content to your muck based project}
 
   if s.respond_to? :specification_version then
